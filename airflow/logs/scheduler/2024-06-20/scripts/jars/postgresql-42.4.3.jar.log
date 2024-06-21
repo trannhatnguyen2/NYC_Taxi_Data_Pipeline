@@ -1,0 +1,135 @@
+[2024-06-20T17:49:12.282+0000] {processor.py:157} INFO - Started process (PID=58) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:49:12.283+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:49:12.287+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:49:12.286+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:49:12.299+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:49:12.321+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.043 seconds
+[2024-06-20T17:49:43.322+0000] {processor.py:157} INFO - Started process (PID=74) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:49:43.324+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:49:43.328+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:49:43.327+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:49:43.340+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:49:43.359+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.042 seconds
+[2024-06-20T17:50:14.387+0000] {processor.py:157} INFO - Started process (PID=89) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:50:14.392+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:50:14.393+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:50:14.393+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:50:14.398+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:50:14.413+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.029 seconds
+[2024-06-20T17:50:47.050+0000] {processor.py:157} INFO - Started process (PID=106) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:50:47.052+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:50:47.056+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:50:47.055+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:50:47.066+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:50:47.087+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.042 seconds
+[2024-06-20T17:51:17.600+0000] {processor.py:157} INFO - Started process (PID=122) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:51:17.605+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:51:17.609+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:51:17.608+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:51:17.620+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:51:17.639+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.045 seconds
+[2024-06-20T17:51:47.834+0000] {processor.py:157} INFO - Started process (PID=139) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:51:47.837+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:51:47.840+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:51:47.839+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:51:47.851+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:51:47.869+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.040 seconds
+[2024-06-20T17:52:22.644+0000] {processor.py:157} INFO - Started process (PID=156) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:52:22.645+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:52:22.647+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:52:22.647+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:52:22.652+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:52:22.664+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.023 seconds
+[2024-06-20T17:52:53.336+0000] {processor.py:157} INFO - Started process (PID=171) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:52:53.337+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:52:53.340+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:52:53.340+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:52:53.345+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:52:53.359+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.027 seconds
+[2024-06-20T17:53:23.559+0000] {processor.py:157} INFO - Started process (PID=189) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:53:23.560+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:53:23.562+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:53:23.561+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:53:23.567+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:53:23.585+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.029 seconds
+[2024-06-20T17:54:12.666+0000] {processor.py:157} INFO - Started process (PID=213) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:54:12.669+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:54:12.673+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:54:12.672+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:54:12.685+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:54:12.703+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.043 seconds
+[2024-06-20T17:54:42.976+0000] {processor.py:157} INFO - Started process (PID=229) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:54:42.978+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:54:42.980+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:54:42.980+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:54:42.985+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:54:43.002+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.029 seconds
+[2024-06-20T17:55:13.768+0000] {processor.py:157} INFO - Started process (PID=246) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:55:13.770+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:55:13.773+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:55:13.772+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:55:13.778+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:55:13.793+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.029 seconds
+[2024-06-20T17:55:46.949+0000] {processor.py:157} INFO - Started process (PID=263) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:55:46.950+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:55:46.952+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:55:46.951+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:55:46.957+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:55:46.973+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.028 seconds
+[2024-06-20T17:56:17.610+0000] {processor.py:157} INFO - Started process (PID=279) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:56:17.613+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:56:17.616+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:56:17.616+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:56:17.627+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:56:17.644+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.038 seconds
+[2024-06-20T17:56:48.344+0000] {processor.py:157} INFO - Started process (PID=294) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:56:48.345+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:56:48.348+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:56:48.348+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:56:48.359+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:56:48.379+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.040 seconds
+[2024-06-20T17:57:20.002+0000] {processor.py:157} INFO - Started process (PID=311) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:57:20.005+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:57:20.009+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:57:20.008+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:57:20.020+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:57:20.036+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.040 seconds
+[2024-06-20T17:57:50.142+0000] {processor.py:157} INFO - Started process (PID=327) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:57:50.143+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:57:50.145+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:57:50.145+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:57:50.151+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:57:50.165+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.026 seconds
+[2024-06-20T17:58:20.340+0000] {processor.py:157} INFO - Started process (PID=345) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:58:20.343+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:58:20.346+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:58:20.345+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:58:20.356+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:58:20.372+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.037 seconds
+[2024-06-20T17:59:13.840+0000] {processor.py:157} INFO - Started process (PID=370) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:59:13.842+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:59:13.845+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:59:13.845+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:59:13.857+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:59:13.879+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.045 seconds
+[2024-06-20T17:59:43.990+0000] {processor.py:157} INFO - Started process (PID=385) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:59:43.991+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T17:59:43.994+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:59:43.994+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:59:44.005+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T17:59:44.024+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.039 seconds
+[2024-06-20T18:00:15.012+0000] {processor.py:157} INFO - Started process (PID=402) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:00:15.014+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T18:00:15.018+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:00:15.017+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:00:15.031+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:00:15.056+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.049 seconds
+[2024-06-20T18:00:51.115+0000] {processor.py:157} INFO - Started process (PID=422) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:00:51.118+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T18:00:51.122+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:00:51.121+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:00:51.133+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:00:51.151+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.042 seconds
+[2024-06-20T18:01:37.885+0000] {processor.py:157} INFO - Started process (PID=448) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:01:37.886+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T18:01:37.889+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:01:37.888+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:01:37.894+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:01:37.915+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.032 seconds
+[2024-06-20T18:02:24.347+0000] {processor.py:157} INFO - Started process (PID=466) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:02:24.348+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T18:02:24.350+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:02:24.350+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:02:24.355+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:02:24.368+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.024 seconds
+[2024-06-20T18:02:54.980+0000] {processor.py:157} INFO - Started process (PID=482) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:02:54.982+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T18:02:54.984+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:02:54.984+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:02:54.989+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:02:55.005+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.028 seconds
+[2024-06-20T18:03:25.564+0000] {processor.py:157} INFO - Started process (PID=499) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:03:25.566+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T18:03:25.570+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:03:25.569+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:03:25.582+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:03:25.603+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.045 seconds
+[2024-06-20T18:04:14.568+0000] {processor.py:157} INFO - Started process (PID=523) to work on /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:04:14.570+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar for tasks to queue
+[2024-06-20T18:04:14.572+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:04:14.572+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:04:14.577+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar
+[2024-06-20T18:04:14.597+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/postgresql-42.4.3.jar took 0.032 seconds

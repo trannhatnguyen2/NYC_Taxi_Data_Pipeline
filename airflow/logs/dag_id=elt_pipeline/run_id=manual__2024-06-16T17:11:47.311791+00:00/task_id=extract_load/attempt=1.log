@@ -1,0 +1,22 @@
+[2024-06-16T17:11:48.377+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: elt_pipeline.extract_load manual__2024-06-16T17:11:47.311791+00:00 [queued]>
+[2024-06-16T17:11:48.389+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: elt_pipeline.extract_load manual__2024-06-16T17:11:47.311791+00:00 [queued]>
+[2024-06-16T17:11:48.390+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-16T17:11:48.403+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): extract_load> on 2024-06-16 17:11:47.311791+00:00
+[2024-06-16T17:11:48.412+0000] {standard_task_runner.py:57} INFO - Started process 508 to run task
+[2024-06-16T17:11:48.417+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'elt_pipeline', 'extract_load', 'manual__2024-06-16T17:11:47.311791+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/elt_pipeline_dag.py', '--cfg-path', '/tmp/tmp2uae7mdv']
+[2024-06-16T17:11:48.419+0000] {standard_task_runner.py:85} INFO - Job 7: Subtask extract_load
+[2024-06-16T17:11:48.465+0000] {task_command.py:415} INFO - Running <TaskInstance: elt_pipeline.extract_load manual__2024-06-16T17:11:47.311791+00:00 [running]> on host 52e246c9d923
+[2024-06-16T17:11:48.717+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='elt_pipeline' AIRFLOW_CTX_TASK_ID='extract_load' AIRFLOW_CTX_EXECUTION_DATE='2024-06-16T17:11:47.311791+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-16T17:11:47.311791+00:00'
+[2024-06-16T17:11:48.720+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scripts/elt_pipeline.py", line 53, in extract_load_to_datalake
+    found = minio_client.bucket_exists(bucket_name=datalake_cfg["bucket_name"])
+NameError: name 'minio_client' is not defined
+[2024-06-16T17:11:48.728+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=elt_pipeline, task_id=extract_load, execution_date=20240616T171147, start_date=20240616T171148, end_date=20240616T171148
+[2024-06-16T17:11:48.738+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 7 for task extract_load (name 'minio_client' is not defined; 508)
+[2024-06-16T17:11:48.789+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-06-16T17:11:48.808+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

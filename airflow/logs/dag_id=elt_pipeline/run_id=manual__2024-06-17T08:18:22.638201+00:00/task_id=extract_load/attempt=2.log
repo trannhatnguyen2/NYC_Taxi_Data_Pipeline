@@ -1,0 +1,29 @@
+[2024-06-17T08:23:31.131+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: elt_pipeline.extract_load manual__2024-06-17T08:18:22.638201+00:00 [queued]>
+[2024-06-17T08:23:31.146+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: elt_pipeline.extract_load manual__2024-06-17T08:18:22.638201+00:00 [queued]>
+[2024-06-17T08:23:31.146+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 2
+[2024-06-17T08:23:31.162+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): extract_load> on 2024-06-17 08:18:22.638201+00:00
+[2024-06-17T08:23:31.169+0000] {standard_task_runner.py:57} INFO - Started process 963 to run task
+[2024-06-17T08:23:31.176+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'elt_pipeline', 'extract_load', 'manual__2024-06-17T08:18:22.638201+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/elt_pipeline_dag.py', '--cfg-path', '/tmp/tmpzgp_9a5v']
+[2024-06-17T08:23:31.181+0000] {standard_task_runner.py:85} INFO - Job 54: Subtask extract_load
+[2024-06-17T08:23:31.241+0000] {task_command.py:415} INFO - Running <TaskInstance: elt_pipeline.extract_load manual__2024-06-17T08:18:22.638201+00:00 [running]> on host 52e246c9d923
+[2024-06-17T08:23:31.490+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='elt_pipeline' AIRFLOW_CTX_TASK_ID='extract_load' AIRFLOW_CTX_EXECUTION_DATE='2024-06-17T08:18:22.638201+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-17T08:18:22.638201+00:00'
+[2024-06-17T08:23:31.492+0000] {logging_mixin.py:151} INFO - {'endpoint': 'http://localhost:9001', 'bucket_name': 'datalake_test', 'folder_name': 'test', 'access_key': 'minio_access_key', 'secret_key': 'minio_secret_key'}
+[2024-06-17T08:23:31.492+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scripts/elt_pipeline.py", line 47, in extract_load_to_datalake
+    minio_client = Minio(
+  File "/home/airflow/.local/lib/python3.8/site-packages/minio/api.py", line 152, in __init__
+    self._base_url = BaseURL(
+  File "/home/airflow/.local/lib/python3.8/site-packages/minio/helpers.py", line 541, in __init__
+    url = _parse_url(endpoint)
+  File "/home/airflow/.local/lib/python3.8/site-packages/minio/helpers.py", line 502, in _parse_url
+    raise ValueError("path in endpoint is not allowed")
+ValueError: path in endpoint is not allowed
+[2024-06-17T08:23:31.500+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=elt_pipeline, task_id=extract_load, execution_date=20240617T081822, start_date=20240617T082331, end_date=20240617T082331
+[2024-06-17T08:23:31.510+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 54 for task extract_load (path in endpoint is not allowed; 963)
+[2024-06-17T08:23:31.544+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-06-17T08:23:31.587+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

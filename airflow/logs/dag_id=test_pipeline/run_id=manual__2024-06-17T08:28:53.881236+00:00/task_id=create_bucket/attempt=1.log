@@ -1,0 +1,14 @@
+[2024-06-17T08:28:56.418+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test_pipeline.create_bucket manual__2024-06-17T08:28:53.881236+00:00 [queued]>
+[2024-06-17T08:28:56.432+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test_pipeline.create_bucket manual__2024-06-17T08:28:53.881236+00:00 [queued]>
+[2024-06-17T08:28:56.433+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-17T08:28:56.451+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): create_bucket> on 2024-06-17 08:28:53.881236+00:00
+[2024-06-17T08:28:56.461+0000] {standard_task_runner.py:57} INFO - Started process 1057 to run task
+[2024-06-17T08:28:56.465+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'test_pipeline', 'create_bucket', 'manual__2024-06-17T08:28:53.881236+00:00', '--job-id', '59', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmpgzs79ota']
+[2024-06-17T08:28:56.466+0000] {standard_task_runner.py:85} INFO - Job 59: Subtask create_bucket
+[2024-06-17T08:28:56.505+0000] {task_command.py:415} INFO - Running <TaskInstance: test_pipeline.create_bucket manual__2024-06-17T08:28:53.881236+00:00 [running]> on host 52e246c9d923
+[2024-06-17T08:28:56.575+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='test_pipeline' AIRFLOW_CTX_TASK_ID='create_bucket' AIRFLOW_CTX_EXECUTION_DATE='2024-06-17T08:28:53.881236+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-17T08:28:53.881236+00:00'
+[2024-06-17T08:28:56.581+0000] {logging_mixin.py:151} INFO - Bucket delta already exists, skip creating!
+[2024-06-17T08:28:56.581+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-06-17T08:28:56.588+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=test_pipeline, task_id=create_bucket, execution_date=20240617T082853, start_date=20240617T082856, end_date=20240617T082856
+[2024-06-17T08:28:56.638+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-06-17T08:28:56.659+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

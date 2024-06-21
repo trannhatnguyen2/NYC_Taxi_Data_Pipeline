@@ -1,0 +1,6 @@
+**/__pycache__/
+
+/data/*
+/jars/*
+/logs/dbt.log
+test.py

@@ -1,0 +1,96 @@
+[2024-06-17T17:08:30.697+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: elt_pipeline.transform manual__2024-06-17T17:08:24.569008+00:00 [queued]>
+[2024-06-17T17:08:30.705+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: elt_pipeline.transform manual__2024-06-17T17:08:24.569008+00:00 [queued]>
+[2024-06-17T17:08:30.705+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-17T17:08:30.745+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): transform> on 2024-06-17 17:08:24.569008+00:00
+[2024-06-17T17:08:30.752+0000] {standard_task_runner.py:57} INFO - Started process 554 to run task
+[2024-06-17T17:08:30.755+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'elt_pipeline', 'transform', 'manual__2024-06-17T17:08:24.569008+00:00', '--job-id', '223', '--raw', '--subdir', 'DAGS_FOLDER/elt_pipeline_dag.py', '--cfg-path', '/tmp/tmpmamo4kmv']
+[2024-06-17T17:08:30.758+0000] {standard_task_runner.py:85} INFO - Job 223: Subtask transform
+[2024-06-17T17:08:30.812+0000] {task_command.py:415} INFO - Running <TaskInstance: elt_pipeline.transform manual__2024-06-17T17:08:24.569008+00:00 [running]> on host bf1afdb2f840
+[2024-06-17T17:08:31.026+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='elt_pipeline' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2024-06-17T17:08:24.569008+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-17T17:08:24.569008+00:00'
+[2024-06-17T17:08:31.095+0000] {logging_mixin.py:151} INFO - {'endpoint': 'minio:9000', 'bucket_name': 'delta', 'folder_name': 'test', 'access_key': 'minio_access_key', 'secret_key': 'minio_secret_key'}
+[2024-06-17T17:08:31.178+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/green_tripdata_2022-01.parquet
+[2024-06-17T17:08:31.247+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: test/green_tripdata_2022-01.parquet
+[2024-06-17T17:08:31.323+0000] {logging_mixin.py:151} INFO - Merged data from file: test/green_tripdata_2022-01.parquet
+[2024-06-17T17:08:31.326+0000] {logging_mixin.py:151} INFO - Transformed data from file: test/green_tripdata_2022-01.parquet
+[2024-06-17T17:08:31.347+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: test/green_tripdata_2022-01.parquet
+[2024-06-17T17:08:31.347+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-17T17:08:31.347+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/green_tripdata_2022-02.parquet
+[2024-06-17T17:08:31.389+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: test/green_tripdata_2022-02.parquet
+[2024-06-17T17:08:31.463+0000] {logging_mixin.py:151} INFO - Merged data from file: test/green_tripdata_2022-02.parquet
+[2024-06-17T17:08:31.466+0000] {logging_mixin.py:151} INFO - Transformed data from file: test/green_tripdata_2022-02.parquet
+[2024-06-17T17:08:31.478+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: test/green_tripdata_2022-02.parquet
+[2024-06-17T17:08:31.478+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-17T17:08:31.478+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/green_tripdata_2022-03.parquet
+[2024-06-17T17:08:31.523+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: test/green_tripdata_2022-03.parquet
+[2024-06-17T17:08:31.616+0000] {logging_mixin.py:151} INFO - Merged data from file: test/green_tripdata_2022-03.parquet
+[2024-06-17T17:08:31.619+0000] {logging_mixin.py:151} INFO - Transformed data from file: test/green_tripdata_2022-03.parquet
+[2024-06-17T17:08:31.648+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: test/green_tripdata_2022-03.parquet
+[2024-06-17T17:08:31.649+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-17T17:08:31.649+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/green_tripdata_2022-04.parquet
+[2024-06-17T17:08:31.683+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: test/green_tripdata_2022-04.parquet
+[2024-06-17T17:08:31.757+0000] {logging_mixin.py:151} INFO - Merged data from file: test/green_tripdata_2022-04.parquet
+[2024-06-17T17:08:31.759+0000] {logging_mixin.py:151} INFO - Transformed data from file: test/green_tripdata_2022-04.parquet
+[2024-06-17T17:08:31.792+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: test/green_tripdata_2022-04.parquet
+[2024-06-17T17:08:31.792+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-17T17:08:31.792+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/green_tripdata_2022-05.parquet
+[2024-06-17T17:08:31.835+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: test/green_tripdata_2022-05.parquet
+[2024-06-17T17:08:31.910+0000] {logging_mixin.py:151} INFO - Merged data from file: test/green_tripdata_2022-05.parquet
+[2024-06-17T17:08:31.913+0000] {logging_mixin.py:151} INFO - Transformed data from file: test/green_tripdata_2022-05.parquet
+[2024-06-17T17:08:31.924+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: test/green_tripdata_2022-05.parquet
+[2024-06-17T17:08:31.924+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-17T17:08:31.924+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/green_tripdata_2022-06.parquet
+[2024-06-17T17:08:31.965+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: test/green_tripdata_2022-06.parquet
+[2024-06-17T17:08:32.040+0000] {logging_mixin.py:151} INFO - Merged data from file: test/green_tripdata_2022-06.parquet
+[2024-06-17T17:08:32.042+0000] {logging_mixin.py:151} INFO - Transformed data from file: test/green_tripdata_2022-06.parquet
+[2024-06-17T17:08:32.051+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: test/green_tripdata_2022-06.parquet
+[2024-06-17T17:08:32.051+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-17T17:08:32.052+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/green_tripdata_2022-07.parquet
+[2024-06-17T17:08:32.086+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: test/green_tripdata_2022-07.parquet
+[2024-06-17T17:08:32.151+0000] {logging_mixin.py:151} INFO - Merged data from file: test/green_tripdata_2022-07.parquet
+[2024-06-17T17:08:32.153+0000] {logging_mixin.py:151} INFO - Transformed data from file: test/green_tripdata_2022-07.parquet
+[2024-06-17T17:08:32.167+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: test/green_tripdata_2022-07.parquet
+[2024-06-17T17:08:32.167+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-17T17:08:32.167+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/green_tripdata_2022-08.parquet
+[2024-06-17T17:08:32.205+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: test/green_tripdata_2022-08.parquet
+[2024-06-17T17:08:32.268+0000] {logging_mixin.py:151} INFO - Merged data from file: test/green_tripdata_2022-08.parquet
+[2024-06-17T17:08:32.270+0000] {logging_mixin.py:151} INFO - Transformed data from file: test/green_tripdata_2022-08.parquet
+[2024-06-17T17:08:32.280+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: test/green_tripdata_2022-08.parquet
+[2024-06-17T17:08:32.281+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-17T17:08:32.281+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/green_tripdata_2022-09.parquet
+[2024-06-17T17:08:32.319+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: test/green_tripdata_2022-09.parquet
+[2024-06-17T17:08:32.385+0000] {logging_mixin.py:151} INFO - Merged data from file: test/green_tripdata_2022-09.parquet
+[2024-06-17T17:08:32.389+0000] {logging_mixin.py:151} INFO - Transformed data from file: test/green_tripdata_2022-09.parquet
+[2024-06-17T17:08:32.400+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: test/green_tripdata_2022-09.parquet
+[2024-06-17T17:08:32.400+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-17T17:08:32.400+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/green_tripdata_2022-10.parquet
+[2024-06-17T17:08:32.441+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: test/green_tripdata_2022-10.parquet
+[2024-06-17T17:08:32.516+0000] {logging_mixin.py:151} INFO - Merged data from file: test/green_tripdata_2022-10.parquet
+[2024-06-17T17:08:32.518+0000] {logging_mixin.py:151} INFO - Transformed data from file: test/green_tripdata_2022-10.parquet
+[2024-06-17T17:08:32.529+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: test/green_tripdata_2022-10.parquet
+[2024-06-17T17:08:32.529+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-17T17:08:32.529+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/green_tripdata_2022-11.parquet
+[2024-06-17T17:08:32.561+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: test/green_tripdata_2022-11.parquet
+[2024-06-17T17:08:32.624+0000] {logging_mixin.py:151} INFO - Merged data from file: test/green_tripdata_2022-11.parquet
+[2024-06-17T17:08:32.626+0000] {logging_mixin.py:151} INFO - Transformed data from file: test/green_tripdata_2022-11.parquet
+[2024-06-17T17:08:32.635+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: test/green_tripdata_2022-11.parquet
+[2024-06-17T17:08:32.635+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-17T17:08:32.635+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/green_tripdata_2022-12.parquet
+[2024-06-17T17:08:32.676+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: test/green_tripdata_2022-12.parquet
+[2024-06-17T17:08:32.741+0000] {logging_mixin.py:151} INFO - Merged data from file: test/green_tripdata_2022-12.parquet
+[2024-06-17T17:08:32.744+0000] {logging_mixin.py:151} INFO - Transformed data from file: test/green_tripdata_2022-12.parquet
+[2024-06-17T17:08:32.752+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: test/green_tripdata_2022-12.parquet
+[2024-06-17T17:08:32.753+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-17T17:08:32.753+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/yellow_tripdata_2022-01.parquet
+[2024-06-17T17:08:33.177+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: test/yellow_tripdata_2022-01.parquet
+[2024-06-17T17:08:36.420+0000] {logging_mixin.py:151} INFO - Merged data from file: test/yellow_tripdata_2022-01.parquet
+[2024-06-17T17:08:36.656+0000] {logging_mixin.py:151} INFO - Transformed data from file: test/yellow_tripdata_2022-01.parquet
+[2024-06-17T17:08:37.924+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: test/yellow_tripdata_2022-01.parquet
+[2024-06-17T17:08:37.924+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-17T17:08:37.924+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/yellow_tripdata_2022-02.parquet
+[2024-06-17T17:08:38.385+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: test/yellow_tripdata_2022-02.parquet
+[2024-06-17T17:08:43.776+0000] {logging_mixin.py:151} INFO - Merged data from file: test/yellow_tripdata_2022-02.parquet
+[2024-06-17T17:08:44.078+0000] {logging_mixin.py:151} INFO - Transformed data from file: test/yellow_tripdata_2022-02.parquet
+[2024-06-17T17:08:46.228+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: test/yellow_tripdata_2022-02.parquet
+[2024-06-17T17:08:46.229+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-17T17:08:46.229+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/yellow_tripdata_2022-03.parquet
+[2024-06-17T17:08:47.988+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: test/yellow_tripdata_2022-03.parquet

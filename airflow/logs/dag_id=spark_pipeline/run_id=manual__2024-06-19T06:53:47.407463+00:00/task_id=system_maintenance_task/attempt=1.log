@@ -1,0 +1,17 @@
+[2024-06-19T06:53:48.266+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: spark_pipeline.system_maintenance_task manual__2024-06-19T06:53:47.407463+00:00 [queued]>
+[2024-06-19T06:53:48.278+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: spark_pipeline.system_maintenance_task manual__2024-06-19T06:53:47.407463+00:00 [queued]>
+[2024-06-19T06:53:48.278+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-19T06:53:48.292+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): system_maintenance_task> on 2024-06-19 06:53:47.407463+00:00
+[2024-06-19T06:53:48.300+0000] {standard_task_runner.py:57} INFO - Started process 2690 to run task
+[2024-06-19T06:53:48.304+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'spark_pipeline', 'system_maintenance_task', 'manual__2024-06-19T06:53:47.407463+00:00', '--job-id', '297', '--raw', '--subdir', 'DAGS_FOLDER/delta_dag.py', '--cfg-path', '/tmp/tmp2xfqz0g6']
+[2024-06-19T06:53:48.305+0000] {standard_task_runner.py:85} INFO - Job 297: Subtask system_maintenance_task
+[2024-06-19T06:53:48.355+0000] {task_command.py:415} INFO - Running <TaskInstance: spark_pipeline.system_maintenance_task manual__2024-06-19T06:53:47.407463+00:00 [running]> on host 4a650837ee9b
+[2024-06-19T06:53:48.428+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='spark_pipeline' AIRFLOW_CTX_TASK_ID='system_maintenance_task' AIRFLOW_CTX_EXECUTION_DATE='2024-06-19T06:53:47.407463+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-19T06:53:47.407463+00:00'
+[2024-06-19T06:53:48.430+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-06-19T06:53:48.431+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "Install some pypi libs..."']
+[2024-06-19T06:53:48.453+0000] {subprocess.py:86} INFO - Output:
+[2024-06-19T06:53:48.457+0000] {subprocess.py:93} INFO - Install some pypi libs...
+[2024-06-19T06:53:48.458+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-06-19T06:53:48.486+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=spark_pipeline, task_id=system_maintenance_task, execution_date=20240619T065347, start_date=20240619T065348, end_date=20240619T065348
+[2024-06-19T06:53:48.516+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-06-19T06:53:48.535+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check

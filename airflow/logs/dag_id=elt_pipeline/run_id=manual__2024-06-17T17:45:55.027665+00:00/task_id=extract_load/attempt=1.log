@@ -1,0 +1,38 @@
+[2024-06-17T17:45:55.806+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: elt_pipeline.extract_load manual__2024-06-17T17:45:55.027665+00:00 [queued]>
+[2024-06-17T17:45:55.820+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: elt_pipeline.extract_load manual__2024-06-17T17:45:55.027665+00:00 [queued]>
+[2024-06-17T17:45:55.820+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-17T17:45:55.832+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): extract_load> on 2024-06-17 17:45:55.027665+00:00
+[2024-06-17T17:45:55.839+0000] {standard_task_runner.py:57} INFO - Started process 869 to run task
+[2024-06-17T17:45:55.842+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'elt_pipeline', 'extract_load', 'manual__2024-06-17T17:45:55.027665+00:00', '--job-id', '266', '--raw', '--subdir', 'DAGS_FOLDER/elt_pipeline_dag.py', '--cfg-path', '/tmp/tmphjulbfuh']
+[2024-06-17T17:45:55.844+0000] {standard_task_runner.py:85} INFO - Job 266: Subtask extract_load
+[2024-06-17T17:45:55.895+0000] {task_command.py:415} INFO - Running <TaskInstance: elt_pipeline.extract_load manual__2024-06-17T17:45:55.027665+00:00 [running]> on host bf1afdb2f840
+[2024-06-17T17:45:56.144+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='elt_pipeline' AIRFLOW_CTX_TASK_ID='extract_load' AIRFLOW_CTX_EXECUTION_DATE='2024-06-17T17:45:55.027665+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-17T17:45:55.027665+00:00'
+[2024-06-17T17:45:56.146+0000] {logging_mixin.py:151} INFO - {'endpoint': 'minio:9000', 'bucket_name': 'delta', 'folder_name': 'test', 'access_key': 'minio_access_key', 'secret_key': 'minio_secret_key'}
+[2024-06-17T17:45:56.156+0000] {logging_mixin.py:151} INFO - Uploading data/2022/yellow_tripdata_2022-05.parquet
+[2024-06-17T17:45:56.422+0000] {logging_mixin.py:151} INFO - Uploading data/2022/yellow_tripdata_2022-12.parquet
+[2024-06-17T17:45:56.663+0000] {logging_mixin.py:151} INFO - Uploading data/2022/yellow_tripdata_2022-09.parquet
+[2024-06-17T17:45:56.953+0000] {logging_mixin.py:151} INFO - Uploading data/2022/green_tripdata_2022-10.parquet
+[2024-06-17T17:45:56.990+0000] {logging_mixin.py:151} INFO - Uploading data/2022/green_tripdata_2022-12.parquet
+[2024-06-17T17:45:57.018+0000] {logging_mixin.py:151} INFO - Uploading data/2022/yellow_tripdata_2022-07.parquet
+[2024-06-17T17:45:57.483+0000] {logging_mixin.py:151} INFO - Uploading data/2022/green_tripdata_2022-03.parquet
+[2024-06-17T17:45:57.500+0000] {logging_mixin.py:151} INFO - Uploading data/2022/green_tripdata_2022-01.parquet
+[2024-06-17T17:45:57.514+0000] {logging_mixin.py:151} INFO - Uploading data/2022/green_tripdata_2022-05.parquet
+[2024-06-17T17:45:57.537+0000] {logging_mixin.py:151} INFO - Uploading data/2022/green_tripdata_2022-08.parquet
+[2024-06-17T17:45:57.560+0000] {logging_mixin.py:151} INFO - Uploading data/2022/green_tripdata_2022-07.parquet
+[2024-06-17T17:45:57.574+0000] {logging_mixin.py:151} INFO - Uploading data/2022/green_tripdata_2022-04.parquet
+[2024-06-17T17:45:57.590+0000] {logging_mixin.py:151} INFO - Uploading data/2022/green_tripdata_2022-06.parquet
+[2024-06-17T17:45:57.604+0000] {logging_mixin.py:151} INFO - Uploading data/2022/yellow_tripdata_2022-01.parquet
+[2024-06-17T17:45:57.971+0000] {logging_mixin.py:151} INFO - Uploading data/2022/yellow_tripdata_2022-03.parquet
+[2024-06-17T17:45:58.425+0000] {logging_mixin.py:151} INFO - Uploading data/2022/green_tripdata_2022-02.parquet
+[2024-06-17T17:45:58.465+0000] {logging_mixin.py:151} INFO - Uploading data/2022/green_tripdata_2022-09.parquet
+[2024-06-17T17:45:58.503+0000] {logging_mixin.py:151} INFO - Uploading data/2022/yellow_tripdata_2022-11.parquet
+[2024-06-17T17:45:58.969+0000] {logging_mixin.py:151} INFO - Uploading data/2022/yellow_tripdata_2022-06.parquet
+[2024-06-17T17:45:59.509+0000] {logging_mixin.py:151} INFO - Uploading data/2022/yellow_tripdata_2022-08.parquet
+[2024-06-17T17:46:00.002+0000] {logging_mixin.py:151} INFO - Uploading data/2022/yellow_tripdata_2022-04.parquet
+[2024-06-17T17:46:00.454+0000] {logging_mixin.py:151} INFO - Uploading data/2022/yellow_tripdata_2022-10.parquet
+[2024-06-17T17:46:00.950+0000] {logging_mixin.py:151} INFO - Uploading data/2022/yellow_tripdata_2022-02.parquet
+[2024-06-17T17:46:01.336+0000] {logging_mixin.py:151} INFO - Uploading data/2022/green_tripdata_2022-11.parquet
+[2024-06-17T17:46:01.394+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-06-17T17:46:01.411+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=elt_pipeline, task_id=extract_load, execution_date=20240617T174555, start_date=20240617T174555, end_date=20240617T174601
+[2024-06-17T17:46:01.474+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-06-17T17:46:01.510+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check

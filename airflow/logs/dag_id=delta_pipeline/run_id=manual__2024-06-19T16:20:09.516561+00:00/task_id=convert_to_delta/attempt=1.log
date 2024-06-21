@@ -1,0 +1,32 @@
+[2024-06-19T16:20:12.245+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: delta_pipeline.convert_to_delta manual__2024-06-19T16:20:09.516561+00:00 [queued]>
+[2024-06-19T16:20:12.253+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: delta_pipeline.convert_to_delta manual__2024-06-19T16:20:09.516561+00:00 [queued]>
+[2024-06-19T16:20:12.253+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-19T16:20:12.265+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): convert_to_delta> on 2024-06-19 16:20:09.516561+00:00
+[2024-06-19T16:20:12.271+0000] {standard_task_runner.py:57} INFO - Started process 197 to run task
+[2024-06-19T16:20:12.274+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'delta_pipeline', 'convert_to_delta', 'manual__2024-06-19T16:20:09.516561+00:00', '--job-id', '355', '--raw', '--subdir', 'DAGS_FOLDER/delta_dag.py', '--cfg-path', '/tmp/tmpktbugsza']
+[2024-06-19T16:20:12.275+0000] {standard_task_runner.py:85} INFO - Job 355: Subtask convert_to_delta
+[2024-06-19T16:20:12.316+0000] {task_command.py:415} INFO - Running <TaskInstance: delta_pipeline.convert_to_delta manual__2024-06-19T16:20:09.516561+00:00 [running]> on host d980191248e2
+[2024-06-19T16:20:12.390+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='delta_pipeline' AIRFLOW_CTX_TASK_ID='convert_to_delta' AIRFLOW_CTX_EXECUTION_DATE='2024-06-19T16:20:09.516561+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-19T16:20:09.516561+00:00'
+[2024-06-19T16:20:14.524+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scripts/convert_to_delta_final.py", line 154, in main_convert
+    spark = configure_spark_with_delta_pip(builder, extra_packages=["org.apache.hadoop:hadoop-aws-3.3.4,com.amazonaws:aws-java-sdk-bundle:1.12.262"]).getOrCreate()
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/sql/session.py", line 497, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/context.py", line 515, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/context.py", line 201, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/context.py", line 436, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/java_gateway.py", line 107, in launch_gateway
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.
+[2024-06-19T16:20:14.538+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=delta_pipeline, task_id=convert_to_delta, execution_date=20240619T162009, start_date=20240619T162012, end_date=20240619T162014
+[2024-06-19T16:20:14.563+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 355 for task convert_to_delta ([JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.; 197)
+[2024-06-19T16:20:14.614+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-06-19T16:20:14.631+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

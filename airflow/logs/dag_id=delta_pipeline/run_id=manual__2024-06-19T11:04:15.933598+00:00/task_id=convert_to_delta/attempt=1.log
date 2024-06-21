@@ -1,0 +1,63 @@
+[2024-06-19T11:04:18.993+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: delta_pipeline.convert_to_delta manual__2024-06-19T11:04:15.933598+00:00 [queued]>
+[2024-06-19T11:04:19.004+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: delta_pipeline.convert_to_delta manual__2024-06-19T11:04:15.933598+00:00 [queued]>
+[2024-06-19T11:04:19.004+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-19T11:04:19.017+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): convert_to_delta> on 2024-06-19 11:04:15.933598+00:00
+[2024-06-19T11:04:19.025+0000] {standard_task_runner.py:57} INFO - Started process 101 to run task
+[2024-06-19T11:04:19.029+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'delta_pipeline', 'convert_to_delta', 'manual__2024-06-19T11:04:15.933598+00:00', '--job-id', '339', '--raw', '--subdir', 'DAGS_FOLDER/delta_dag.py', '--cfg-path', '/tmp/tmpfopq7n2b']
+[2024-06-19T11:04:19.030+0000] {standard_task_runner.py:85} INFO - Job 339: Subtask convert_to_delta
+[2024-06-19T11:04:19.086+0000] {task_command.py:415} INFO - Running <TaskInstance: delta_pipeline.convert_to_delta manual__2024-06-19T11:04:15.933598+00:00 [running]> on host f85a93fee5ec
+[2024-06-19T11:04:19.167+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='delta_pipeline' AIRFLOW_CTX_TASK_ID='convert_to_delta' AIRFLOW_CTX_EXECUTION_DATE='2024-06-19T11:04:15.933598+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-19T11:04:15.933598+00:00'
+[2024-06-19T11:09:52.716+0000] {local_task_job_runner.py:294} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-06-19T11:09:52.720+0000] {process_utils.py:131} INFO - Sending 15 to group 101. PIDs of all processes in the group: [102, 101]
+[2024-06-19T11:09:52.720+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 101
+[2024-06-19T11:09:52.721+0000] {taskinstance.py:1630} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-06-19T11:09:52.722+0000] {clientserver.py:538} INFO - Error while receiving.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/local/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1632, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-06-19T11:09:52.725+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2024-06-19T11:09:52.725+0000] {java_gateway.py:1055} ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/local/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1632, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/airflow/.local/lib/python3.8/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+[2024-06-19T11:09:52.728+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2024-06-19T11:09:52.729+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scripts/convert_to_delta.py", line 158, in main_convert
+    df = spark.read.parquet(file_path)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/airflow/.local/lib/python3.8/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/errors/exceptions/captured.py", line 179, in deco
+    return f(*a, **kw)
+  File "/home/airflow/.local/lib/python3.8/site-packages/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o48.parquet
+[2024-06-19T11:09:52.750+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=delta_pipeline, task_id=convert_to_delta, execution_date=20240619T110415, start_date=20240619T110418, end_date=20240619T110952
+[2024-06-19T11:09:52.777+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 339 for task convert_to_delta (An error occurred while calling o48.parquet; 101)
+[2024-06-19T11:09:52.813+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=101, status='terminated', exitcode=1, started='11:04:18') (101) terminated with exit code 1
+[2024-06-19T11:09:53.267+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=102, status='terminated', started='11:04:19') (102) terminated with exit code None

@@ -1,0 +1,39 @@
+[2024-06-19T09:07:16.202+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: delta_pipeline.convert_to_delta manual__2024-06-19T09:02:11.170275+00:00 [queued]>
+[2024-06-19T09:07:16.214+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: delta_pipeline.convert_to_delta manual__2024-06-19T09:02:11.170275+00:00 [queued]>
+[2024-06-19T09:07:16.214+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 2
+[2024-06-19T09:07:16.229+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): convert_to_delta> on 2024-06-19 09:02:11.170275+00:00
+[2024-06-19T09:07:16.239+0000] {standard_task_runner.py:57} INFO - Started process 873 to run task
+[2024-06-19T09:07:16.242+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'delta_pipeline', 'convert_to_delta', 'manual__2024-06-19T09:02:11.170275+00:00', '--job-id', '335', '--raw', '--subdir', 'DAGS_FOLDER/delta_dag.py', '--cfg-path', '/tmp/tmpgyc1fkbb']
+[2024-06-19T09:07:16.243+0000] {standard_task_runner.py:85} INFO - Job 335: Subtask convert_to_delta
+[2024-06-19T09:07:16.292+0000] {task_command.py:415} INFO - Running <TaskInstance: delta_pipeline.convert_to_delta manual__2024-06-19T09:02:11.170275+00:00 [running]> on host f85a93fee5ec
+[2024-06-19T09:07:16.358+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='delta_pipeline' AIRFLOW_CTX_TASK_ID='convert_to_delta' AIRFLOW_CTX_EXECUTION_DATE='2024-06-19T09:02:11.170275+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-19T09:02:11.170275+00:00'
+[2024-06-19T09:07:18.390+0000] {logging_mixin.py:151} WARNING - Traceback (most recent call last):
+[2024-06-19T09:07:18.390+0000] {logging_mixin.py:151} WARNING -   File "/opt/***/dags/scripts/convert_to_delta.py", line 90, in create_spark_session
+    spark = configure_spark_with_delta_pip(builder, extra_packages=["org.apache.hadoop:hadoop-aws-3.3.4,com.amazonaws:aws-java-sdk-bundle:1.12.262"]).getOrCreate()
+[2024-06-19T09:07:18.391+0000] {logging_mixin.py:151} WARNING -   File "/home/***/.local/lib/python3.8/site-packages/pyspark/sql/session.py", line 497, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+[2024-06-19T09:07:18.391+0000] {logging_mixin.py:151} WARNING -   File "/home/***/.local/lib/python3.8/site-packages/pyspark/context.py", line 515, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+[2024-06-19T09:07:18.391+0000] {logging_mixin.py:151} WARNING -   File "/home/***/.local/lib/python3.8/site-packages/pyspark/context.py", line 201, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+[2024-06-19T09:07:18.392+0000] {logging_mixin.py:151} WARNING -   File "/home/***/.local/lib/python3.8/site-packages/pyspark/context.py", line 436, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+[2024-06-19T09:07:18.392+0000] {logging_mixin.py:151} WARNING -   File "/home/***/.local/lib/python3.8/site-packages/pyspark/java_gateway.py", line 107, in launch_gateway
+    raise PySparkRuntimeError(
+[2024-06-19T09:07:18.392+0000] {logging_mixin.py:151} WARNING - pyspark.errors.exceptions.base.PySparkRuntimeError: [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.
+[2024-06-19T09:07:18.393+0000] {convert_to_delta.py:96} ERROR - Couldn't create the spark session due to exception: [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.
+[2024-06-19T09:07:18.394+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scripts/convert_to_delta.py", line 122, in main_convert
+    spark = create_spark_session()
+  File "/opt/airflow/dags/scripts/convert_to_delta.py", line 98, in create_spark_session
+    return spark
+UnboundLocalError: local variable 'spark' referenced before assignment
+[2024-06-19T09:07:18.404+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=delta_pipeline, task_id=convert_to_delta, execution_date=20240619T090211, start_date=20240619T090716, end_date=20240619T090718
+[2024-06-19T09:07:18.416+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 335 for task convert_to_delta (local variable 'spark' referenced before assignment; 873)
+[2024-06-19T09:07:18.460+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-06-19T09:07:18.476+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

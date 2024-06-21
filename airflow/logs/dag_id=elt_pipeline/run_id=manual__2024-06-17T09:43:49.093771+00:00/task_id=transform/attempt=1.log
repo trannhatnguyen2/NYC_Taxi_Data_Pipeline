@@ -1,0 +1,49 @@
+[2024-06-17T09:43:55.352+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: elt_pipeline.transform manual__2024-06-17T09:43:49.093771+00:00 [queued]>
+[2024-06-17T09:43:55.363+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: elt_pipeline.transform manual__2024-06-17T09:43:49.093771+00:00 [queued]>
+[2024-06-17T09:43:55.364+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-17T09:43:55.377+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): transform> on 2024-06-17 09:43:49.093771+00:00
+[2024-06-17T09:43:55.388+0000] {standard_task_runner.py:57} INFO - Started process 2370 to run task
+[2024-06-17T09:43:55.391+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'elt_pipeline', 'transform', 'manual__2024-06-17T09:43:49.093771+00:00', '--job-id', '71', '--raw', '--subdir', 'DAGS_FOLDER/elt_pipeline_dag.py', '--cfg-path', '/tmp/tmpw9xi4da9']
+[2024-06-17T09:43:55.394+0000] {standard_task_runner.py:85} INFO - Job 71: Subtask transform
+[2024-06-17T09:43:55.441+0000] {task_command.py:415} INFO - Running <TaskInstance: elt_pipeline.transform manual__2024-06-17T09:43:49.093771+00:00 [running]> on host 52e246c9d923
+[2024-06-17T09:43:55.681+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='elt_pipeline' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2024-06-17T09:43:49.093771+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-17T09:43:49.093771+00:00'
+[2024-06-17T09:43:55.718+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/green_tripdata_2022-01.parquet
+[2024-06-17T09:43:55.790+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/fsspec/registry.py", line 234, in get_filesystem_class
+    register_implementation(protocol, _import_class(bit["class"]))
+  File "/home/airflow/.local/lib/python3.8/site-packages/fsspec/registry.py", line 269, in _import_class
+    mod = importlib.import_module(mod)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 's3fs'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scripts/elt_pipeline.py", line 187, in transform_data
+    df = pd.read_parquet(path)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/parquet.py", line 509, in read_parquet
+    return impl.read(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/parquet.py", line 220, in read
+    path_or_handle, handles, kwargs["filesystem"] = _get_path_or_handle(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/parquet.py", line 92, in _get_path_or_handle
+    fs, path_or_handle = fsspec.core.url_to_fs(
+  File "/home/airflow/.local/lib/python3.8/site-packages/fsspec/core.py", line 377, in url_to_fs
+    chain = _un_chain(url, kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/fsspec/core.py", line 325, in _un_chain
+    cls = get_filesystem_class(protocol)
+  File "/home/airflow/.local/lib/python3.8/site-packages/fsspec/registry.py", line 236, in get_filesystem_class
+    raise ImportError(bit["err"]) from e
+ImportError: Install s3fs to access S3
+[2024-06-17T09:43:55.801+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=elt_pipeline, task_id=transform, execution_date=20240617T094349, start_date=20240617T094355, end_date=20240617T094355
+[2024-06-17T09:43:55.814+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 71 for task transform (Install s3fs to access S3; 2370)
+[2024-06-17T09:43:55.844+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-06-17T09:43:55.858+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

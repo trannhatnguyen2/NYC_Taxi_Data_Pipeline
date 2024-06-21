@@ -1,0 +1,52 @@
+[2024-06-19T06:33:17.264+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: spark_pipeline.process_spark manual__2024-06-19T06:28:14.477223+00:00 [queued]>
+[2024-06-19T06:33:17.273+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: spark_pipeline.process_spark manual__2024-06-19T06:28:14.477223+00:00 [queued]>
+[2024-06-19T06:33:17.273+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 2
+[2024-06-19T06:33:17.286+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): process_spark> on 2024-06-19 06:28:14.477223+00:00
+[2024-06-19T06:33:17.292+0000] {standard_task_runner.py:57} INFO - Started process 2376 to run task
+[2024-06-19T06:33:17.295+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'spark_pipeline', 'process_spark', 'manual__2024-06-19T06:28:14.477223+00:00', '--job-id', '296', '--raw', '--subdir', 'DAGS_FOLDER/delta_dag.py', '--cfg-path', '/tmp/tmp13oflhaz']
+[2024-06-19T06:33:17.296+0000] {standard_task_runner.py:85} INFO - Job 296: Subtask process_spark
+[2024-06-19T06:33:17.340+0000] {task_command.py:415} INFO - Running <TaskInstance: spark_pipeline.process_spark manual__2024-06-19T06:28:14.477223+00:00 [running]> on host 4a650837ee9b
+[2024-06-19T06:33:17.377+0000] {abstractoperator.py:709} ERROR - Exception rendering Jinja template for task 'process_spark', field 'bash_command'. Template: '/opt/***/dags/scripts/spark.sh'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/abstractoperator.py", line 701, in _do_render_template_fields
+    rendered_content = self.render_template(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/template/templater.py", line 154, in render_template
+    template = jinja_env.get_template(value)
+  File "/home/airflow/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/airflow/.local/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/airflow/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 218, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: /opt/airflow/dags/scripts/spark.sh
+[2024-06-19T06:33:17.379+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1516, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode, session=session)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1645, in _execute_task_with_callbacks
+    task_orig = self.render_templates(context=context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2283, in render_templates
+    original_task.render_template_fields(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 1245, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 77, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/abstractoperator.py", line 701, in _do_render_template_fields
+    rendered_content = self.render_template(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/template/templater.py", line 154, in render_template
+    template = jinja_env.get_template(value)
+  File "/home/airflow/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/airflow/.local/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/airflow/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 218, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: /opt/airflow/dags/scripts/spark.sh
+[2024-06-19T06:33:17.388+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=spark_pipeline, task_id=process_spark, execution_date=20240619T062814, start_date=20240619T063317, end_date=20240619T063317
+[2024-06-19T06:33:17.400+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 296 for task process_spark (/opt/airflow/dags/scripts/spark.sh; 2376)
+[2024-06-19T06:33:17.427+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-06-19T06:33:17.442+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

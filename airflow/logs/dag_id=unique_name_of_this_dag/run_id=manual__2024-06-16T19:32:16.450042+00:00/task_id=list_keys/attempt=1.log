@@ -1,0 +1,47 @@
+[2024-06-16T19:32:17.770+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: unique_name_of_this_dag.list_keys manual__2024-06-16T19:32:16.450042+00:00 [queued]>
+[2024-06-16T19:32:17.779+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: unique_name_of_this_dag.list_keys manual__2024-06-16T19:32:16.450042+00:00 [queued]>
+[2024-06-16T19:32:17.779+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2024-06-16T19:32:17.792+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): list_keys> on 2024-06-16 19:32:16.450042+00:00
+[2024-06-16T19:32:17.799+0000] {standard_task_runner.py:57} INFO - Started process 3658 to run task
+[2024-06-16T19:32:17.803+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'unique_name_of_this_dag', 'list_keys', 'manual__2024-06-16T19:32:16.450042+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmpn_qpep4x']
+[2024-06-16T19:32:17.804+0000] {standard_task_runner.py:85} INFO - Job 30: Subtask list_keys
+[2024-06-16T19:32:17.852+0000] {task_command.py:415} INFO - Running <TaskInstance: unique_name_of_this_dag.list_keys manual__2024-06-16T19:32:16.450042+00:00 [running]> on host 52e246c9d923
+[2024-06-16T19:32:17.930+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='unique_name_of_this_dag' AIRFLOW_CTX_TASK_ID='list_keys' AIRFLOW_CTX_EXECUTION_DATE='2024-06-16T19:32:16.450042+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-16T19:32:16.450042+00:00'
+[2024-06-16T19:32:17.939+0000] {base.py:73} INFO - Using connection ID 'my_s3_conn' for task execution.
+[2024-06-16T19:32:18.656+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/test_dag.py", line 28, in list_keys
+    keys = hook.list_keys('datalake', prefix='stream')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 92, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 812, in list_keys
+    paginator = self.get_conn().get_paginator("list_objects_v2")
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/amazon/aws/hooks/base_aws.py", line 714, in get_conn
+    return self.conn
+  File "/usr/local/lib/python3.8/functools.py", line 967, in __get__
+    val = self.func(instance)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/amazon/aws/hooks/base_aws.py", line 670, in conn
+    return self.get_client_type(region_name=self.region_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/amazon/aws/hooks/base_aws.py", line 635, in get_client_type
+    return session.client(
+  File "/home/airflow/.local/lib/python3.8/site-packages/boto3/session.py", line 299, in client
+    return self._session.create_client(
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/session.py", line 997, in create_client
+    client = client_creator.create_client(
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/client.py", line 159, in create_client
+    client_args = self._get_client_args(
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/client.py", line 490, in _get_client_args
+    return args_creator.get_client_args(
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/args.py", line 137, in get_client_args
+    endpoint = endpoint_creator.create_endpoint(
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/endpoint.py", line 402, in create_endpoint
+    raise ValueError("Invalid endpoint: %s" % endpoint_url)
+ValueError: Invalid endpoint: http:localhost:9000
+[2024-06-16T19:32:18.668+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=unique_name_of_this_dag, task_id=list_keys, execution_date=20240616T193216, start_date=20240616T193217, end_date=20240616T193218
+[2024-06-16T19:32:18.683+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 30 for task list_keys (Invalid endpoint: http:localhost:9000; 3658)
+[2024-06-16T19:32:18.737+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-06-16T19:32:18.758+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

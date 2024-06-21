@@ -1,0 +1,32 @@
+[2024-06-19T04:49:06.908+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: spark_pipeline.process_spark manual__2024-06-19T04:44:03.898294+00:00 [queued]>
+[2024-06-19T04:49:06.918+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: spark_pipeline.process_spark manual__2024-06-19T04:44:03.898294+00:00 [queued]>
+[2024-06-19T04:49:06.918+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 2
+[2024-06-19T04:49:06.930+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): process_spark> on 2024-06-19 04:44:03.898294+00:00
+[2024-06-19T04:49:06.936+0000] {standard_task_runner.py:57} INFO - Started process 771 to run task
+[2024-06-19T04:49:06.941+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'spark_pipeline', 'process_spark', 'manual__2024-06-19T04:44:03.898294+00:00', '--job-id', '293', '--raw', '--subdir', 'DAGS_FOLDER/delta_dag.py', '--cfg-path', '/tmp/tmp84b1b_n3']
+[2024-06-19T04:49:06.943+0000] {standard_task_runner.py:85} INFO - Job 293: Subtask process_spark
+[2024-06-19T04:49:07.006+0000] {task_command.py:415} INFO - Running <TaskInstance: spark_pipeline.process_spark manual__2024-06-19T04:44:03.898294+00:00 [running]> on host 4a650837ee9b
+[2024-06-19T04:49:07.092+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='spark_pipeline' AIRFLOW_CTX_TASK_ID='process_spark' AIRFLOW_CTX_EXECUTION_DATE='2024-06-19T04:44:03.898294+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-19T04:44:03.898294+00:00'
+[2024-06-19T04:49:07.279+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/delta_dag.py", line 22, in process_spark
+    spark = SparkSession.builder.appName("ExampleApp").getOrCreate()
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/sql/session.py", line 497, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/context.py", line 515, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/context.py", line 201, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/context.py", line 436, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/java_gateway.py", line 107, in launch_gateway
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.
+[2024-06-19T04:49:07.287+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=spark_pipeline, task_id=process_spark, execution_date=20240619T044403, start_date=20240619T044906, end_date=20240619T044907
+[2024-06-19T04:49:07.302+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 293 for task process_spark ([JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.; 771)
+[2024-06-19T04:49:07.356+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-06-19T04:49:07.371+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

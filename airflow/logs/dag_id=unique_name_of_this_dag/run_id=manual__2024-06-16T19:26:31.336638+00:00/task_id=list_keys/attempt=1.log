@@ -1,0 +1,24 @@
+[2024-06-16T19:26:31.849+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: unique_name_of_this_dag.list_keys manual__2024-06-16T19:26:31.336638+00:00 [queued]>
+[2024-06-16T19:26:31.860+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: unique_name_of_this_dag.list_keys manual__2024-06-16T19:26:31.336638+00:00 [queued]>
+[2024-06-16T19:26:31.860+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2024-06-16T19:26:31.874+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): list_keys> on 2024-06-16 19:26:31.336638+00:00
+[2024-06-16T19:26:31.881+0000] {standard_task_runner.py:57} INFO - Started process 3564 to run task
+[2024-06-16T19:26:31.884+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'unique_name_of_this_dag', 'list_keys', 'manual__2024-06-16T19:26:31.336638+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmppiza1t60']
+[2024-06-16T19:26:31.885+0000] {standard_task_runner.py:85} INFO - Job 27: Subtask list_keys
+[2024-06-16T19:26:31.945+0000] {task_command.py:415} INFO - Running <TaskInstance: unique_name_of_this_dag.list_keys manual__2024-06-16T19:26:31.336638+00:00 [running]> on host 52e246c9d923
+[2024-06-16T19:26:32.013+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='unique_name_of_this_dag' AIRFLOW_CTX_TASK_ID='list_keys' AIRFLOW_CTX_EXECUTION_DATE='2024-06-16T19:26:31.336638+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-16T19:26:31.336638+00:00'
+[2024-06-16T19:26:32.023+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/test_dag.py", line 25, in list_keys
+    bucket = Variable.get('datalake')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable datalake does not exist'
+[2024-06-16T19:26:32.031+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=unique_name_of_this_dag, task_id=list_keys, execution_date=20240616T192631, start_date=20240616T192631, end_date=20240616T192632
+[2024-06-16T19:26:32.040+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 27 for task list_keys ('Variable datalake does not exist'; 3564)
+[2024-06-16T19:26:32.056+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-06-16T19:26:32.076+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

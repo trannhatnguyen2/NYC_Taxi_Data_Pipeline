@@ -1,0 +1,140 @@
+[2024-06-20T17:48:56.148+0000] {processor.py:157} INFO - Started process (PID=46) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:48:56.149+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:48:56.153+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:48:56.153+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:48:56.395+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:48:56.404+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.263 seconds
+[2024-06-20T17:49:26.852+0000] {processor.py:157} INFO - Started process (PID=63) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:49:26.854+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:49:26.856+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:49:26.856+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:49:27.091+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:49:27.101+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.252 seconds
+[2024-06-20T17:49:59.952+0000] {processor.py:157} INFO - Started process (PID=87) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:49:59.954+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:49:59.956+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:49:59.956+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:50:00.083+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:50:00.097+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.148 seconds
+[2024-06-20T17:50:30.412+0000] {processor.py:157} INFO - Started process (PID=103) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:50:30.414+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:50:30.416+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:50:30.415+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:50:30.542+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:50:30.557+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.148 seconds
+[2024-06-20T17:51:00.625+0000] {processor.py:157} INFO - Started process (PID=118) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:51:00.628+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:51:00.632+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:51:00.631+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:51:00.779+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:51:00.793+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.175 seconds
+[2024-06-20T17:51:34.748+0000] {processor.py:157} INFO - Started process (PID=133) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:51:34.749+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:51:34.751+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:51:34.751+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:51:34.951+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:51:34.965+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.219 seconds
+[2024-06-20T17:52:05.138+0000] {processor.py:157} INFO - Started process (PID=149) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:52:05.139+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:52:05.143+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:52:05.142+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:52:05.529+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:52:05.540+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.409 seconds
+[2024-06-20T17:52:35.867+0000] {processor.py:157} INFO - Started process (PID=166) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:52:35.870+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:52:35.872+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:52:35.871+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:52:35.977+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:52:35.992+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.127 seconds
+[2024-06-20T17:53:13.492+0000] {processor.py:157} INFO - Started process (PID=183) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:53:13.493+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:53:13.496+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:53:13.496+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:53:13.616+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:53:13.632+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.145 seconds
+[2024-06-20T17:53:56.879+0000] {processor.py:157} INFO - Started process (PID=201) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:53:56.881+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:53:56.883+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:53:56.883+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:53:57.009+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:53:57.022+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.146 seconds
+[2024-06-20T17:54:27.195+0000] {processor.py:157} INFO - Started process (PID=217) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:54:27.197+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:54:27.201+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:54:27.200+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:54:27.340+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:54:27.352+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.163 seconds
+[2024-06-20T17:55:00.311+0000] {processor.py:157} INFO - Started process (PID=235) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:55:00.314+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:55:00.318+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:55:00.317+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:55:00.445+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:55:00.460+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.155 seconds
+[2024-06-20T17:55:30.577+0000] {processor.py:157} INFO - Started process (PID=251) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:55:30.578+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:55:30.580+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:55:30.580+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:55:30.683+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:55:30.698+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.123 seconds
+[2024-06-20T17:56:01.020+0000] {processor.py:157} INFO - Started process (PID=268) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:56:01.023+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:56:01.027+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:56:01.026+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:56:01.172+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:56:01.184+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.170 seconds
+[2024-06-20T17:56:33.945+0000] {processor.py:157} INFO - Started process (PID=292) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:56:33.948+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:56:33.951+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:56:33.950+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:56:34.078+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:56:34.090+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.149 seconds
+[2024-06-20T17:57:04.315+0000] {processor.py:157} INFO - Started process (PID=308) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:57:04.315+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:57:04.317+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:57:04.317+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:57:04.443+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:57:04.454+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.142 seconds
+[2024-06-20T17:57:34.776+0000] {processor.py:157} INFO - Started process (PID=324) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:57:34.778+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:57:34.780+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:57:34.779+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:57:34.895+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:57:34.907+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.135 seconds
+[2024-06-20T17:58:11.233+0000] {processor.py:157} INFO - Started process (PID=339) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:58:11.234+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:58:11.236+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:58:11.236+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:58:11.363+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:58:11.374+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.145 seconds
+[2024-06-20T17:58:57.875+0000] {processor.py:157} INFO - Started process (PID=358) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:58:57.877+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:58:57.879+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:58:57.878+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:58:57.989+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:58:58.000+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.128 seconds
+[2024-06-20T17:59:28.132+0000] {processor.py:157} INFO - Started process (PID=373) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:59:28.133+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T17:59:28.135+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:59:28.135+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:59:28.249+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T17:59:28.262+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.132 seconds
+[2024-06-20T18:00:01.579+0000] {processor.py:157} INFO - Started process (PID=392) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:00:01.581+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T18:00:01.583+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:00:01.583+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:00:01.700+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:00:01.713+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.137 seconds
+[2024-06-20T18:00:32.391+0000] {processor.py:157} INFO - Started process (PID=414) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:00:32.392+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T18:00:32.394+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:00:32.394+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:00:32.514+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:00:32.526+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.138 seconds
+[2024-06-20T18:01:03.358+0000] {processor.py:157} INFO - Started process (PID=432) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:01:03.360+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T18:01:03.364+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:01:03.364+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:01:03.616+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:01:03.627+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.276 seconds
+[2024-06-20T18:01:37.541+0000] {processor.py:157} INFO - Started process (PID=445) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:01:37.542+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T18:01:37.545+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:01:37.544+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:01:37.712+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:01:37.731+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.194 seconds
+[2024-06-20T18:02:07.882+0000] {processor.py:157} INFO - Started process (PID=461) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:02:07.883+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T18:02:07.885+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:02:07.885+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:02:08.005+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:02:08.022+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.143 seconds
+[2024-06-20T18:02:38.503+0000] {processor.py:157} INFO - Started process (PID=477) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:02:38.505+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T18:02:38.507+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:02:38.507+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:02:38.614+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:02:38.629+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.129 seconds
+[2024-06-20T18:03:11.421+0000] {processor.py:157} INFO - Started process (PID=494) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:03:11.424+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T18:03:11.425+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:03:11.425+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:03:11.538+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:03:11.550+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.131 seconds
+[2024-06-20T18:03:57.114+0000] {processor.py:157} INFO - Started process (PID=511) to work on /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:03:57.115+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/convert_to_delta.py for tasks to queue
+[2024-06-20T18:03:57.117+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:03:57.117+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:03:57.247+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/convert_to_delta.py
+[2024-06-20T18:03:57.266+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/convert_to_delta.py took 0.155 seconds

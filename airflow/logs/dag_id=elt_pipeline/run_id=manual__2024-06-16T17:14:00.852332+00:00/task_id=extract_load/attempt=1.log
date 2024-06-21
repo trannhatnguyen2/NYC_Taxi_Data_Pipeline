@@ -1,0 +1,84 @@
+[2024-06-16T17:14:02.385+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: elt_pipeline.extract_load manual__2024-06-16T17:14:00.852332+00:00 [queued]>
+[2024-06-16T17:14:02.394+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: elt_pipeline.extract_load manual__2024-06-16T17:14:00.852332+00:00 [queued]>
+[2024-06-16T17:14:02.394+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-16T17:14:02.405+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): extract_load> on 2024-06-16 17:14:00.852332+00:00
+[2024-06-16T17:14:02.414+0000] {standard_task_runner.py:57} INFO - Started process 547 to run task
+[2024-06-16T17:14:02.417+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'elt_pipeline', 'extract_load', 'manual__2024-06-16T17:14:00.852332+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/elt_pipeline_dag.py', '--cfg-path', '/tmp/tmptbr7648r']
+[2024-06-16T17:14:02.419+0000] {standard_task_runner.py:85} INFO - Job 10: Subtask extract_load
+[2024-06-16T17:14:02.472+0000] {task_command.py:415} INFO - Running <TaskInstance: elt_pipeline.extract_load manual__2024-06-16T17:14:00.852332+00:00 [running]> on host 52e246c9d923
+[2024-06-16T17:14:02.690+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='elt_pipeline' AIRFLOW_CTX_TASK_ID='extract_load' AIRFLOW_CTX_EXECUTION_DATE='2024-06-16T17:14:00.852332+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-16T17:14:00.852332+00:00'
+[2024-06-16T17:14:02.694+0000] {connectionpool.py:823} WARNING - Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x74b9cf845280>: Failed to establish a new connection: [Errno 111] Connection refused')': /datalake?location=
+[2024-06-16T17:14:03.095+0000] {connectionpool.py:823} WARNING - Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x74b9cd68ea30>: Failed to establish a new connection: [Errno 111] Connection refused')': /datalake?location=
+[2024-06-16T17:14:03.897+0000] {connectionpool.py:823} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x74b9cd4db430>: Failed to establish a new connection: [Errno 111] Connection refused')': /datalake?location=
+[2024-06-16T17:14:05.500+0000] {connectionpool.py:823} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x74b9cd4db2e0>: Failed to establish a new connection: [Errno 111] Connection refused')': /datalake?location=
+[2024-06-16T17:14:08.705+0000] {connectionpool.py:823} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x74b9cf7058e0>: Failed to establish a new connection: [Errno 111] Connection refused')': /datalake?location=
+[2024-06-16T17:14:08.707+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 415, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.8/http/client.py", line 1256, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.8/http/client.py", line 1302, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.8/http/client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.8/http/client.py", line 1011, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.8/http/client.py", line 951, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x74b9cf705430>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scripts/elt_pipeline.py", line 53, in extract_load_to_datalake
+    found = minio_client.bucket_exists(bucket_name=datalake_cfg["bucket_name"])
+  File "/home/airflow/.local/lib/python3.8/site-packages/minio/api.py", line 696, in bucket_exists
+    self._execute("HEAD", bucket_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/minio/api.py", line 437, in _execute
+    region = self._get_region(bucket_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/minio/api.py", line 494, in _get_region
+    response = self._url_open(
+  File "/home/airflow/.local/lib/python3.8/site-packages/minio/api.py", line 302, in _url_open
+    response = self._http.urlopen(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 826, in urlopen
+    return self.urlopen(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 826, in urlopen
+    return self.urlopen(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 826, in urlopen
+    return self.urlopen(
+  [Previous line repeated 2 more times]
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=9000): Max retries exceeded with url: /datalake?location= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x74b9cf705430>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2024-06-16T17:14:08.720+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=elt_pipeline, task_id=extract_load, execution_date=20240616T171400, start_date=20240616T171402, end_date=20240616T171408
+[2024-06-16T17:14:08.739+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 10 for task extract_load (HTTPConnectionPool(host='localhost', port=9000): Max retries exceeded with url: /datalake?location= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x74b9cf705430>: Failed to establish a new connection: [Errno 111] Connection refused')); 547)
+[2024-06-16T17:14:08.812+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-06-16T17:14:08.846+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
