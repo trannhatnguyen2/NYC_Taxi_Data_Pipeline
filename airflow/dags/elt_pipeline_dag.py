@@ -18,7 +18,7 @@ default_args = {
     "retry_delay": timedelta(minutes=5)
 }
 
-with DAG("elt_pipeline", start_date=datetime(2024, 1, 1), schedule=None, default_args=default_args) as dag:
+with DAG("elt_pipeline", start_date=datetime(2024, 1, 1), schedule_interval="@daily", default_args=default_args) as dag:
 
     start_pipeline = DummyOperator(
         task_id="start_pipeline"
