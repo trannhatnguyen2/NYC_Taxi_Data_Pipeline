@@ -1,41 +1,20 @@
+import sys
 import os
 import pandas as pd
 from glob import glob
-from helpers import load_cfg
 from minio import Minio
+
+sys.path.append("./utils/")
+from helpers import load_cfg
+from minio_utils import create_bucket, connect_minio
 
 ###############################################
 # Parameters & Arguments
 ###############################################
 DATA_PATH = "data/"
-YEARS = ["2022", "2023"]
+YEARS = ["2020"]
 TAXI_LOOKUP_PATH = "src/data/taxi_lookup.csv"
 CFG_FILE =  "config/datalake.yaml"
-###############################################
-
-
-###############################################
-# Utils
-###############################################
-def create_bucket(bucket_name):
-     # Load minio config
-    cfg = load_cfg(CFG_FILE)
-    datalake_cfg = cfg["datalake"]
-
-    # Create a client with the MinIO server
-    minio_client = Minio(
-        endpoint=datalake_cfg["endpoint"],
-        access_key=datalake_cfg["access_key"],
-        secret_key=datalake_cfg["secret_key"],
-        secure=False,
-    )
-
-    # Create bucket if not exist
-    found = minio_client.bucket_exists(bucket_name=bucket_name)
-    if not found:
-        minio_client.make_bucket(bucket_name=bucket_name)
-    else:
-        print(f"Bucket {bucket_name} already exists, skip creating!")
 ###############################################
 
 
@@ -61,30 +40,22 @@ def merge_taxi_zone(df, file):
     """
     df_lookup = pd.read_csv(TAXI_LOOKUP_PATH)
 
-    if "pickup_latitude" not in df.columns:
-        # merge for pickup locations
-        df = df.merge(df_lookup, left_on="pulocationid", right_on="LocationID")
+    def merge_and_rename(df, location_id, lat_col, long_col):
+        df = df.merge(df_lookup, left_on=location_id, right_on="LocationID")
         df = df.drop(columns=["LocationID", "Borough", "service_zone", "zone"])
         df = df.rename(columns={
-            "latitude" : "pickup_latitude",
-            "longitude" : "pickup_longitude"
+            "latitude" : lat_col,
+            "longitude" : long_col
         })
-    
-    if "dropoff_latitude" not in df.columns:
-        # merge for pickup locations
-        df = df.merge(df_lookup, left_on="dolocationid", right_on="LocationID")
-        df = df.drop(columns=["LocationID", "Borough", "service_zone", "zone"])
-        df = df.rename(columns={
-            "latitude" : "dropoff_latitude",
-            "longitude" : "dropoff_longitude"
-        })
+        return df
 
-    if "Unnamed: 0_x" in df.columns:
-        # drop rows with missing values
-        df = df.drop(columns=['Unnamed: 0_x']).dropna()
-    
-    if "Unnamed: 0_y" in df.columns:
-        df = df.drop(columns=['Unnamed: 0_y']).dropna()
+    if "pickup_latitude" not in df.columns:
+        df = merge_and_rename(df, "pulocationid", "pickup_latitude", "pickup_longitude")
+        
+    if "dropoff_latitude" not in df.columns:
+        df = merge_and_rename(df, "dolocationid", "dropoff_latitude", "dropoff_longitude")
+
+    df = df.drop(columns=[col for col in df.columns if "Unnamed" in col], errors='ignore').dropna()
 
     print("Merged data from file: " + file)
 
@@ -196,27 +167,3 @@ if __name__ == "__main__":
             print("Finished transforming data in file: " + path)
             print("==========================================================================================")
 ###############################################
-
-
-        # for file in os.listdir(year_path):
-        #     if file.endswith(".parquet"):
-        #         df = pd.read_parquet(os.path.join(year_path, file), engine='pyarrow')
-
-        #         # lower case all columns
-        #         df.columns = map(str.lower, df.columns)
-
-        #         df = drop_column(df, file)
-        #         df = merge_taxi_zone(df, file)
-        #         df = transform_data(df, file)
-
-        #         # save to parquet file
-        #         # df.to_parquet(os.path.join(year_path, file), index=False, engine='pyarrow')
-
-        #         # path = f"s3://{datalake_cfg['bucket_name_2']}/{datalake_cfg['folder_name']}/" + file_name
-        #         path = f"s3://test/{datalake_cfg['folder_name']}/" + file_name
-        #         df.to_parquet(path, index=False, filesystem=s3_fs, engine='pyarrow')
-
-        #         print("Finished preprocessing data in file: " + file)
-        #         print("==========================================================================================")
-
-                

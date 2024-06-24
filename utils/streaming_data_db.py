@@ -7,16 +7,20 @@ import pyarrow as pa
 from dotenv import load_dotenv
 load_dotenv(".env")
 
-# sys.path.append("./utils/")
 from postgresql_client import PostgresSQLClient
 
-
-
+###############################################
+# Parameters & Arguments
+###############################################
 TABLE_NAME = "iot.taxi_nyc_time_series"
 PARQUET_FILE = "./data/2024/yellow_tripdata_2024-01.parquet"
 NUM_ROWS = 10000
+###############################################
 
 
+###############################################
+# Main
+###############################################
 def main():
 
     pc = PostgresSQLClient(
@@ -73,6 +77,8 @@ def format_record(row):
         'Airport_fee': row['Airport_fee'],
     }
     return taxi_res
+###############################################
+
 
 if __name__ == "__main__":
     main()

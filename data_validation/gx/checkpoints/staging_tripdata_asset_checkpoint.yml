@@ -24,7 +24,7 @@ validations:
       data_asset_name: postgres_taxi_data
       options: {}
       batch_slice:
-    expectation_suite_name: insert_your_expectation_suite_name_here
+    expectation_suite_name: validate_trip_data
 profilers: []
 ge_cloud_id:
 expectation_suite_ge_cloud_id:

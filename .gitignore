@@ -2,5 +2,6 @@
 
 /data/*
 /jars/*
-/logs/dbt.log
+**/logs/
 test.py
+/airflow/logs/*

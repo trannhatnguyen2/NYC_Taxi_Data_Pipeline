@@ -8,6 +8,8 @@ import dotenv
 dotenv.load_dotenv(".env")
 
 from pyspark import SparkConf, SparkContext
+
+sys.path.append("./utils/")
 from minio_utils import list_parquet_files
 from helpers import load_cfg
 
@@ -32,6 +34,12 @@ MINIO_ENDPOINT = datalake_cfg["endpoint"]
 MINIO_ACCESS_KEY = datalake_cfg["access_key"]
 MINIO_SECRET_KEY = datalake_cfg["secret_key"]
 BUCKET_NAME = datalake_cfg['bucket_name_2']
+
+CFG_FILE_SPARK = "./config/spark.yaml"
+cfg = load_cfg(CFG_FILE_SPARK)
+spark_cfg = cfg["spark_config"]
+
+MEMORY = spark_cfg['executor_memory']
 ###############################################
 
 
@@ -45,7 +53,7 @@ def create_spark_session():
     from pyspark.sql import SparkSession
 
     try: 
-        spark = (SparkSession.builder.config("spark.executor.memory", "8g") \
+        spark = (SparkSession.builder.config("spark.executor.memory", MEMORY) \
                         .config(
                             "spark.jars", 
                             "jars/postgresql-42.4.3.jar,jars/aws-java-sdk-bundle-1.12.262.jar,jars/hadoop-aws-3.3.4.jar",
@@ -142,8 +150,8 @@ def load_to_staging_table(df):
     }
 
     # write data to PostgreSQL
-    df.write.jdbc(url=URL, table= DB_STAGING_TABLE, mode='append', properties=properties)
-    # df.write.jdbc(url=URL, table= 'staging.nyc_taxi_test', mode='append', properties=properties)
+    # df.write.jdbc(url=URL, table= DB_STAGING_TABLE, mode='append', properties=properties)
+    df.write.jdbc(url=URL, table= 'staging.nyc_taxi_test', mode='append', properties=properties)
 ###############################################
 
 

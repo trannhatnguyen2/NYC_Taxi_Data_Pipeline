@@ -22,7 +22,6 @@ After that, you can see the following structure:
 │       └── delta_dag.py                                /* dag: convert parquet to delta lake format /*
 │   ├── data/
 │   ├── include/
-│   ├── logs/
 │   ├── plugins/
 │   ├── Dockerfile                                  /* build image to run airflow container /*
 │   ├── README.md

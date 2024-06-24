@@ -46,7 +46,6 @@ def create_streams(servers):
     """
         Create streaming data to Kafka Topic
     """
-
     producer = None
     admin = None
     for _ in range (10): 
@@ -74,25 +73,19 @@ def create_streams(servers):
 
 
 def format_record(row):
-    taxi_res = {
-        'dolocationid': row['dolocationid'],
-        'pulocationid': row['pulocationid'],
-        'ratecodeid': row['ratecodeid'],
-        'vendorid': row['vendorid'],
-        'congestion_surcharge': row['congestion_surcharge'],
-        'extra': row['extra'],
-        'fare_amount': row['fare_amount'],
-        'improvement_surcharge': row['improvement_surcharge'],
-        'mta_tax': row['mta_tax'],
-        'passenger_count': row['passenger_count'],
-        'payment_type': row['payment_type'],
-        'tip_amount': row['tip_amount'],
-        'tolls_amount': row['tolls_amount'],
-        'total_amount': row['total_amount'],
-        'dropoff_datetime': str(row['dropoff_datetime']),
-        'pickup_datetime': str(row['pickup_datetime']),
-        'trip_distance': row['trip_distance']
-    }
+    taxi_res = {}
+    column_names = [
+        'dolocationid', 'pulocationid', 'ratecodeid', 'vendorid',
+        'congestion_surcharge', 'extra', 'fare_amount', 'improvement_surcharge',
+        'mta_tax', 'passenger_count', 'payment_type', 'tip_amount',
+        'tolls_amount', 'total_amount', 'dropoff_datetime', 'pickup_datetime',
+        'trip_distance'
+    ]
+    for i, column_name in enumerate(column_names):
+        if 'datetime' in column_name:
+            taxi_res[column_name] = str(row.iloc[i])
+        else:
+            taxi_res[column_name] = row.iloc[i]
     return taxi_res
 
 

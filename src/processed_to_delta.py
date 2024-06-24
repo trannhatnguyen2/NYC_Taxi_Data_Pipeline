@@ -7,7 +7,10 @@ import time
 from minio import Minio
 
 from pyspark import SparkConf, SparkContext
+
+sys.path.append("./utils/")
 from helpers import load_cfg
+from minio_utils import create_bucket, list_parquet_files
 
 logging.basicConfig(level=logging.INFO, 
                     format='%(asctime)s:%(funcName)s:%(levelname)s:%(message)s')
@@ -26,50 +29,6 @@ MINIO_ACCESS_KEY = datalake_cfg["access_key"]
 MINIO_SECRET_KEY = datalake_cfg["secret_key"]
 BUCKET_NAME_2 = datalake_cfg['bucket_name_2']
 BUCKET_NAME_3 = datalake_cfg['bucket_name_3']
-
-# Create a client with the MinIO server
-minio_client = Minio(
-    endpoint=MINIO_ENDPOINT,
-    access_key=MINIO_ACCESS_KEY,
-    secret_key=MINIO_SECRET_KEY,
-    secure=False,
-)
-###############################################
-
-
-###############################################
-# Utils
-###############################################
-def create_bucket(bucket_name):
-    """
-        Create bucket if not exist
-    """
-    try:
-        found = minio_client.bucket_exists(bucket_name=bucket_name)
-        if not found:
-            minio_client.make_bucket(bucket_name=bucket_name)
-        else:
-            print(f"Bucket {bucket_name} already exists, skip creating!")
-    except Exception as err:
-        print(f"Error: {err}")
-        return []
-
-
-def list_parquet_files(bucket_name, prefix=""):
-    """
-        Function to list all Parquet files in a bucket (MinIO)
-    """
-    try:
-        # List all objects in the bucket with the given prefix
-        objects = minio_client.list_objects(bucket_name, prefix=prefix, recursive=True)
-        
-        # Filter and collect Parquet file names
-        parquet_files = [obj.object_name for obj in objects if obj.object_name.endswith('.parquet')]
-        
-        return parquet_files
-    except Exception as err:
-        print(f"Error: {err}")
-        return []
 ###############################################
 
 
@@ -86,21 +45,17 @@ def main_convert():
                     .appName("Converting to Delta Lake") \
                     .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
                     .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog") \
+                    .config("spark.hadoop.fs.s3a.access.key", MINIO_ACCESS_KEY) \
+                    .config("spark.hadoop.fs.s3a.secret.key", MINIO_SECRET_KEY) \
+                    .config("spark.hadoop.fs.s3a.endpoint", MINIO_ENDPOINT) \
+                    .config("spark.hadoop.fs.s3a.aws.credentials.provider", "org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider") \
+                    .config("spark.hadoop.fs.s3a.path.style.access", "true") \
+                    .config("spark.hadoop.fs.s3a.connection.ssl.enabled", "false") \
+                    .config("spark.hadoop.fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem") \
+                    .config("spark.hadoop.fs.s3a.connection.ssl.enabled", "false") \
                     .config("spark.jars", jars)
         
     spark = configure_spark_with_delta_pip(builder, extra_packages=["org.apache.hadoop:hadoop-aws:3.3.4"]).getOrCreate()
-
-    sc = spark.sparkContext
-
-    sc._jsc.hadoopConfiguration().set("fs.s3a.access.key", MINIO_ACCESS_KEY)
-    sc._jsc.hadoopConfiguration().set("fs.s3a.secret.key", MINIO_SECRET_KEY)
-    sc._jsc.hadoopConfiguration().set("fs.s3a.endpoint", MINIO_ENDPOINT)
-    sc._jsc.hadoopConfiguration().set("fs.s3a.aws.credentials.provider", "org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider")
-    sc._jsc.hadoopConfiguration().set("fs.s3a.path.style.access", "true")
-    sc._jsc.hadoopConfiguration().set("fs.s3a.connection.ssl.enabled", "false")
-    sc._jsc.hadoopConfiguration().set("fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
-    sc._jsc.hadoopConfiguration().set("fs.s3a.connection.ssl.enabled", "false")
-
     logging.info('Spark session successfully created!')
 
     # Create bucket 'delta'

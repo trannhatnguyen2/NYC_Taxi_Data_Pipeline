@@ -9,6 +9,9 @@ dotenv.load_dotenv(".env")
 
 from pyspark import SparkConf, SparkContext
 
+sys.path.append("./src/")
+from helpers import load_cfg
+
 logging.basicConfig(level=logging.INFO, 
                     format='%(asctime)s:%(funcName)s:%(levelname)s:%(message)s')
             
@@ -21,6 +24,12 @@ MINIO_ENDPOINT = os.getenv("MINIO_ENDPOINT")
 MINIO_ACCESS_KEY = os.getenv("MINIO_ACCESS_KEY")
 MINIO_SECRET_KEY = os.getenv("MINIO_SECRET_KEY")
 BUCKET_NAME = os.getenv("BUCKET_NAME")
+
+CFG_FILE_SPARK = "./config/spark.yaml"
+cfg = load_cfg(CFG_FILE_SPARK)
+spark_cfg = cfg["spark_config"]
+
+MEMORY = spark_cfg['executor_memory']
 ###############################################
 
 
@@ -34,7 +43,7 @@ def create_spark_session():
     from pyspark.sql import SparkSession
 
     try: 
-        spark = (SparkSession.builder.config("spark.executor.memory", "4g") \
+        spark = (SparkSession.builder.config("spark.executor.memory", MEMORY) \
                         .config(
                             "spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.0.0,org.apache.hadoop:hadoop-aws:2.8.2"
                         )

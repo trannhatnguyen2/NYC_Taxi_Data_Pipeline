@@ -1,5 +1,5 @@
-import os
 import sys
+import os
 import pandas as pd
 from glob import glob
 from minio import Minio
@@ -7,6 +7,7 @@ import time
 
 sys.path.append("/opt/airflow/dags/scripts/")
 from helpers import load_cfg
+from minio_utils import create_bucket, connect_minio
 
 ###############################################
 # Parameters & Arguments
@@ -17,31 +18,6 @@ CFG_FILE = BASE_PATH + "config/datalake_airflow.yaml"
 DATA_PATH = BASE_PATH + "data/"
 TAXI_LOOKUP_PATH = BASE_PATH + "dags/scripts/data/taxi_lookup.csv"
 YEARS = ["2022"]
-###############################################
-
-
-###############################################
-# Utils
-###############################################
-def create_bucket(bucket_name):
-     # Load minio config
-    cfg = load_cfg(CFG_FILE)
-    datalake_cfg = cfg["datalake"]
-
-    # Create a client with the MinIO server
-    minio_client = Minio(
-        endpoint=datalake_cfg["endpoint"],
-        access_key=datalake_cfg["access_key"],
-        secret_key=datalake_cfg["secret_key"],
-        secure=False,
-    )
-
-    # Create bucket if not exist
-    found = minio_client.bucket_exists(bucket_name=bucket_name)
-    if not found:
-        minio_client.make_bucket(bucket_name=bucket_name)
-    else:
-        print(f"Bucket {bucket_name} already exists, skip creating!")
 ###############################################
 
 
@@ -57,22 +33,9 @@ def extract_load_to_datalake():
     datalake_cfg = cfg["datalake"]
     nyc_data_cfg = cfg["nyc_data"]
 
-    print(datalake_cfg)
-
     # Create a client with the MinIO server
-    minio_client = Minio(
-        endpoint=datalake_cfg["endpoint"],
-        access_key=datalake_cfg["access_key"],
-        secret_key=datalake_cfg["secret_key"],
-        secure=False,
-    )
-
-    # Create bucket if not exist
-    found = minio_client.bucket_exists(bucket_name=datalake_cfg["bucket_name_1"])
-    if not found:
-        minio_client.make_bucket(bucket_name=datalake_cfg["bucket_name_1"])
-    else:
-        print(f"Bucket {datalake_cfg['bucket_name_1']} already exists, skip creating!")
+    minio_client = connect_minio()
+    create_bucket(datalake_cfg["bucket_name_1"])
 
     for year in YEARS:
         # Upload files
@@ -110,30 +73,22 @@ def merge_taxi_zone(df, file):
     """
     df_lookup = pd.read_csv(TAXI_LOOKUP_PATH)
 
-    if "pickup_latitude" not in df.columns:
-        # merge for pickup locations
-        df = df.merge(df_lookup, left_on="pulocationid", right_on="LocationID")
+    def merge_and_rename(df, location_id, lat_col, long_col):
+        df = df.merge(df_lookup, left_on=location_id, right_on="LocationID")
         df = df.drop(columns=["LocationID", "Borough", "service_zone", "zone"])
         df = df.rename(columns={
-            "latitude" : "pickup_latitude",
-            "longitude" : "pickup_longitude"
+            "latitude" : lat_col,
+            "longitude" : long_col
         })
-    
-    if "dropoff_latitude" not in df.columns:
-        # merge for pickup locations
-        df = df.merge(df_lookup, left_on="dolocationid", right_on="LocationID")
-        df = df.drop(columns=["LocationID", "Borough", "service_zone", "zone"])
-        df = df.rename(columns={
-            "latitude" : "dropoff_latitude",
-            "longitude" : "dropoff_longitude"
-        })
+        return df
 
-    if "Unnamed: 0_x" in df.columns:
-        # drop rows with missing values
-        df = df.drop(columns=['Unnamed: 0_x']).dropna()
-    
-    if "Unnamed: 0_y" in df.columns:
-        df = df.drop(columns=['Unnamed: 0_y']).dropna()
+    if "pickup_latitude" not in df.columns:
+        df = merge_and_rename(df, "pulocationid", "pickup_latitude", "pickup_longitude")
+        
+    if "dropoff_latitude" not in df.columns:
+        df = merge_and_rename(df, "dolocationid", "dropoff_latitude", "dropoff_longitude")
+
+    df = df.drop(columns=[col for col in df.columns if "Unnamed" in col], errors='ignore').dropna()
 
     print("Merged data from file: " + file)
 
