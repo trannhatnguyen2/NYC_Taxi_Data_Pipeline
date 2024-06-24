@@ -150,8 +150,8 @@ def load_to_staging_table(df):
     }
 
     # write data to PostgreSQL
-    # df.write.jdbc(url=URL, table= DB_STAGING_TABLE, mode='append', properties=properties)
-    df.write.jdbc(url=URL, table= 'staging.nyc_taxi_test', mode='append', properties=properties)
+    df.write.jdbc(url=URL, table= DB_STAGING_TABLE, mode='append', properties=properties)
+    # df.write.jdbc(url=URL, table= 'staging.nyc_taxi_test', mode='append', properties=properties)
 ###############################################
 
 
