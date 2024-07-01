@@ -7,6 +7,10 @@ RUN apt-get update && apt-get install -y openjdk-11-jdk
 
 # Set JAVA_HOME
 ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64/
+ENV MINIO_ENDPOINT minio:9000
+ENV MINIO_ACCESS_KEY minio_access_key
+ENV MINIO_SECRET_KEY minio_secret_key
+
 RUN export JAVA_HOME
 
 RUN apt-get update && \

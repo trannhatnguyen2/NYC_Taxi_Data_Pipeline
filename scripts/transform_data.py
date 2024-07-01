@@ -5,54 +5,23 @@ from glob import glob
 from minio import Minio
 import time
 
-sys.path.append("/opt/airflow/dags/scripts/")
+utils_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'utils'))
+sys.path.append(utils_path)
 from helpers import load_cfg
-from minio_utils import create_bucket, connect_minio
+from minio_utils import MinIOClient
 
 ###############################################
 # Parameters & Arguments
 ###############################################
-BASE_PATH = "/opt/airflow/"
-
-CFG_FILE = BASE_PATH + "config/datalake_airflow.yaml"
-DATA_PATH = BASE_PATH + "data/"
-TAXI_LOOKUP_PATH = BASE_PATH + "dags/scripts/data/taxi_lookup.csv"
+DATA_PATH = "data/"
 YEARS = ["2022"]
+TAXI_LOOKUP_PATH = os.path.join(os.path.dirname(__file__), "data", "taxi_lookup.csv")
+CFG_FILE =  "config/datalake.yaml"
 ###############################################
 
 
 ###############################################
-# Extract and Load
-###############################################
-def extract_load_to_datalake():
-    """
-        Extract data file and Load to Datalake (MinIO) at bucket 'datalake'
-    """
-    # Load minio config
-    cfg = load_cfg(CFG_FILE)
-    datalake_cfg = cfg["datalake"]
-    nyc_data_cfg = cfg["nyc_data"]
-
-    # Create a client with the MinIO server
-    minio_client = connect_minio()
-    create_bucket(datalake_cfg["bucket_name_1"])
-
-    for year in YEARS:
-        # Upload files
-        all_fps = glob(os.path.join(nyc_data_cfg["folder_path"], year, "*.parquet"))
-
-        for fp in all_fps:
-            print(f"Uploading {fp}")
-            minio_client.fput_object(
-                bucket_name=datalake_cfg["bucket_name_1"],
-                object_name=os.path.join(datalake_cfg["folder_name"], os.path.basename(fp)),
-                file_path=fp,
-            )
-###############################################
-
-
-###############################################
-# Transform
+# Process data
 ###############################################
 def drop_column(df, file):
     """
@@ -153,7 +122,7 @@ def process(df, file):
     return df
 
 
-def transform_data():
+def transform_data(endpoint_url, access_key, secret_key):
     """
         Transform data after loading into Datalake (MinIO)
     """
@@ -162,21 +131,26 @@ def transform_data():
     # Load minio config
     cfg = load_cfg(CFG_FILE)
     datalake_cfg = cfg["datalake"]
-    nyc_data_cfg = cfg["nyc_data"]
 
     s3_fs = s3fs.S3FileSystem(
         anon=False,
-        key=datalake_cfg["access_key"],
-        secret=datalake_cfg["secret_key"],
-        client_kwargs={'endpoint_url': 'http://minio:9000'}
+        key=access_key,
+        secret=secret_key,
+        client_kwargs={'endpoint_url': "".join(["http://", endpoint_url])}
+    )
+
+    client = MinIOClient(
+        endpoint_url=endpoint_url,
+        access_key=access_key,
+        secret_key=secret_key
     )
 
     # Create bucket 'processed'
-    create_bucket(datalake_cfg['bucket_name_2'])
+    client.create_bucket(datalake_cfg['bucket_name_2'])
 
     # Transform data
     for year in YEARS:
-        all_fps = glob(os.path.join(BASE_PATH, nyc_data_cfg["folder_path"], year, "*.parquet"))
+        all_fps = glob(os.path.join(DATA_PATH, year, "*.parquet"))
 
         for file in all_fps:
             file_name = file.split('/')[-1]
@@ -196,5 +170,19 @@ def transform_data():
             df.to_parquet(path, index=False, filesystem=s3_fs, engine='pyarrow')
             print("Finished transforming data in file: " + path)
             print("="*100)
-            time.sleep(5)
+###############################################
+
+
+###############################################
+# Process data
+###############################################
+if __name__ == "__main__":
+    cfg = load_cfg(CFG_FILE)
+    datalake_cfg = cfg["datalake"]
+
+    ENDPOINT_URL_LOCAL = datalake_cfg['endpoint']
+    ACCESS_KEY_LOCAL = datalake_cfg['access_key']
+    SECRET_KEY_LOCAL = datalake_cfg['secret_key']
+
+    transform_data(ENDPOINT_URL_LOCAL, ACCESS_KEY_LOCAL, SECRET_KEY_LOCAL)
 ###############################################

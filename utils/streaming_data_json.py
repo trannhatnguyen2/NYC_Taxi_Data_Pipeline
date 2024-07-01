@@ -27,6 +27,7 @@ parser.add_argument(
 args = parser.parse_args()
 
 NUM_DEVICES = 1
+DATA_PATH = "data/2024/yellow_tripdata_2024-01.parquet"
 
 
 def create_topic(admin, topic_name):
@@ -59,7 +60,7 @@ def create_streams(servers):
             pass
 
     # send data
-    df = pd.read_parquet("data/2024/yellow_tripdata_2024-01.parquet")
+    df = pd.read_parquet(DATA_PATH)
     
     for index, row in df.iterrows():
         topic_name = "nyc_taxi_device"

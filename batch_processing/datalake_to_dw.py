@@ -9,9 +9,10 @@ dotenv.load_dotenv(".env")
 
 from pyspark import SparkConf, SparkContext
 
-sys.path.append("./utils/")
-from minio_utils import list_parquet_files
+utils_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'utils'))
+sys.path.append(utils_path)
 from helpers import load_cfg
+from minio_utils import MinIOClient
 
 logging.basicConfig(level=logging.INFO, 
                     format='%(asctime)s:%(funcName)s:%(levelname)s:%(message)s')
@@ -150,8 +151,8 @@ def load_to_staging_table(df):
     }
 
     # write data to PostgreSQL
-    df.write.jdbc(url=URL, table= DB_STAGING_TABLE, mode='append', properties=properties)
-    # df.write.jdbc(url=URL, table= 'staging.nyc_taxi_test', mode='append', properties=properties)
+    # df.write.jdbc(url=URL, table= DB_STAGING_TABLE, mode='append', properties=properties)
+    df.write.jdbc(url=URL, table= 'staging.nyc_taxi_test', mode='append', properties=properties)
 ###############################################
 
 
@@ -164,7 +165,13 @@ if __name__ == "__main__":
     spark = create_spark_session()
     load_minio_config(spark.sparkContext)
 
-    for file in list_parquet_files(BUCKET_NAME, prefix='batch/'):
+    client = MinIOClient(
+        endpoint_url=MINIO_ENDPOINT,
+        access_key=MINIO_ACCESS_KEY,
+        secret_key=MINIO_SECRET_KEY
+    )
+
+    for file in client.list_parquet_files(BUCKET_NAME, prefix='batch/'):
         path = f"s3a://{BUCKET_NAME}/" + file
         logging.info(f"Reading parquet file: {file}")
 

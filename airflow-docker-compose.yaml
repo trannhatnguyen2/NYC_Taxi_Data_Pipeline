@@ -78,7 +78,8 @@ x-airflow-common: &airflow-common
     - ${AIRFLOW_PROJ_DIR:-.}/include:/opt/airflow/include
     # - ${AIRFLOW_PROJ_DIR:-.}/data:/opt/airflow/data
     - ./data:/opt/airflow/data
-    - ./src_airflow:/opt/airflow/dags/scripts
+    - ./scripts:/opt/airflow/dags/scripts
+    - ./utils:/opt/airflow/dags/utils
     - ./jars:/opt/airflow/dags/scripts/jars
     - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
     - //var/run/docker.sock:/var/run/docker.sock

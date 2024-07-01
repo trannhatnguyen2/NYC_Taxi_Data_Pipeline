@@ -2,13 +2,14 @@ import os
 from datetime import datetime, timedelta
 
 from airflow import DAG
-from airflow.decorators import task
 from airflow.operators.python import PythonOperator
 from airflow.operators.dummy import DummyOperator
 
-from scripts.elt_pipeline import extract_load_to_datalake, transform_data
-from scripts.convert_to_delta import main_convert
+from scripts.extract_load import extract_load
+from scripts.transform_data import transform_data
+from scripts.convert_to_delta import delta_convert
 
+# Default arguments for the DAG
 default_args = {
     "owner": "t.nhatnguyen",
     "email_on_failure": False,
@@ -18,7 +19,16 @@ default_args = {
     "retry_delay": timedelta(minutes=5)
 }
 
-with DAG("elt_pipeline", start_date=datetime(2024, 1, 1), schedule_interval="@daily", default_args=default_args) as dag:
+###############################################
+# Parameters & Arguments
+###############################################
+MINIO_ENDPOINT = os.environ['MINIO_ENDPOINT']
+MINIO_ACCESS_KEY = os.environ['MINIO_ACCESS_KEY']
+MINIO_SECRET_KEY = os.environ['MINIO_SECRET_KEY']
+###############################################
+
+
+with DAG("elt_pipeline", start_date=datetime(2024, 1, 1), schedule=None, default_args=default_args) as dag:
 
     start_pipeline = DummyOperator(
         task_id="start_pipeline"
@@ -26,21 +36,24 @@ with DAG("elt_pipeline", start_date=datetime(2024, 1, 1), schedule_interval="@da
 
     extract_load = PythonOperator(
         task_id="extract_load",
-        python_callable=extract_load_to_datalake
+        python_callable=extract_load,
+        op_kwargs={'endpoint_url': MINIO_ENDPOINT, 'access_key': MINIO_ACCESS_KEY, 'secret_key': MINIO_SECRET_KEY}
     )
 
-    transform = PythonOperator(
-        task_id="transform",
-        python_callable=transform_data
+    transform_data = PythonOperator(
+        task_id="transform_data",
+        python_callable=transform_data,
+        op_kwargs={'endpoint_url': MINIO_ENDPOINT, 'access_key': MINIO_ACCESS_KEY, 'secret_key': MINIO_SECRET_KEY}
     )
 
-    convert_to_delta = PythonOperator(
-        task_id="convert_to_delta",
-        python_callable=main_convert
+    delta_convert = PythonOperator(
+        task_id="delta_convert",
+        python_callable=delta_convert,
+        op_kwargs={'endpoint_url': MINIO_ENDPOINT, 'access_key': MINIO_ACCESS_KEY, 'secret_key': MINIO_SECRET_KEY}
     )
 
     end_pipeline = DummyOperator(
         task_id="end_pipeline"
     )
 
-start_pipeline >> extract_load >> transform >> convert_to_delta >> end_pipeline
+start_pipeline >> extract_load >> transform_data >> delta_convert >> end_pipeline
