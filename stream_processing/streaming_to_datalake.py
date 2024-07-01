@@ -4,12 +4,14 @@ import warnings
 import traceback
 import logging
 import dotenv
+import json
 from time import sleep
 dotenv.load_dotenv(".env")
 
 from pyspark import SparkConf, SparkContext
 
-sys.path.append("./src/")
+utils_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'utils'))
+sys.path.append(utils_path)
 from helpers import load_cfg
 
 logging.basicConfig(level=logging.INFO, 
@@ -92,27 +94,26 @@ def create_final_dataframe(df, spark_session):
     """
         Modifies the initial dataframe, and creates the final dataframe
     """
-    from pyspark.sql.types import IntegerType, StringType, StructType, StructField, TimestampNTZType, DoubleType, LongType
+    from pyspark.sql.types import StructType, StructField, IntegerType, StringType, TimestampNTZType, DoubleType, LongType
     from pyspark.sql.functions import col, from_json, udf
 
+    # Load the configuration file
+    with open('./stream_processing/schema_config.json', 'r') as f:
+        config = json.load(f)
+
+    # Define a mapping from type names to PySpark types
+    type_mapping = {
+        "IntegerType": IntegerType(),
+        "StringType": StringType(),
+        "TimestampNTZType": TimestampNTZType(),
+        "DoubleType": DoubleType(),
+        "LongType": LongType()
+    }
+
+    # Create the schema based on the configuration file
     payload_after_schema = StructType([
-            StructField("dolocationid", IntegerType(), True),
-            StructField("pulocationid", IntegerType(), True),
-            StructField("ratecodeid", DoubleType(), True),
-            StructField("vendorid", IntegerType(), True),
-            StructField("congestion_surcharge", DoubleType(), True),
-            StructField("extra", DoubleType(), True),
-            StructField("fare_amount", DoubleType(), True),
-            StructField("improvement_surcharge", DoubleType(), True),
-            StructField("mta_tax", DoubleType(), True),
-            StructField("passenger_count", DoubleType(), True),
-            StructField("payment_type", IntegerType(), True),
-            StructField("tip_amount", DoubleType(), True),
-            StructField("tolls_amount", DoubleType(), True),
-            StructField("total_amount", DoubleType(), True),
-            StructField("tpep_dropoff_datetime", LongType(), True),
-            StructField("tpep_pickup_datetime", LongType(), True),
-            StructField("trip_distance", DoubleType(), True)
+        StructField(field["name"], type_mapping[field["type"]], field["nullable"])
+        for field in config["fields"]
     ])
 
     data_schema = StructType([
@@ -121,6 +122,11 @@ def create_final_dataframe(df, spark_session):
         ]), True)
     ])
 
+
+    # Explain:
+    #  1. Converts the value column of df to a STRING type and names the new column 'json'
+    #  2. Converts the new 'json' column into JSON format based on the schema 'data_schema' with the alias 'data'.
+    #  3. Based on the Debezium JSON, only extracts the data from "payload.after.*"
     parsed_df = df.selectExpr("CAST(value AS STRING) as json") \
                 .select(from_json(col("json"), data_schema).alias("data")) \
                 .select("data.payload.after.*")
