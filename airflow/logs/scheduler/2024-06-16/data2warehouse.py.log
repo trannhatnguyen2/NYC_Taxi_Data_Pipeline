@@ -1,0 +1,1120 @@
+[2024-06-16T07:58:33.638+0000] {processor.py:157} INFO - Started process (PID=43) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T07:58:33.639+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T07:58:33.641+0000] {logging_mixin.py:151} INFO - [2024-06-16T07:58:33.641+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T07:58:33.645+0000] {logging_mixin.py:151} INFO - [2024-06-16T07:58:33.643+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T07:58:33.645+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T07:58:33.666+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.031 seconds
+[2024-06-16T07:59:03.816+0000] {processor.py:157} INFO - Started process (PID=51) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T07:59:03.818+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T07:59:03.822+0000] {logging_mixin.py:151} INFO - [2024-06-16T07:59:03.822+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T07:59:03.826+0000] {logging_mixin.py:151} INFO - [2024-06-16T07:59:03.826+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T07:59:03.827+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T07:59:03.850+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.037 seconds
+[2024-06-16T07:59:33.971+0000] {processor.py:157} INFO - Started process (PID=59) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T07:59:33.973+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T07:59:33.974+0000] {logging_mixin.py:151} INFO - [2024-06-16T07:59:33.974+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T07:59:33.977+0000] {logging_mixin.py:151} INFO - [2024-06-16T07:59:33.976+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T07:59:33.978+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T07:59:34.000+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.031 seconds
+[2024-06-16T08:00:04.134+0000] {processor.py:157} INFO - Started process (PID=67) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:00:04.136+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:00:04.139+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:00:04.138+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:00:04.143+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:00:04.141+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:00:04.144+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:00:04.169+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.039 seconds
+[2024-06-16T08:00:34.288+0000] {processor.py:157} INFO - Started process (PID=75) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:00:34.293+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:00:34.296+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:00:34.296+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:00:34.302+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:00:34.300+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:00:34.302+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:00:34.330+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.048 seconds
+[2024-06-16T08:01:04.435+0000] {processor.py:157} INFO - Started process (PID=83) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:01:04.440+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:01:04.442+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:01:04.442+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:01:04.444+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:01:04.444+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:01:04.445+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:01:04.465+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.033 seconds
+[2024-06-16T08:01:34.591+0000] {processor.py:157} INFO - Started process (PID=91) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:01:34.596+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:01:34.598+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:01:34.597+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:01:34.601+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:01:34.600+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:01:34.601+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:01:34.618+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.031 seconds
+[2024-06-16T08:02:04.730+0000] {processor.py:157} INFO - Started process (PID=99) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:02:04.732+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:02:04.735+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:02:04.734+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:02:04.740+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:02:04.738+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:02:04.741+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:02:04.760+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.035 seconds
+[2024-06-16T08:02:34.876+0000] {processor.py:157} INFO - Started process (PID=107) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:02:34.881+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:02:34.885+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:02:34.885+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:02:34.892+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:02:34.890+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:02:34.893+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:02:34.925+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.055 seconds
+[2024-06-16T08:03:05.012+0000] {processor.py:157} INFO - Started process (PID=115) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:03:05.017+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:03:05.021+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:03:05.021+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:03:05.027+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:03:05.025+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:03:05.027+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:03:05.055+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.048 seconds
+[2024-06-16T08:03:35.193+0000] {processor.py:157} INFO - Started process (PID=123) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:03:35.195+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:03:35.197+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:03:35.197+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:03:35.200+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:03:35.199+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:03:35.201+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:03:35.226+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.037 seconds
+[2024-06-16T08:04:05.344+0000] {processor.py:157} INFO - Started process (PID=131) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:04:05.347+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:04:05.351+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:04:05.350+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:04:05.356+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:04:05.354+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:04:05.356+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:04:05.377+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.038 seconds
+[2024-06-16T08:04:35.492+0000] {processor.py:157} INFO - Started process (PID=139) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:04:35.493+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:04:35.495+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:04:35.495+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:04:35.498+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:04:35.497+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:04:35.498+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:04:35.520+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.033 seconds
+[2024-06-16T08:05:05.644+0000] {processor.py:157} INFO - Started process (PID=147) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:05:05.649+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:05:05.653+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:05:05.653+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:05:05.660+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:05:05.658+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:05:05.662+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:05:05.689+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.051 seconds
+[2024-06-16T08:05:35.806+0000] {processor.py:157} INFO - Started process (PID=155) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:05:35.808+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:05:35.810+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:05:35.809+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:05:35.812+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:05:35.811+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:05:35.812+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:05:35.835+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.032 seconds
+[2024-06-16T08:06:05.989+0000] {processor.py:157} INFO - Started process (PID=163) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:06:05.992+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:06:05.995+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:06:05.995+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:06:06.001+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:06:05.999+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:06:06.002+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:06:06.020+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.036 seconds
+[2024-06-16T08:06:36.152+0000] {processor.py:157} INFO - Started process (PID=170) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:06:36.156+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:06:36.160+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:06:36.159+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:06:36.166+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:06:36.164+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:06:36.166+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:06:36.198+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.052 seconds
+[2024-06-16T08:07:06.317+0000] {processor.py:157} INFO - Started process (PID=178) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:07:06.319+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:07:06.321+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:07:06.321+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:07:06.324+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:07:06.323+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:07:06.324+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:07:06.347+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.033 seconds
+[2024-06-16T08:07:36.507+0000] {processor.py:157} INFO - Started process (PID=186) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:07:36.512+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:07:36.514+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:07:36.514+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:07:36.516+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:07:36.515+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:07:36.516+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:07:36.546+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.041 seconds
+[2024-06-16T08:08:06.678+0000] {processor.py:157} INFO - Started process (PID=194) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:08:06.683+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:08:06.687+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:08:06.686+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:08:06.692+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:08:06.691+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:08:06.693+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:08:06.717+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.044 seconds
+[2024-06-16T08:08:36.848+0000] {processor.py:157} INFO - Started process (PID=202) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:08:36.853+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:08:36.858+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:08:36.857+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:08:36.864+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:08:36.862+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:08:36.864+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:08:36.898+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.055 seconds
+[2024-06-16T08:09:06.989+0000] {processor.py:157} INFO - Started process (PID=210) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:09:06.991+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:09:06.996+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:09:06.996+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:09:07.002+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:09:07.001+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:09:07.003+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:09:07.039+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.057 seconds
+[2024-06-16T08:09:37.181+0000] {processor.py:157} INFO - Started process (PID=218) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:09:37.182+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:09:37.184+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:09:37.184+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:09:37.187+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:09:37.186+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:09:37.187+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:09:37.208+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.031 seconds
+[2024-06-16T08:10:07.325+0000] {processor.py:157} INFO - Started process (PID=226) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:10:07.330+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:10:07.334+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:10:07.333+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:10:07.338+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:10:07.337+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:10:07.339+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:10:07.359+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.038 seconds
+[2024-06-16T08:10:37.480+0000] {processor.py:157} INFO - Started process (PID=234) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:10:37.482+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:10:37.486+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:10:37.485+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:10:37.491+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:10:37.489+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:10:37.492+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:10:37.511+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.037 seconds
+[2024-06-16T08:11:07.629+0000] {processor.py:157} INFO - Started process (PID=242) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:11:07.630+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:11:07.634+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:11:07.634+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:11:07.640+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:11:07.638+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:11:07.640+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:11:07.660+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.037 seconds
+[2024-06-16T08:11:37.770+0000] {processor.py:157} INFO - Started process (PID=250) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:11:37.775+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:11:37.778+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:11:37.777+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:11:37.780+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:11:37.779+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:11:37.780+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:11:37.801+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.033 seconds
+[2024-06-16T08:12:07.935+0000] {processor.py:157} INFO - Started process (PID=258) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:12:07.939+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:12:07.943+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:12:07.942+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:12:07.949+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:12:07.947+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:12:07.949+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:12:07.980+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.051 seconds
+[2024-06-16T08:12:38.085+0000] {processor.py:157} INFO - Started process (PID=266) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:12:38.090+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:12:38.092+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:12:38.092+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:12:38.097+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:12:38.096+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:12:38.098+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:12:38.116+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.033 seconds
+[2024-06-16T08:13:08.260+0000] {processor.py:157} INFO - Started process (PID=274) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:13:08.265+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:13:08.269+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:13:08.268+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:13:08.274+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:13:08.272+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:13:08.274+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:13:08.305+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.051 seconds
+[2024-06-16T08:13:38.429+0000] {processor.py:157} INFO - Started process (PID=283) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:13:38.433+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:13:38.436+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:13:38.436+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:13:38.444+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:13:38.441+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:13:38.445+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:13:38.468+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.045 seconds
+[2024-06-16T08:14:08.613+0000] {processor.py:157} INFO - Started process (PID=291) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:14:08.618+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:14:08.623+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:14:08.622+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:14:08.630+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:14:08.628+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:14:08.631+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:14:08.665+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.058 seconds
+[2024-06-16T08:14:38.775+0000] {processor.py:157} INFO - Started process (PID=299) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:14:38.780+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:14:38.784+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:14:38.783+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:14:38.790+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:14:38.788+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:14:38.791+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:14:38.811+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.042 seconds
+[2024-06-16T08:15:08.970+0000] {processor.py:157} INFO - Started process (PID=307) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:15:08.975+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:15:08.979+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:15:08.979+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:15:08.988+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:15:08.986+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:15:08.989+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:15:09.011+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.047 seconds
+[2024-06-16T08:15:39.145+0000] {processor.py:157} INFO - Started process (PID=315) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:15:39.150+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:15:39.154+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:15:39.153+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:15:39.160+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:15:39.158+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:15:39.160+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:15:39.187+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.047 seconds
+[2024-06-16T08:16:09.318+0000] {processor.py:157} INFO - Started process (PID=323) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:16:09.323+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:16:09.328+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:16:09.327+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:16:09.334+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:16:09.332+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:16:09.335+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:16:09.359+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.047 seconds
+[2024-06-16T08:16:39.486+0000] {processor.py:157} INFO - Started process (PID=331) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:16:39.491+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:16:39.493+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:16:39.493+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:16:39.495+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:16:39.495+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:16:39.496+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:16:39.518+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.034 seconds
+[2024-06-16T08:17:09.660+0000] {processor.py:157} INFO - Started process (PID=339) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:17:09.661+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:17:09.666+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:17:09.665+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:17:09.671+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:17:09.670+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:17:09.672+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:17:09.697+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.042 seconds
+[2024-06-16T08:17:39.844+0000] {processor.py:157} INFO - Started process (PID=347) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:17:39.845+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:17:39.850+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:17:39.849+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:17:39.856+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:17:39.854+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:17:39.857+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:17:39.887+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.049 seconds
+[2024-06-16T08:18:10.024+0000] {processor.py:157} INFO - Started process (PID=355) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:18:10.026+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:18:10.031+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:18:10.030+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:18:10.036+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:18:10.035+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:18:10.037+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:18:10.058+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.039 seconds
+[2024-06-16T08:18:40.212+0000] {processor.py:157} INFO - Started process (PID=363) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:18:40.214+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:18:40.218+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:18:40.217+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:18:40.224+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:18:40.223+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:18:40.225+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:18:40.247+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.044 seconds
+[2024-06-16T08:19:10.380+0000] {processor.py:157} INFO - Started process (PID=371) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:19:10.382+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:19:10.384+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:19:10.384+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:19:10.387+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:19:10.386+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:19:10.387+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:19:10.411+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.036 seconds
+[2024-06-16T08:19:40.546+0000] {processor.py:157} INFO - Started process (PID=379) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:19:40.548+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:19:40.550+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:19:40.550+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:19:40.552+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:19:40.552+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:19:40.553+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:19:40.576+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.036 seconds
+[2024-06-16T08:20:10.712+0000] {processor.py:157} INFO - Started process (PID=387) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:20:10.714+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:20:10.717+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:20:10.716+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:20:10.722+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:20:10.721+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:20:10.723+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:20:10.751+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.044 seconds
+[2024-06-16T08:20:40.867+0000] {processor.py:157} INFO - Started process (PID=395) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:20:40.871+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:20:40.873+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:20:40.873+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:20:40.876+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:20:40.875+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:20:40.876+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:20:40.901+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.037 seconds
+[2024-06-16T08:21:11.059+0000] {processor.py:157} INFO - Started process (PID=403) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:21:11.061+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:21:11.065+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:21:11.064+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:21:11.070+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:21:11.068+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:21:11.071+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:21:11.096+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.042 seconds
+[2024-06-16T08:21:41.234+0000] {processor.py:157} INFO - Started process (PID=411) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:21:41.239+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:21:41.243+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:21:41.242+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:21:41.249+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:21:41.247+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:21:41.250+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:21:41.271+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.043 seconds
+[2024-06-16T08:22:11.407+0000] {processor.py:157} INFO - Started process (PID=419) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:22:11.409+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:22:11.413+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:22:11.412+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:22:11.419+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:22:11.417+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:22:11.419+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:22:11.448+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.047 seconds
+[2024-06-16T08:22:41.591+0000] {processor.py:157} INFO - Started process (PID=427) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:22:41.596+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:22:41.598+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:22:41.598+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:22:41.601+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:22:41.600+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:22:41.601+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:22:41.626+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.038 seconds
+[2024-06-16T08:23:11.767+0000] {processor.py:157} INFO - Started process (PID=435) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:23:11.772+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:23:11.773+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:23:11.773+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:23:11.776+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:23:11.775+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:23:11.776+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:23:11.797+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.032 seconds
+[2024-06-16T08:23:41.955+0000] {processor.py:157} INFO - Started process (PID=443) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:23:41.960+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:23:41.962+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:23:41.962+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:23:41.966+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:23:41.965+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:23:41.966+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:23:41.988+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.036 seconds
+[2024-06-16T08:24:12.124+0000] {processor.py:157} INFO - Started process (PID=451) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:24:12.128+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:24:12.131+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:24:12.131+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:24:12.134+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:24:12.133+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:24:12.134+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:24:12.152+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.030 seconds
+[2024-06-16T08:24:42.293+0000] {processor.py:157} INFO - Started process (PID=459) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:24:42.295+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:24:42.299+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:24:42.299+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:24:42.304+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:24:42.302+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:24:42.305+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:24:42.330+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.042 seconds
+[2024-06-16T08:25:12.435+0000] {processor.py:157} INFO - Started process (PID=467) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:25:12.440+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:25:12.442+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:25:12.442+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:25:12.444+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:25:12.444+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:25:12.445+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:25:12.461+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.031 seconds
+[2024-06-16T08:25:42.585+0000] {processor.py:157} INFO - Started process (PID=475) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:25:42.590+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:25:42.593+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:25:42.593+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:25:42.598+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:25:42.597+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:25:42.599+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:25:42.622+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.041 seconds
+[2024-06-16T08:26:12.732+0000] {processor.py:157} INFO - Started process (PID=483) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:26:12.737+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:26:12.739+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:26:12.738+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:26:12.741+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:26:12.741+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:26:12.742+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:26:12.759+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.029 seconds
+[2024-06-16T08:26:42.890+0000] {processor.py:157} INFO - Started process (PID=491) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:26:42.895+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:26:42.898+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:26:42.898+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:26:42.904+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:26:42.903+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:26:42.905+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:26:42.939+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.055 seconds
+[2024-06-16T08:27:13.027+0000] {processor.py:157} INFO - Started process (PID=499) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:27:13.032+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:27:13.034+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:27:13.034+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:27:13.037+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:27:13.036+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:27:13.037+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:27:13.055+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.030 seconds
+[2024-06-16T08:27:43.187+0000] {processor.py:157} INFO - Started process (PID=507) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:27:43.189+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:27:43.191+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:27:43.191+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:27:43.195+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:27:43.194+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:27:43.196+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:27:43.216+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.033 seconds
+[2024-06-16T08:28:13.338+0000] {processor.py:157} INFO - Started process (PID=515) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:28:13.343+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:28:13.347+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:28:13.346+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:28:13.353+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:28:13.351+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:28:13.354+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:28:13.382+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.049 seconds
+[2024-06-16T08:28:43.524+0000] {processor.py:157} INFO - Started process (PID=523) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:28:43.529+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:28:43.532+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:28:43.532+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:28:43.538+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:28:43.537+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:28:43.539+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:28:43.561+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.043 seconds
+[2024-06-16T08:29:13.684+0000] {processor.py:157} INFO - Started process (PID=531) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:29:13.688+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:29:13.691+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:29:13.691+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:29:13.693+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:29:13.693+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:29:13.694+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:29:13.711+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.030 seconds
+[2024-06-16T08:29:43.851+0000] {processor.py:157} INFO - Started process (PID=539) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:29:43.853+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:29:43.855+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:29:43.854+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:29:43.857+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:29:43.857+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:29:43.858+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:29:43.876+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.028 seconds
+[2024-06-16T08:30:14.032+0000] {processor.py:157} INFO - Started process (PID=547) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:30:14.034+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:30:14.039+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:30:14.039+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:30:14.045+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:30:14.044+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:30:14.046+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:30:14.076+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.051 seconds
+[2024-06-16T08:30:44.209+0000] {processor.py:157} INFO - Started process (PID=555) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:30:44.214+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:30:44.218+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:30:44.218+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:30:44.221+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:30:44.220+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:30:44.221+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:30:44.244+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.037 seconds
+[2024-06-16T08:31:14.384+0000] {processor.py:157} INFO - Started process (PID=563) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:31:14.386+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:31:14.388+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:31:14.388+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:31:14.391+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:31:14.390+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:31:14.391+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:31:14.409+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.028 seconds
+[2024-06-16T08:31:44.534+0000] {processor.py:157} INFO - Started process (PID=571) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:31:44.539+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:31:44.541+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:31:44.541+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:31:44.544+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:31:44.543+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:31:44.544+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:31:44.562+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.030 seconds
+[2024-06-16T08:32:14.701+0000] {processor.py:157} INFO - Started process (PID=579) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:32:14.706+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:32:14.709+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:32:14.709+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:32:14.714+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:32:14.713+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:32:14.715+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:32:14.735+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.037 seconds
+[2024-06-16T08:32:44.876+0000] {processor.py:157} INFO - Started process (PID=587) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:32:44.878+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:32:44.881+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:32:44.881+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:32:44.887+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:32:44.886+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:32:44.888+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:32:44.913+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.044 seconds
+[2024-06-16T08:33:15.036+0000] {processor.py:157} INFO - Started process (PID=595) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:33:15.037+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:33:15.039+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:33:15.039+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:33:15.042+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:33:15.041+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:33:15.042+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:33:15.061+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.028 seconds
+[2024-06-16T08:33:45.220+0000] {processor.py:157} INFO - Started process (PID=603) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:33:45.222+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:33:45.225+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:33:45.224+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:33:45.231+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:33:45.229+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:33:45.231+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:33:45.255+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.039 seconds
+[2024-06-16T08:34:15.384+0000] {processor.py:157} INFO - Started process (PID=611) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:34:15.389+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:34:15.390+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:34:15.390+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:34:15.393+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:34:15.392+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:34:15.394+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:34:15.410+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.029 seconds
+[2024-06-16T08:34:45.548+0000] {processor.py:157} INFO - Started process (PID=619) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:34:45.550+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:34:45.551+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:34:45.551+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:34:45.554+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:34:45.553+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:34:45.554+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:34:45.572+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.027 seconds
+[2024-06-16T08:35:15.730+0000] {processor.py:157} INFO - Started process (PID=627) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:35:15.734+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:35:15.738+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:35:15.737+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:35:15.744+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:35:15.742+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:35:15.744+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:35:15.763+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.039 seconds
+[2024-06-16T08:35:45.899+0000] {processor.py:157} INFO - Started process (PID=634) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:35:45.904+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:35:45.905+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:35:45.905+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:35:45.909+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:35:45.908+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:35:45.909+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:35:45.927+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.030 seconds
+[2024-06-16T08:36:16.062+0000] {processor.py:157} INFO - Started process (PID=642) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:36:16.067+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:36:16.071+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:36:16.070+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:36:16.077+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:36:16.076+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:36:16.077+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:36:16.097+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.041 seconds
+[2024-06-16T08:36:46.213+0000] {processor.py:157} INFO - Started process (PID=650) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:36:46.215+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:36:46.217+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:36:46.217+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:36:46.220+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:36:46.219+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:36:46.220+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:36:46.240+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.029 seconds
+[2024-06-16T08:37:16.363+0000] {processor.py:157} INFO - Started process (PID=658) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:37:16.367+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:37:16.369+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:37:16.369+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:37:16.372+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:37:16.371+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:37:16.372+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:37:16.394+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.034 seconds
+[2024-06-16T08:37:46.519+0000] {processor.py:157} INFO - Started process (PID=666) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:37:46.520+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:37:46.522+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:37:46.522+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:37:46.525+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:37:46.524+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:37:46.525+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:37:46.542+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.026 seconds
+[2024-06-16T08:38:16.676+0000] {processor.py:157} INFO - Started process (PID=674) to work on /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:38:16.680+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data2warehouse.py for tasks to queue
+[2024-06-16T08:38:16.682+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:38:16.682+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:38:16.685+0000] {logging_mixin.py:151} INFO - [2024-06-16T08:38:16.684+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data2warehouse.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data2warehouse.py", line 6, in <module>
+    from airflow.decorators import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.decorators' (/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/__init__.py)
+[2024-06-16T08:38:16.685+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data2warehouse.py
+[2024-06-16T08:38:16.706+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data2warehouse.py took 0.034 seconds

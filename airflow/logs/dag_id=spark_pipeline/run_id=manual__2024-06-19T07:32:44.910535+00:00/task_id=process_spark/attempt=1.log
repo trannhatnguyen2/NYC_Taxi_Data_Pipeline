@@ -1,0 +1,23 @@
+[2024-06-19T07:32:47.301+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: spark_pipeline.process_spark manual__2024-06-19T07:32:44.910535+00:00 [queued]>
+[2024-06-19T07:32:47.311+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: spark_pipeline.process_spark manual__2024-06-19T07:32:44.910535+00:00 [queued]>
+[2024-06-19T07:32:47.311+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-19T07:32:47.326+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): process_spark> on 2024-06-19 07:32:44.910535+00:00
+[2024-06-19T07:32:47.335+0000] {standard_task_runner.py:57} INFO - Started process 131 to run task
+[2024-06-19T07:32:47.338+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'spark_pipeline', 'process_spark', 'manual__2024-06-19T07:32:44.910535+00:00', '--job-id', '312', '--raw', '--subdir', 'DAGS_FOLDER/delta_dag.py', '--cfg-path', '/tmp/tmp0tx6xluj']
+[2024-06-19T07:32:47.339+0000] {standard_task_runner.py:85} INFO - Job 312: Subtask process_spark
+[2024-06-19T07:32:47.388+0000] {task_command.py:415} INFO - Running <TaskInstance: spark_pipeline.process_spark manual__2024-06-19T07:32:44.910535+00:00 [running]> on host 1546b00fb6e0
+[2024-06-19T07:32:47.459+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='spark_pipeline' AIRFLOW_CTX_TASK_ID='process_spark' AIRFLOW_CTX_EXECUTION_DATE='2024-06-19T07:32:44.910535+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-19T07:32:44.910535+00:00'
+[2024-06-19T07:32:57.657+0000] {logging_mixin.py:151} INFO - +-----+---+
+| Name|Age|
++-----+---+
+| John| 28|
+|Smith| 35|
+|Alice| 32|
++-----+---+
+[2024-06-19T07:32:57.660+0000] {logging_mixin.py:151} INFO - root
+ |-- Name: string (nullable = true)
+ |-- Age: long (nullable = true)
+[2024-06-19T07:32:58.592+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-06-19T07:32:58.607+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=spark_pipeline, task_id=process_spark, execution_date=20240619T073244, start_date=20240619T073247, end_date=20240619T073258
+[2024-06-19T07:32:58.685+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-06-19T07:32:58.705+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

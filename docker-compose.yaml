@@ -1,0 +1,102 @@
+---
+version: "3.8"
+services:
+  trino:
+    ports:
+      - "8084:8080"
+    container_name: datalake-trino
+    image: "trinodb/trino:410"
+    hostname: trino
+    volumes:
+      - ./trino/etc:/usr/lib/trino/etc:ro
+      - ./trino/catalog:/etc/trino/catalog
+    depends_on:
+      - hive-metastore
+
+  # We use PostgreSQL to store Hive metadata about
+  # how the datafile are mapped to schemas and tables
+  metastore_db:
+    container_name: datalake-metastore-db
+    image: postgres:11
+    hostname: metastore_db
+    ports:
+      - "5433:5432" # Access via Thrift protocol
+    environment:
+      POSTGRES_USER: hive
+      POSTGRES_PASSWORD: hive
+      POSTGRES_DB: metastore
+
+  # Expose service to get metadata, which is a repository of metadata about the tables,
+  # such as database names, table names, schema and data location of each table
+  hive-metastore:
+    container_name: datalake-hive-metastore
+    image: "starburstdata/hive:3.1.2-e.18"
+    hostname: hive-metastore
+    ports:
+      - "9083:9083" # Access via Thrift protocol
+    environment:
+      HIVE_METASTORE_DRIVER: org.postgresql.Driver
+      HIVE_METASTORE_JDBC_URL: jdbc:postgresql://metastore_db:5432/metastore
+      HIVE_METASTORE_USER: hive
+      HIVE_METASTORE_PASSWORD: hive
+      HIVE_METASTORE_WAREHOUSE_DIR: s3://datalake/ # HDFS config, we don't need it
+      HIVE_METASTORE_USERS_IN_ADMIN_ROLE: "admin" # We also don't need it
+      S3_ENDPOINT: http://minio:9000
+      S3_ACCESS_KEY: minio_access_key
+      S3_SECRET_KEY: minio_secret_key
+      S3_PATH_STYLE_ACCESS: "true"
+      # Below arguments exist for no reasons, but
+      # we can not live without it
+      REGION: ""
+      GOOGLE_CLOUD_KEY_FILE_PATH: ""
+      AZURE_ADL_CLIENT_ID: ""
+      AZURE_ADL_CREDENTIAL: ""
+      AZURE_ADL_REFRESH_URL: ""
+      AZURE_ABFS_STORAGE_ACCOUNT: ""
+      AZURE_ABFS_ACCESS_KEY: ""
+      AZURE_WASB_STORAGE_ACCOUNT: ""
+      AZURE_ABFS_OAUTH: ""
+      AZURE_ABFS_OAUTH_TOKEN_PROVIDER: ""
+      AZURE_ABFS_OAUTH_CLIENT_ID: ""
+      AZURE_ABFS_OAUTH_SECRET: ""
+      AZURE_ABFS_OAUTH_ENDPOINT: ""
+      AZURE_WASB_ACCESS_KEY: ""
+    depends_on:
+      - metastore_db
+
+  # Parquet files stored in MinIO object storage
+  minio:
+    image: minio/minio
+    container_name: datalake-minio
+    hostname: minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_storage:/data
+    environment:
+      MINIO_ACCESS_KEY: minio_access_key
+      MINIO_SECRET_KEY: minio_secret_key
+    command: server --console-address ":9001" /data
+
+  postgresql:
+    image: postgres:latest
+    command: ["postgres", "-c", "wal_level=logical"]
+    container_name: dw-postgresql
+    healthcheck:
+      test: ["CMD", "psql", "-U", "k6", "-c", "SELECT 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=k6
+      - POSTGRES_USER=k6
+      - POSTGRES_PASSWORD=k6
+    volumes:
+      - dw_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  dw_postgres_data:
+  minio_storage:

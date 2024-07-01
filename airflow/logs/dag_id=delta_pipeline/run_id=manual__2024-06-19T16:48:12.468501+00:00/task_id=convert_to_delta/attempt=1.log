@@ -1,0 +1,60 @@
+[2024-06-19T16:48:15.058+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: delta_pipeline.convert_to_delta manual__2024-06-19T16:48:12.468501+00:00 [queued]>
+[2024-06-19T16:48:15.066+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: delta_pipeline.convert_to_delta manual__2024-06-19T16:48:12.468501+00:00 [queued]>
+[2024-06-19T16:48:15.066+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-19T16:48:15.079+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): convert_to_delta> on 2024-06-19 16:48:12.468501+00:00
+[2024-06-19T16:48:15.085+0000] {standard_task_runner.py:57} INFO - Started process 81 to run task
+[2024-06-19T16:48:15.088+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'delta_pipeline', 'convert_to_delta', 'manual__2024-06-19T16:48:12.468501+00:00', '--job-id', '366', '--raw', '--subdir', 'DAGS_FOLDER/delta_dag.py', '--cfg-path', '/tmp/tmpghjldvhd']
+[2024-06-19T16:48:15.089+0000] {standard_task_runner.py:85} INFO - Job 366: Subtask convert_to_delta
+[2024-06-19T16:48:15.140+0000] {task_command.py:415} INFO - Running <TaskInstance: delta_pipeline.convert_to_delta manual__2024-06-19T16:48:12.468501+00:00 [running]> on host cec22f86e8b0
+[2024-06-19T16:48:15.213+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='delta_pipeline' AIRFLOW_CTX_TASK_ID='convert_to_delta' AIRFLOW_CTX_EXECUTION_DATE='2024-06-19T16:48:12.468501+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-19T16:48:12.468501+00:00'
+[2024-06-19T16:49:01.325+0000] {convert_to_delta_final.py:162} INFO - Spark session successfully created!
+[2024-06-19T16:49:11.247+0000] {logging_mixin.py:151} INFO - +--------+--------------------+---------------------+---------------+-------------+----------+------------------+------------+------------+------------+-----------+-----+-------+----------+------------+---------------------+------------+--------------------+-----------+
+|VendorID|tpep_pickup_datetime|tpep_dropoff_datetime|passenger_count|trip_distance|RatecodeID|store_and_fwd_flag|PULocationID|DOLocationID|payment_type|fare_amount|extra|mta_tax|tip_amount|tolls_amount|improvement_surcharge|total_amount|congestion_surcharge|airport_fee|
++--------+--------------------+---------------------+---------------+-------------+----------+------------------+------------+------------+------------+-----------+-----+-------+----------+------------+---------------------+------------+--------------------+-----------+
+|       1| 2022-03-01 00:13:08|  2022-03-01 00:24:35|            1.0|          2.4|       1.0|                 N|          90|         209|           2|       10.0|  3.0|    0.5|       0.0|         0.0|                  0.3|        13.8|                 2.5|        0.0|
+|       1| 2022-03-01 00:47:52|  2022-03-01 01:00:08|            1.0|          2.2|       1.0|                 N|         148|         234|           2|       10.5|  3.0|    0.5|       0.0|         0.0|                  0.3|        14.3|                 2.5|        0.0|
+|       2| 2022-03-01 00:02:46|  2022-03-01 00:46:43|            1.0|        19.78|       2.0|                 N|         132|         249|           1|       52.0|  0.0|    0.5|     11.06|         0.0|                  0.3|       67.61|                 2.5|       1.25|
+|       2| 2022-03-01 00:52:43|  2022-03-01 01:03:40|            2.0|         2.94|       1.0|                 N|         211|          66|           1|       11.0|  0.5|    0.5|      4.44|         0.0|                  0.3|       19.24|                 2.5|        0.0|
+|       2| 2022-03-01 00:15:35|  2022-03-01 00:34:13|            1.0|         8.57|       1.0|                 N|         138|         197|           1|       25.0|  0.5|    0.5|      5.51|         0.0|                  0.3|       33.06|                 0.0|       1.25|
+|       1| 2022-03-01 00:11:57|  2022-03-01 00:53:05|            2.0|         14.0|       1.0|                 N|         132|          33|           1|       43.5| 1.75|    0.5|       9.2|         0.0|                  0.3|       55.25|                 0.0|       1.25|
+|       2| 2022-03-01 00:05:11|  2022-03-01 00:08:22|            1.0|         0.61|       1.0|                 N|         166|         151|           1|        4.5|  0.5|    0.5|       1.0|         0.0|                  0.3|         6.8|                 0.0|        0.0|
+|       2| 2022-03-01 00:30:56|  2022-03-01 00:46:21|            1.0|         2.83|       1.0|                 N|          74|         238|           1|       13.0|  0.5|    0.5|       3.7|         0.0|                  0.3|        18.0|                 0.0|        0.0|
+|       2| 2022-03-01 00:30:28|  2022-03-01 00:30:36|            1.0|          0.1|       1.0|                 N|         145|         145|           3|       -2.5| -0.5|   -0.5|       0.0|         0.0|                 -0.3|        -3.8|                 0.0|        0.0|
+|       2| 2022-03-01 00:30:28|  2022-03-01 00:30:36|            1.0|          0.1|       1.0|                 N|         145|         145|           2|        2.5|  0.5|    0.5|       0.0|         0.0|                  0.3|         3.8|                 0.0|        0.0|
+|       2| 2022-03-01 00:34:25|  2022-03-01 00:39:43|            1.0|          1.4|       2.0|                 N|         170|          90|           1|       52.0|  0.0|    0.5|       8.0|        6.55|                  0.3|       69.85|                 2.5|        0.0|
+|       2| 2022-03-01 00:35:11|  2022-03-01 01:20:33|            1.0|        14.48|       1.0|                 N|         132|          97|           1|       45.5|  0.5|    0.5|      9.36|         0.0|                  0.3|       57.41|                 0.0|       1.25|
+|       2| 2022-03-01 00:59:02|  2022-03-01 01:13:38|            1.0|         7.98|       1.0|                 N|         138|         255|           1|       23.5|  0.5|    0.5|       4.0|         0.0|                  0.3|       30.05|                 0.0|       1.25|
+|       2| 2022-03-01 00:16:00|  2022-03-01 00:36:46|            1.0|         3.48|       1.0|                 N|         179|         226|           2|       16.0|  0.5|    0.5|       0.0|         0.0|                  0.3|        17.3|                 0.0|        0.0|
+|       2| 2022-03-01 00:57:18|  2022-03-01 01:38:31|            1.0|         8.57|       1.0|                 N|         226|          70|           2|       34.0|  0.5|    0.5|       0.0|         0.0|                  0.3|        35.3|                 0.0|        0.0|
+|       2| 2022-03-01 00:01:50|  2022-03-01 00:17:53|            1.0|         7.56|       1.0|                 N|         138|         256|           1|       23.5|  0.5|    0.5|       6.2|         0.0|                  0.3|       32.25|                 0.0|       1.25|
+|       2| 2022-03-01 01:03:05|  2022-03-01 01:06:05|            5.0|         0.62|       1.0|                 N|          80|         255|           2|        4.5|  0.5|    0.5|       0.0|         0.0|                  0.3|         5.8|                 0.0|        0.0|
+|       2| 2022-03-01 00:28:14|  2022-03-01 00:43:11|            2.0|         4.33|       1.0|                 N|         211|         142|           1|       15.0|  0.5|    0.5|      3.76|         0.0|                  0.3|       22.56|                 2.5|        0.0|
+|       2| 2022-03-01 00:35:49|  2022-03-01 01:14:54|            1.0|        20.76|       2.0|                 N|         132|         238|           1|       52.0|  0.0|    0.5|     12.12|        6.55|                  0.3|       72.72|                 0.0|       1.25|
+|       2| 2022-03-01 00:22:31|  2022-03-01 00:30:49|            2.0|         1.45|       1.0|                 N|         148|         231|           1|        7.5|  0.5|    0.5|      2.26|         0.0|                  0.3|       13.56|                 2.5|        0.0|
++--------+--------------------+---------------------+---------------+-------------+----------+------------------+------------+------------+------------+-----------+-----+-------+----------+------------+---------------------+------------+--------------------+-----------+
+only showing top 20 rows
+[2024-06-19T16:49:12.052+0000] {logging_mixin.py:151} INFO - 3627882
+[2024-06-19T16:49:12.054+0000] {logging_mixin.py:151} INFO - root
+ |-- VendorID: long (nullable = true)
+ |-- tpep_pickup_datetime: timestamp_ntz (nullable = true)
+ |-- tpep_dropoff_datetime: timestamp_ntz (nullable = true)
+ |-- passenger_count: double (nullable = true)
+ |-- trip_distance: double (nullable = true)
+ |-- RatecodeID: double (nullable = true)
+ |-- store_and_fwd_flag: string (nullable = true)
+ |-- PULocationID: long (nullable = true)
+ |-- DOLocationID: long (nullable = true)
+ |-- payment_type: long (nullable = true)
+ |-- fare_amount: double (nullable = true)
+ |-- extra: double (nullable = true)
+ |-- mta_tax: double (nullable = true)
+ |-- tip_amount: double (nullable = true)
+ |-- tolls_amount: double (nullable = true)
+ |-- improvement_surcharge: double (nullable = true)
+ |-- total_amount: double (nullable = true)
+ |-- congestion_surcharge: double (nullable = true)
+ |-- airport_fee: double (nullable = true)
+[2024-06-19T16:49:12.055+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-06-19T16:49:12.066+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=delta_pipeline, task_id=convert_to_delta, execution_date=20240619T164812, start_date=20240619T164815, end_date=20240619T164912
+[2024-06-19T16:49:12.118+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-06-19T16:49:12.135+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

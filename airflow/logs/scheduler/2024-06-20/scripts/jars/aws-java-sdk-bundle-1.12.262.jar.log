@@ -1,0 +1,95 @@
+[2024-06-20T17:49:12.136+0000] {processor.py:157} INFO - Started process (PID=57) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:49:12.136+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T17:49:12.138+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:49:12.138+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:49:13.374+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:49:13.388+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.255 seconds
+[2024-06-20T17:49:59.029+0000] {processor.py:157} INFO - Started process (PID=76) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:49:59.031+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T17:49:59.034+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:49:59.033+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:50:00.211+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:50:00.221+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.195 seconds
+[2024-06-20T17:50:46.844+0000] {processor.py:157} INFO - Started process (PID=105) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:50:46.845+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T17:50:46.847+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:50:46.847+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:50:48.019+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:50:48.031+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.191 seconds
+[2024-06-20T17:51:34.328+0000] {processor.py:157} INFO - Started process (PID=131) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:51:34.331+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T17:51:34.334+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:51:34.334+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:51:35.601+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:51:35.614+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.292 seconds
+[2024-06-20T17:52:21.906+0000] {processor.py:157} INFO - Started process (PID=153) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:52:21.908+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T17:52:21.911+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:52:21.910+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:52:23.218+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:52:23.231+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.331 seconds
+[2024-06-20T17:53:13.087+0000] {processor.py:157} INFO - Started process (PID=181) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:53:13.088+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T17:53:13.090+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:53:13.090+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:53:14.200+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:53:14.210+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.128 seconds
+[2024-06-20T17:54:12.516+0000] {processor.py:157} INFO - Started process (PID=212) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:54:12.518+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T17:54:12.520+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:54:12.519+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:54:13.650+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:54:13.663+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.150 seconds
+[2024-06-20T17:54:59.455+0000] {processor.py:157} INFO - Started process (PID=231) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:54:59.458+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T17:54:59.461+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:54:59.461+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:55:00.652+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:55:00.662+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.213 seconds
+[2024-06-20T17:55:46.325+0000] {processor.py:157} INFO - Started process (PID=260) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:55:46.346+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T17:55:46.349+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:55:46.348+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:55:47.650+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:55:47.662+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.340 seconds
+[2024-06-20T17:56:33.166+0000] {processor.py:157} INFO - Started process (PID=288) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:56:33.172+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T17:56:33.176+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:56:33.175+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:56:34.359+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:56:34.373+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.214 seconds
+[2024-06-20T17:57:19.775+0000] {processor.py:157} INFO - Started process (PID=309) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:57:19.781+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T17:57:19.784+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:57:19.783+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:57:21.150+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:57:21.160+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.391 seconds
+[2024-06-20T17:58:10.020+0000] {processor.py:157} INFO - Started process (PID=336) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:58:10.021+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T17:58:10.023+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:58:10.023+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:58:11.224+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:58:11.236+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.220 seconds
+[2024-06-20T17:59:13.680+0000] {processor.py:157} INFO - Started process (PID=369) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:59:13.685+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T17:59:13.688+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:59:13.687+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:59:15.055+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T17:59:15.065+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.391 seconds
+[2024-06-20T18:00:00.757+0000] {processor.py:157} INFO - Started process (PID=388) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T18:00:00.758+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T18:00:00.760+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:00:00.759+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T18:00:01.913+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T18:00:01.923+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.169 seconds
+[2024-06-20T18:00:49.370+0000] {processor.py:157} INFO - Started process (PID=417) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T18:00:49.372+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T18:00:49.375+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:00:49.374+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T18:00:50.640+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T18:00:50.653+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.289 seconds
+[2024-06-20T18:01:36.284+0000] {processor.py:157} INFO - Started process (PID=441) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T18:01:36.286+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T18:01:36.289+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:01:36.289+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T18:01:37.774+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T18:01:37.786+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.506 seconds
+[2024-06-20T18:02:23.720+0000] {processor.py:157} INFO - Started process (PID=462) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T18:02:23.722+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T18:02:23.724+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:02:23.723+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T18:02:24.824+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T18:02:24.835+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.117 seconds
+[2024-06-20T18:03:10.642+0000] {processor.py:157} INFO - Started process (PID=491) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T18:03:10.644+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T18:03:10.648+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:03:10.647+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T18:03:11.818+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T18:03:11.831+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.195 seconds
+[2024-06-20T18:04:14.389+0000] {processor.py:157} INFO - Started process (PID=522) to work on /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T18:04:14.391+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar for tasks to queue
+[2024-06-20T18:04:14.395+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:04:14.394+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T18:04:15.923+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar
+[2024-06-20T18:04:15.940+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/aws-java-sdk-bundle-1.12.262.jar took 1.557 seconds

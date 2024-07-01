@@ -1,0 +1,198 @@
+[2024-06-20T17:48:55.619+0000] {processor.py:157} INFO - Started process (PID=44) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:48:55.620+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:48:55.624+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:48:55.623+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:48:55.915+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:48:56.089+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:48:56.089+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:delta_pipeline' as access control is unset.
+[2024-06-20T17:48:56.090+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:48:56.090+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:48:56.099+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:48:56.099+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:48:56.116+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.503 seconds
+[2024-06-20T17:49:26.496+0000] {processor.py:157} INFO - Started process (PID=61) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:49:26.497+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:49:26.501+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:49:26.501+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:49:26.774+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:49:26.795+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:49:26.795+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:49:26.805+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:49:26.804+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:49:26.821+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.332 seconds
+[2024-06-20T17:49:59.721+0000] {processor.py:157} INFO - Started process (PID=79) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:49:59.723+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:49:59.725+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:49:59.725+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:49:59.859+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:49:59.889+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:49:59.889+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:49:59.904+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:49:59.903+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:49:59.924+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.205 seconds
+[2024-06-20T17:50:30.129+0000] {processor.py:157} INFO - Started process (PID=101) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:50:30.130+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:50:30.133+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:50:30.132+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:50:30.301+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:50:30.341+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:50:30.341+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:50:30.354+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:50:30.354+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:50:30.379+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.254 seconds
+[2024-06-20T17:51:00.606+0000] {processor.py:157} INFO - Started process (PID=117) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:51:00.609+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:51:00.613+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:51:00.612+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:51:00.787+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:51:00.839+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:51:00.839+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:51:00.853+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:51:00.853+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:51:00.871+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.271 seconds
+[2024-06-20T17:51:34.424+0000] {processor.py:157} INFO - Started process (PID=132) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:51:34.426+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:51:34.429+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:51:34.429+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:51:34.673+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:51:34.695+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:51:34.695+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:51:34.704+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:51:34.704+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:51:34.717+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.300 seconds
+[2024-06-20T17:52:05.126+0000] {processor.py:157} INFO - Started process (PID=148) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:52:05.131+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:52:05.134+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:52:05.134+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:52:05.542+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:52:05.571+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:52:05.571+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:52:05.586+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:52:05.585+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:52:05.605+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.484 seconds
+[2024-06-20T17:52:35.857+0000] {processor.py:157} INFO - Started process (PID=165) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:52:35.859+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:52:35.863+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:52:35.863+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:52:35.993+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:52:36.017+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:52:36.017+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:52:36.028+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:52:36.028+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:52:36.044+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.193 seconds
+[2024-06-20T17:53:13.179+0000] {processor.py:157} INFO - Started process (PID=182) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:53:13.180+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:53:13.182+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:53:13.181+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:53:13.382+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:53:13.434+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:53:13.434+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:53:13.445+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:53:13.445+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:53:13.462+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.286 seconds
+[2024-06-20T17:53:56.649+0000] {processor.py:157} INFO - Started process (PID=199) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:53:56.650+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:53:56.652+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:53:56.651+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:53:56.783+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:53:56.809+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:53:56.809+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:53:56.821+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:53:56.821+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:53:56.845+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.199 seconds
+[2024-06-20T17:54:26.919+0000] {processor.py:157} INFO - Started process (PID=215) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:54:26.922+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:54:26.926+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:54:26.925+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:54:27.085+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:54:27.110+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:54:27.110+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:54:27.120+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:54:27.120+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:54:27.137+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.221 seconds
+[2024-06-20T17:55:00.093+0000] {processor.py:157} INFO - Started process (PID=234) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:55:00.095+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:55:00.097+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:55:00.097+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:55:00.212+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:55:00.236+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:55:00.236+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:55:00.247+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:55:00.247+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:55:00.267+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.176 seconds
+[2024-06-20T17:55:30.559+0000] {processor.py:157} INFO - Started process (PID=250) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:55:30.561+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:55:30.562+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:55:30.562+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:55:30.676+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:55:30.701+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:55:30.701+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:55:30.711+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:55:30.711+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:55:30.727+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.171 seconds
+[2024-06-20T17:56:00.791+0000] {processor.py:157} INFO - Started process (PID=266) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:56:00.793+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:56:00.797+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:56:00.797+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:56:00.933+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:56:00.959+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:56:00.959+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:56:00.971+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:56:00.971+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:56:00.988+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.202 seconds
+[2024-06-20T17:56:33.695+0000] {processor.py:157} INFO - Started process (PID=291) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:56:33.697+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:56:33.700+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:56:33.700+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:56:33.840+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:56:33.873+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:56:33.872+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:56:33.887+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:56:33.887+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:56:33.909+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.220 seconds
+[2024-06-20T17:57:04.306+0000] {processor.py:157} INFO - Started process (PID=307) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:57:04.308+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:57:04.311+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:57:04.311+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:57:04.445+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:57:04.470+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:57:04.469+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:57:04.481+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:57:04.480+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:57:04.503+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.204 seconds
+[2024-06-20T17:57:50.017+0000] {processor.py:157} INFO - Started process (PID=325) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:57:50.019+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:57:50.023+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:57:50.022+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:57:50.290+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:57:50.322+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:57:50.322+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:57:50.443+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:57:50.443+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:57:50.459+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.448 seconds
+[2024-06-20T17:58:21.362+0000] {processor.py:157} INFO - Started process (PID=346) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:58:21.363+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:58:21.366+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:58:21.366+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:58:21.497+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:58:21.525+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:58:21.525+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:58:21.539+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:58:21.539+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:58:21.561+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.205 seconds
+[2024-06-20T17:58:57.664+0000] {processor.py:157} INFO - Started process (PID=356) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:58:57.665+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:58:57.667+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:58:57.667+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:58:57.786+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:58:57.812+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:58:57.812+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:58:57.823+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:58:57.823+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:58:57.845+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.183 seconds
+[2024-06-20T17:59:28.120+0000] {processor.py:157} INFO - Started process (PID=372) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:59:28.125+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T17:59:28.129+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:59:28.128+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:59:28.262+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T17:59:28.286+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:59:28.286+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T17:59:28.297+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:59:28.297+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T17:59:28.315+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.202 seconds
+[2024-06-20T18:00:01.360+0000] {processor.py:157} INFO - Started process (PID=391) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:00:01.362+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T18:00:01.364+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:00:01.364+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:00:01.488+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:00:01.514+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:00:01.514+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T18:00:01.527+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:00:01.527+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T18:00:01.545+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.187 seconds
+[2024-06-20T18:00:32.288+0000] {processor.py:157} INFO - Started process (PID=413) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:00:32.289+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T18:00:32.292+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:00:32.292+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:00:32.427+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:00:32.451+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:00:32.450+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T18:00:32.461+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:00:32.461+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T18:00:32.476+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.192 seconds
+[2024-06-20T18:01:03.338+0000] {processor.py:157} INFO - Started process (PID=431) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:01:03.340+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T18:01:03.345+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:01:03.344+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:01:03.607+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:01:03.627+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:01:03.627+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T18:01:03.637+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:01:03.637+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T18:01:03.652+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.319 seconds
+[2024-06-20T18:01:37.115+0000] {processor.py:157} INFO - Started process (PID=444) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:01:37.117+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T18:01:37.121+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:01:37.120+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:01:37.323+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:01:37.448+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:01:37.447+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:delta_pipeline' as access control is unset.
+[2024-06-20T18:01:37.448+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:01:37.448+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T18:01:37.466+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:01:37.466+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T18:01:37.499+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.390 seconds
+[2024-06-20T18:02:07.873+0000] {processor.py:157} INFO - Started process (PID=460) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:02:07.875+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T18:02:07.877+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:02:07.877+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:02:08.017+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:02:08.047+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:02:08.047+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T18:02:08.063+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:02:08.062+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T18:02:08.081+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.211 seconds
+[2024-06-20T18:02:54.598+0000] {processor.py:157} INFO - Started process (PID=478) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:02:54.603+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T18:02:54.606+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:02:54.606+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:02:54.746+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:02:54.770+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:02:54.770+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T18:02:54.781+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:02:54.781+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T18:02:54.801+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.207 seconds
+[2024-06-20T18:03:25.091+0000] {processor.py:157} INFO - Started process (PID=495) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:03:25.098+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T18:03:25.100+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:03:25.100+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:03:25.319+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:03:25.367+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:03:25.367+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T18:03:25.377+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:03:25.377+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T18:03:25.391+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.303 seconds
+[2024-06-20T18:03:57.102+0000] {processor.py:157} INFO - Started process (PID=510) to work on /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:03:57.104+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/delta_dag.py for tasks to queue
+[2024-06-20T18:03:57.106+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:03:57.106+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:03:57.245+0000] {processor.py:839} INFO - DAG(s) dict_keys(['delta_pipeline']) retrieved from /opt/airflow/dags/delta_dag.py
+[2024-06-20T18:03:57.272+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:03:57.272+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-20T18:03:57.284+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:03:57.284+0000] {dag.py:3696} INFO - Setting next_dagrun for delta_pipeline to None, run_after=None
+[2024-06-20T18:03:57.312+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/delta_dag.py took 0.213 seconds

@@ -1,0 +1,28 @@
+[2024-06-17T08:13:42.674+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test_pipeline.create_bucket manual__2024-06-17T08:06:48.582292+00:00 [queued]>
+[2024-06-17T08:13:42.684+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test_pipeline.create_bucket manual__2024-06-17T08:06:48.582292+00:00 [queued]>
+[2024-06-17T08:13:42.684+0000] {taskinstance.py:1359} INFO - Starting attempt 4 of 4
+[2024-06-17T08:13:42.696+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): create_bucket> on 2024-06-17 08:06:48.582292+00:00
+[2024-06-17T08:13:42.702+0000] {standard_task_runner.py:57} INFO - Started process 797 to run task
+[2024-06-17T08:13:42.705+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'test_pipeline', 'create_bucket', 'manual__2024-06-17T08:06:48.582292+00:00', '--job-id', '49', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmpd_cxzzn3']
+[2024-06-17T08:13:42.706+0000] {standard_task_runner.py:85} INFO - Job 49: Subtask create_bucket
+[2024-06-17T08:13:42.749+0000] {task_command.py:415} INFO - Running <TaskInstance: test_pipeline.create_bucket manual__2024-06-17T08:06:48.582292+00:00 [running]> on host 52e246c9d923
+[2024-06-17T08:13:42.815+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='test_pipeline' AIRFLOW_CTX_TASK_ID='create_bucket' AIRFLOW_CTX_EXECUTION_DATE='2024-06-17T08:06:48.582292+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-17T08:06:48.582292+00:00'
+[2024-06-17T08:13:42.817+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/test_dag.py", line 36, in create_bucket
+    minio_client = Minio(
+  File "/home/airflow/.local/lib/python3.8/site-packages/minio/api.py", line 152, in __init__
+    self._base_url = BaseURL(
+  File "/home/airflow/.local/lib/python3.8/site-packages/minio/helpers.py", line 541, in __init__
+    url = _parse_url(endpoint)
+  File "/home/airflow/.local/lib/python3.8/site-packages/minio/helpers.py", line 502, in _parse_url
+    raise ValueError("path in endpoint is not allowed")
+ValueError: path in endpoint is not allowed
+[2024-06-17T08:13:42.826+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=test_pipeline, task_id=create_bucket, execution_date=20240617T080648, start_date=20240617T081342, end_date=20240617T081342
+[2024-06-17T08:13:42.837+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 49 for task create_bucket (path in endpoint is not allowed; 797)
+[2024-06-17T08:13:42.877+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-06-17T08:13:42.900+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

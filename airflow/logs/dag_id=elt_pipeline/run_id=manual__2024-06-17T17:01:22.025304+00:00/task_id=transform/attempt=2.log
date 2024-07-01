@@ -1,0 +1,37 @@
+[2024-06-17T17:06:30.762+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: elt_pipeline.transform manual__2024-06-17T17:01:22.025304+00:00 [queued]>
+[2024-06-17T17:06:30.771+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: elt_pipeline.transform manual__2024-06-17T17:01:22.025304+00:00 [queued]>
+[2024-06-17T17:06:30.771+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 2
+[2024-06-17T17:06:30.782+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): transform> on 2024-06-17 17:01:22.025304+00:00
+[2024-06-17T17:06:30.788+0000] {standard_task_runner.py:57} INFO - Started process 454 to run task
+[2024-06-17T17:06:30.791+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'elt_pipeline', 'transform', 'manual__2024-06-17T17:01:22.025304+00:00', '--job-id', '221', '--raw', '--subdir', 'DAGS_FOLDER/elt_pipeline_dag.py', '--cfg-path', '/tmp/tmpnlozvgph']
+[2024-06-17T17:06:30.794+0000] {standard_task_runner.py:85} INFO - Job 221: Subtask transform
+[2024-06-17T17:06:30.846+0000] {task_command.py:415} INFO - Running <TaskInstance: elt_pipeline.transform manual__2024-06-17T17:01:22.025304+00:00 [running]> on host bf1afdb2f840
+[2024-06-17T17:06:31.126+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='elt_pipeline' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2024-06-17T17:01:22.025304+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-17T17:01:22.025304+00:00'
+[2024-06-17T17:06:31.366+0000] {logging_mixin.py:151} INFO - {'endpoint': 'minio:9000', 'bucket_name': 'delta', 'folder_name': 'test', 'access_key': 'minio_access_key', 'secret_key': 'minio_secret_key'}
+[2024-06-17T17:06:31.684+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/green_tripdata_2022-01.parquet
+[2024-06-17T17:06:31.821+0000] {logging_mixin.py:151} INFO - Column store_and_fwd_flag not found in file: test/green_tripdata_2022-01.parquet
+[2024-06-17T17:06:31.830+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scripts/elt_pipeline.py", line 204, in transform_data
+    df = merge_taxi_zone(df, file)
+  File "/opt/airflow/dags/scripts/elt_pipeline.py", line 94, in merge_taxi_zone
+    df = df.merge(df_lookup, left_on="PULocationID", right_on="LocationID")
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/frame.py", line 9843, in merge
+    return merge(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/reshape/merge.py", line 148, in merge
+    op = _MergeOperation(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/reshape/merge.py", line 737, in __init__
+    ) = self._get_merge_keys()
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/reshape/merge.py", line 1221, in _get_merge_keys
+    left_keys.append(left._get_label_or_level_values(lk))
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 1778, in _get_label_or_level_values
+    raise KeyError(key)
+KeyError: 'PULocationID'
+[2024-06-17T17:06:31.847+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=elt_pipeline, task_id=transform, execution_date=20240617T170122, start_date=20240617T170630, end_date=20240617T170631
+[2024-06-17T17:06:31.862+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 221 for task transform ('PULocationID'; 454)
+[2024-06-17T17:06:31.889+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-06-17T17:06:31.911+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

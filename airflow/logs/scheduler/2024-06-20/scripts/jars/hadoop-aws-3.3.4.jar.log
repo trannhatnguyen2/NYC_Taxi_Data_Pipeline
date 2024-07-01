@@ -1,0 +1,135 @@
+[2024-06-20T17:49:12.407+0000] {processor.py:157} INFO - Started process (PID=59) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:49:12.408+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:49:12.411+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:49:12.411+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:49:12.424+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:49:12.444+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.043 seconds
+[2024-06-20T17:49:43.444+0000] {processor.py:157} INFO - Started process (PID=75) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:49:43.447+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:49:43.449+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:49:43.449+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:49:43.460+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:49:43.482+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.044 seconds
+[2024-06-20T17:50:14.450+0000] {processor.py:157} INFO - Started process (PID=90) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:50:14.452+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:50:14.457+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:50:14.456+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:50:14.471+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:50:14.496+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.051 seconds
+[2024-06-20T17:50:47.175+0000] {processor.py:157} INFO - Started process (PID=107) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:50:47.177+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:50:47.179+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:50:47.179+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:50:47.185+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:50:47.200+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.028 seconds
+[2024-06-20T17:51:17.658+0000] {processor.py:157} INFO - Started process (PID=123) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:51:17.661+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:51:17.665+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:51:17.664+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:51:17.677+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:51:17.692+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.039 seconds
+[2024-06-20T17:51:47.974+0000] {processor.py:157} INFO - Started process (PID=140) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:51:47.976+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:51:47.980+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:51:47.980+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:51:47.992+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:51:48.011+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.043 seconds
+[2024-06-20T17:52:22.738+0000] {processor.py:157} INFO - Started process (PID=157) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:52:22.740+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:52:22.742+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:52:22.742+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:52:22.748+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:52:22.760+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.025 seconds
+[2024-06-20T17:52:53.438+0000] {processor.py:157} INFO - Started process (PID=173) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:52:53.440+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:52:53.444+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:52:53.443+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:52:53.457+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:52:53.475+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.044 seconds
+[2024-06-20T17:53:23.618+0000] {processor.py:157} INFO - Started process (PID=190) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:53:23.619+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:53:23.621+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:53:23.621+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:53:23.626+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:53:23.642+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.027 seconds
+[2024-06-20T17:54:12.787+0000] {processor.py:157} INFO - Started process (PID=214) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:54:12.789+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:54:12.792+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:54:12.792+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:54:12.803+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:54:12.823+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.041 seconds
+[2024-06-20T17:54:43.077+0000] {processor.py:157} INFO - Started process (PID=230) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:54:43.079+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:54:43.082+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:54:43.082+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:54:43.087+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:54:43.102+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.028 seconds
+[2024-06-20T17:55:13.872+0000] {processor.py:157} INFO - Started process (PID=247) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:55:13.874+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:55:13.876+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:55:13.875+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:55:13.881+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:55:13.897+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.029 seconds
+[2024-06-20T17:55:47.086+0000] {processor.py:157} INFO - Started process (PID=264) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:55:47.090+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:55:47.094+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:55:47.093+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:55:47.107+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:55:47.124+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.045 seconds
+[2024-06-20T17:56:17.718+0000] {processor.py:157} INFO - Started process (PID=280) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:56:17.720+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:56:17.722+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:56:17.722+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:56:17.727+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:56:17.740+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.025 seconds
+[2024-06-20T17:56:48.396+0000] {processor.py:157} INFO - Started process (PID=295) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:56:48.398+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:56:48.400+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:56:48.400+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:56:48.405+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:56:48.418+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.024 seconds
+[2024-06-20T17:57:20.117+0000] {processor.py:157} INFO - Started process (PID=312) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:57:20.120+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:57:20.124+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:57:20.124+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:57:20.139+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:57:20.161+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.051 seconds
+[2024-06-20T17:57:50.541+0000] {processor.py:157} INFO - Started process (PID=328) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:57:50.543+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:57:50.545+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:57:50.545+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:57:50.557+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:57:50.577+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.039 seconds
+[2024-06-20T17:58:21.466+0000] {processor.py:157} INFO - Started process (PID=347) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:58:21.468+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:58:21.471+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:58:21.471+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:58:21.483+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:58:21.504+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.043 seconds
+[2024-06-20T17:59:13.973+0000] {processor.py:157} INFO - Started process (PID=371) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:59:13.975+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:59:13.977+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:59:13.977+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:59:13.983+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:59:14.003+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.036 seconds
+[2024-06-20T17:59:44.110+0000] {processor.py:157} INFO - Started process (PID=387) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:59:44.111+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T17:59:44.115+0000] {logging_mixin.py:151} INFO - [2024-06-20T17:59:44.114+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:59:44.125+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T17:59:44.141+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.036 seconds
+[2024-06-20T18:00:15.143+0000] {processor.py:157} INFO - Started process (PID=404) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:00:15.144+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T18:00:15.148+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:00:15.148+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:00:15.161+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:00:15.180+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.044 seconds
+[2024-06-20T18:00:51.265+0000] {processor.py:157} INFO - Started process (PID=423) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:00:51.326+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T18:00:51.331+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:00:51.330+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:00:51.344+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:00:51.360+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.101 seconds
+[2024-06-20T18:01:37.999+0000] {processor.py:157} INFO - Started process (PID=449) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:01:38.002+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T18:01:38.005+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:01:38.004+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:01:38.012+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:01:38.034+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.038 seconds
+[2024-06-20T18:02:24.453+0000] {processor.py:157} INFO - Started process (PID=467) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:02:24.456+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T18:02:24.458+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:02:24.458+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:02:24.469+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:02:24.487+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.039 seconds
+[2024-06-20T18:02:55.060+0000] {processor.py:157} INFO - Started process (PID=483) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:02:55.062+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T18:02:55.065+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:02:55.065+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:02:55.077+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:02:55.098+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.044 seconds
+[2024-06-20T18:03:25.694+0000] {processor.py:157} INFO - Started process (PID=500) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:03:25.696+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T18:03:25.700+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:03:25.699+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:03:25.707+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:03:25.721+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.033 seconds
+[2024-06-20T18:04:14.686+0000] {processor.py:157} INFO - Started process (PID=524) to work on /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:04:14.688+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar for tasks to queue
+[2024-06-20T18:04:14.691+0000] {logging_mixin.py:151} INFO - [2024-06-20T18:04:14.691+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:04:14.698+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar
+[2024-06-20T18:04:14.732+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/hadoop-aws-3.3.4.jar took 0.049 seconds

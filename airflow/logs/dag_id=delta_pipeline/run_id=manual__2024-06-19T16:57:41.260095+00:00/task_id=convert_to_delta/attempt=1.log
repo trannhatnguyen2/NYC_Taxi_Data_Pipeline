@@ -1,0 +1,32 @@
+[2024-06-19T16:57:43.532+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: delta_pipeline.convert_to_delta manual__2024-06-19T16:57:41.260095+00:00 [queued]>
+[2024-06-19T16:57:43.541+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: delta_pipeline.convert_to_delta manual__2024-06-19T16:57:41.260095+00:00 [queued]>
+[2024-06-19T16:57:43.541+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-19T16:57:43.556+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): convert_to_delta> on 2024-06-19 16:57:41.260095+00:00
+[2024-06-19T16:57:43.564+0000] {standard_task_runner.py:57} INFO - Started process 508 to run task
+[2024-06-19T16:57:43.568+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'delta_pipeline', 'convert_to_delta', 'manual__2024-06-19T16:57:41.260095+00:00', '--job-id', '368', '--raw', '--subdir', 'DAGS_FOLDER/delta_dag.py', '--cfg-path', '/tmp/tmpwr1q8k0r']
+[2024-06-19T16:57:43.569+0000] {standard_task_runner.py:85} INFO - Job 368: Subtask convert_to_delta
+[2024-06-19T16:57:43.617+0000] {task_command.py:415} INFO - Running <TaskInstance: delta_pipeline.convert_to_delta manual__2024-06-19T16:57:41.260095+00:00 [running]> on host cec22f86e8b0
+[2024-06-19T16:57:43.692+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='delta_pipeline' AIRFLOW_CTX_TASK_ID='convert_to_delta' AIRFLOW_CTX_EXECUTION_DATE='2024-06-19T16:57:41.260095+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-19T16:57:41.260095+00:00'
+[2024-06-19T16:57:49.125+0000] {convert_to_delta_final.py:144} INFO - Spark session successfully created!
+[2024-06-19T16:57:49.204+0000] {logging_mixin.py:151} INFO - batch/yellow_tripdata_2022-01.parquet
+[2024-06-19T16:57:49.204+0000] {convert_to_delta_final.py:155} INFO - Reading parquet file: batch/yellow_tripdata_2022-01.parquet
+[2024-06-19T16:57:55.298+0000] {logging_mixin.py:151} INFO - 2170108
+[2024-06-19T16:57:55.298+0000] {convert_to_delta_final.py:163} INFO - Saving delta file: batch/yellow_tripdata_2022-01.parquet
+[2024-06-19T16:58:09.164+0000] {convert_to_delta_final.py:170} INFO - Completely
+[2024-06-19T16:58:09.165+0000] {convert_to_delta_final.py:171} INFO - ================================================================================
+[2024-06-19T16:58:09.165+0000] {logging_mixin.py:151} INFO - batch/yellow_tripdata_2022-02.parquet
+[2024-06-19T16:58:09.166+0000] {convert_to_delta_final.py:155} INFO - Reading parquet file: batch/yellow_tripdata_2022-02.parquet
+[2024-06-19T16:58:09.500+0000] {logging_mixin.py:151} INFO - 2616469
+[2024-06-19T16:58:09.500+0000] {convert_to_delta_final.py:163} INFO - Saving delta file: batch/yellow_tripdata_2022-02.parquet
+[2024-06-19T16:58:16.465+0000] {convert_to_delta_final.py:170} INFO - Completely
+[2024-06-19T16:58:16.465+0000] {convert_to_delta_final.py:171} INFO - ================================================================================
+[2024-06-19T16:58:16.465+0000] {logging_mixin.py:151} INFO - batch/yellow_tripdata_2022-03.parquet
+[2024-06-19T16:58:16.465+0000] {convert_to_delta_final.py:155} INFO - Reading parquet file: batch/yellow_tripdata_2022-03.parquet
+[2024-06-19T16:58:16.769+0000] {logging_mixin.py:151} INFO - 3203539
+[2024-06-19T16:58:16.769+0000] {convert_to_delta_final.py:163} INFO - Saving delta file: batch/yellow_tripdata_2022-03.parquet
+[2024-06-19T16:58:22.277+0000] {convert_to_delta_final.py:170} INFO - Completely
+[2024-06-19T16:58:22.277+0000] {convert_to_delta_final.py:171} INFO - ================================================================================
+[2024-06-19T16:58:22.278+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-06-19T16:58:22.288+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=delta_pipeline, task_id=convert_to_delta, execution_date=20240619T165741, start_date=20240619T165743, end_date=20240619T165822
+[2024-06-19T16:58:22.326+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-06-19T16:58:22.340+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

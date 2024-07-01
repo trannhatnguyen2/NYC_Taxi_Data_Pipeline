@@ -1,0 +1,45 @@
+[2024-06-21T03:48:46.439+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: elt_pipeline.convert_to_delta manual__2024-06-21T03:47:51.474151+00:00 [queued]>
+[2024-06-21T03:48:46.447+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: elt_pipeline.convert_to_delta manual__2024-06-21T03:47:51.474151+00:00 [queued]>
+[2024-06-21T03:48:46.447+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-21T03:48:46.459+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): convert_to_delta> on 2024-06-21 03:47:51.474151+00:00
+[2024-06-21T03:48:46.467+0000] {standard_task_runner.py:57} INFO - Started process 490 to run task
+[2024-06-21T03:48:46.471+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'elt_pipeline', 'convert_to_delta', 'manual__2024-06-21T03:47:51.474151+00:00', '--job-id', '389', '--raw', '--subdir', 'DAGS_FOLDER/elt_pipeline_dag.py', '--cfg-path', '/tmp/tmpdgtecfhf']
+[2024-06-21T03:48:46.474+0000] {standard_task_runner.py:85} INFO - Job 389: Subtask convert_to_delta
+[2024-06-21T03:48:46.520+0000] {task_command.py:415} INFO - Running <TaskInstance: elt_pipeline.convert_to_delta manual__2024-06-21T03:47:51.474151+00:00 [running]> on host 2f57aed1878c
+[2024-06-21T03:48:46.590+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='elt_pipeline' AIRFLOW_CTX_TASK_ID='convert_to_delta' AIRFLOW_CTX_EXECUTION_DATE='2024-06-21T03:47:51.474151+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-21T03:47:51.474151+00:00'
+[2024-06-21T03:50:01.002+0000] {convert_to_delta.py:102} INFO - Spark session successfully created!
+[2024-06-21T03:50:01.012+0000] {logging_mixin.py:151} INFO - Bucket delta already exists, skip creating!
+[2024-06-21T03:50:01.018+0000] {logging_mixin.py:151} INFO - batch/green_tripdata_2022-01.parquet
+[2024-06-21T03:50:01.018+0000] {convert_to_delta.py:113} INFO - Reading parquet file: batch/green_tripdata_2022-01.parquet
+[2024-06-21T03:50:06.813+0000] {logging_mixin.py:151} INFO - 0
+[2024-06-21T03:50:06.814+0000] {convert_to_delta.py:121} INFO - Saving delta file: batch/green_tripdata_2022-01.parquet
+[2024-06-21T03:50:16.828+0000] {convert_to_delta.py:128} INFO - ==================================================COMPLETELY==================================================
+[2024-06-21T03:50:16.828+0000] {logging_mixin.py:151} INFO - batch/green_tripdata_2022-02.parquet
+[2024-06-21T03:50:16.828+0000] {convert_to_delta.py:113} INFO - Reading parquet file: batch/green_tripdata_2022-02.parquet
+[2024-06-21T03:50:17.091+0000] {logging_mixin.py:151} INFO - 0
+[2024-06-21T03:50:17.091+0000] {convert_to_delta.py:121} INFO - Saving delta file: batch/green_tripdata_2022-02.parquet
+[2024-06-21T03:50:17.888+0000] {convert_to_delta.py:128} INFO - ==================================================COMPLETELY==================================================
+[2024-06-21T03:50:17.888+0000] {logging_mixin.py:151} INFO - batch/green_tripdata_2022-03.parquet
+[2024-06-21T03:50:17.888+0000] {convert_to_delta.py:113} INFO - Reading parquet file: batch/green_tripdata_2022-03.parquet
+[2024-06-21T03:50:18.110+0000] {logging_mixin.py:151} INFO - 0
+[2024-06-21T03:50:18.111+0000] {convert_to_delta.py:121} INFO - Saving delta file: batch/green_tripdata_2022-03.parquet
+[2024-06-21T03:50:18.568+0000] {convert_to_delta.py:128} INFO - ==================================================COMPLETELY==================================================
+[2024-06-21T03:50:18.569+0000] {logging_mixin.py:151} INFO - batch/yellow_tripdata_2022-01.parquet
+[2024-06-21T03:50:18.569+0000] {convert_to_delta.py:113} INFO - Reading parquet file: batch/yellow_tripdata_2022-01.parquet
+[2024-06-21T03:50:18.873+0000] {logging_mixin.py:151} INFO - 2170108
+[2024-06-21T03:50:18.873+0000] {convert_to_delta.py:121} INFO - Saving delta file: batch/yellow_tripdata_2022-01.parquet
+[2024-06-21T03:50:26.681+0000] {convert_to_delta.py:128} INFO - ==================================================COMPLETELY==================================================
+[2024-06-21T03:50:26.681+0000] {logging_mixin.py:151} INFO - batch/yellow_tripdata_2022-02.parquet
+[2024-06-21T03:50:26.681+0000] {convert_to_delta.py:113} INFO - Reading parquet file: batch/yellow_tripdata_2022-02.parquet
+[2024-06-21T03:50:26.903+0000] {logging_mixin.py:151} INFO - 2616469
+[2024-06-21T03:50:26.904+0000] {convert_to_delta.py:121} INFO - Saving delta file: batch/yellow_tripdata_2022-02.parquet
+[2024-06-21T03:50:32.000+0000] {convert_to_delta.py:128} INFO - ==================================================COMPLETELY==================================================
+[2024-06-21T03:50:32.000+0000] {logging_mixin.py:151} INFO - batch/yellow_tripdata_2022-03.parquet
+[2024-06-21T03:50:32.000+0000] {convert_to_delta.py:113} INFO - Reading parquet file: batch/yellow_tripdata_2022-03.parquet
+[2024-06-21T03:50:32.280+0000] {logging_mixin.py:151} INFO - 3203539
+[2024-06-21T03:50:32.281+0000] {convert_to_delta.py:121} INFO - Saving delta file: batch/yellow_tripdata_2022-03.parquet
+[2024-06-21T03:50:36.831+0000] {convert_to_delta.py:128} INFO - ==================================================COMPLETELY==================================================
+[2024-06-21T03:50:36.831+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-06-21T03:50:36.843+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=elt_pipeline, task_id=convert_to_delta, execution_date=20240621T034751, start_date=20240621T034846, end_date=20240621T035036
+[2024-06-21T03:50:36.894+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-06-21T03:50:36.913+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

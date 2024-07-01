@@ -1,0 +1,120 @@
+[2024-06-21T03:44:08.284+0000] {processor.py:157} INFO - Started process (PID=42) to work on /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:44:08.285+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/elt_pipeline_dag.py for tasks to queue
+[2024-06-21T03:44:08.289+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:08.288+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:44:08.795+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:44:08.899+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:08.898+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:elt_pipeline' as access control is unset.
+[2024-06-21T03:44:08.899+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:08.899+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-21T03:44:08.908+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:08.908+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-21T03:44:08.925+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/elt_pipeline_dag.py took 0.647 seconds
+[2024-06-21T03:44:26.113+0000] {processor.py:157} INFO - Started process (PID=57) to work on /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:44:26.115+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/elt_pipeline_dag.py for tasks to queue
+[2024-06-21T03:44:26.117+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:26.116+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:44:26.585+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:44:26.602+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:26.601+0000] {taskinstance.py:1937} ERROR - {'DAG Id': 'elt_pipeline', 'Task Id': 'transform', 'Run Id': 'manual__2024-06-20T17:55:43.046812+00:00', 'Hostname': '40214f1a5465', 'External Executor Id': 'd2fd0dd6-15db-4a4f-8c29-33a0b7a6895c'}
+[2024-06-21T03:44:26.618+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:26.618+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=elt_pipeline, task_id=transform, execution_date=20240620T175543, start_date=20240620T180316, end_date=20240621T034426
+[2024-06-21T03:44:26.628+0000] {processor.py:790} INFO - Executed failure callback for <TaskInstance: elt_pipeline.transform manual__2024-06-20T17:55:43.046812+00:00 [failed]> in state failed
+[2024-06-21T03:44:26.630+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:26.630+0000] {taskinstance.py:1937} ERROR - {'DAG Id': 'elt_pipeline', 'Task Id': 'transform', 'Run Id': 'manual__2024-06-20T17:55:43.046812+00:00', 'Hostname': '40214f1a5465', 'External Executor Id': 'd2fd0dd6-15db-4a4f-8c29-33a0b7a6895c'}
+[2024-06-21T03:44:26.637+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:26.636+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=elt_pipeline, task_id=transform, execution_date=20240620T175543, start_date=20240620T180316, end_date=20240621T034426
+[2024-06-21T03:44:26.645+0000] {processor.py:790} INFO - Executed failure callback for <TaskInstance: elt_pipeline.transform manual__2024-06-20T17:55:43.046812+00:00 [failed]> in state failed
+[2024-06-21T03:44:26.652+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:26.652+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-21T03:44:26.661+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:26.660+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-21T03:44:26.674+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/elt_pipeline_dag.py took 0.563 seconds
+[2024-06-21T03:44:26.727+0000] {processor.py:157} INFO - Started process (PID=59) to work on /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:44:26.729+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/elt_pipeline_dag.py for tasks to queue
+[2024-06-21T03:44:26.732+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:26.731+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:44:27.252+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:44:27.274+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:27.273+0000] {taskinstance.py:1937} ERROR - {'DAG Id': 'elt_pipeline', 'Task Id': 'transform', 'Run Id': 'manual__2024-06-20T17:55:43.046812+00:00', 'Hostname': '40214f1a5465', 'External Executor Id': 'd2fd0dd6-15db-4a4f-8c29-33a0b7a6895c'}
+[2024-06-21T03:44:27.292+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:27.292+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=elt_pipeline, task_id=transform, execution_date=20240620T175543, start_date=20240620T180316, end_date=20240621T034427
+[2024-06-21T03:44:27.300+0000] {processor.py:790} INFO - Executed failure callback for <TaskInstance: elt_pipeline.transform manual__2024-06-20T17:55:43.046812+00:00 [failed]> in state failed
+[2024-06-21T03:44:27.307+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:27.306+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-21T03:44:27.317+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:27.317+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-21T03:44:27.335+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/elt_pipeline_dag.py took 0.614 seconds
+[2024-06-21T03:44:57.637+0000] {processor.py:157} INFO - Started process (PID=75) to work on /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:44:57.647+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/elt_pipeline_dag.py for tasks to queue
+[2024-06-21T03:44:57.660+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:57.650+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:44:58.848+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:44:58.916+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:58.910+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-21T03:44:58.938+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:58.937+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-21T03:44:58.969+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/elt_pipeline_dag.py took 1.354 seconds
+[2024-06-21T03:45:44.405+0000] {processor.py:157} INFO - Started process (PID=99) to work on /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:45:44.406+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/elt_pipeline_dag.py for tasks to queue
+[2024-06-21T03:45:44.408+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:45:44.408+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:45:45.453+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:45:45.481+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:45:45.480+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-21T03:45:45.492+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:45:45.491+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-21T03:45:45.511+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/elt_pipeline_dag.py took 1.110 seconds
+[2024-06-21T03:46:03.261+0000] {processor.py:157} INFO - Started process (PID=108) to work on /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:46:03.263+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/elt_pipeline_dag.py for tasks to queue
+[2024-06-21T03:46:03.266+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:46:03.266+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:46:03.981+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:46:04.009+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:46:04.009+0000] {taskinstance.py:1937} ERROR - {'DAG Id': 'elt_pipeline', 'Task Id': 'transform', 'Run Id': 'manual__2024-06-21T03:44:45.186828+00:00', 'Hostname': '2f57aed1878c', 'External Executor Id': 'a88becc2-dd46-4224-abdd-852e971b2aa0'}
+[2024-06-21T03:46:04.034+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:46:04.034+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=elt_pipeline, task_id=transform, execution_date=20240621T034445, start_date=20240621T034451, end_date=20240621T034604
+[2024-06-21T03:46:04.044+0000] {processor.py:790} INFO - Executed failure callback for <TaskInstance: elt_pipeline.transform manual__2024-06-21T03:44:45.186828+00:00 [up_for_retry]> in state up_for_retry
+[2024-06-21T03:46:04.109+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:46:04.108+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-21T03:46:04.127+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:46:04.126+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-21T03:46:04.150+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/elt_pipeline_dag.py took 0.894 seconds
+[2024-06-21T03:46:48.753+0000] {processor.py:157} INFO - Started process (PID=130) to work on /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:46:48.754+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/elt_pipeline_dag.py for tasks to queue
+[2024-06-21T03:46:48.756+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:46:48.756+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:46:49.233+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:46:49.372+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:46:49.371+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:elt_pipeline' as access control is unset.
+[2024-06-21T03:46:49.373+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:46:49.372+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-21T03:46:49.385+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:46:49.385+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-21T03:46:49.406+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/elt_pipeline_dag.py took 0.657 seconds
+[2024-06-21T03:47:19.537+0000] {processor.py:157} INFO - Started process (PID=146) to work on /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:47:19.542+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/elt_pipeline_dag.py for tasks to queue
+[2024-06-21T03:47:19.544+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:47:19.544+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:47:19.989+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:47:20.009+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:47:20.009+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-21T03:47:20.018+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:47:20.018+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-21T03:47:20.035+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/elt_pipeline_dag.py took 0.501 seconds
+[2024-06-21T03:47:50.502+0000] {processor.py:157} INFO - Started process (PID=163) to work on /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:47:50.507+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/elt_pipeline_dag.py for tasks to queue
+[2024-06-21T03:47:50.510+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:47:50.509+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:47:50.964+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:47:50.987+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:47:50.986+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-21T03:47:50.995+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:47:50.995+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-21T03:47:51.015+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/elt_pipeline_dag.py took 0.515 seconds
+[2024-06-21T03:48:22.842+0000] {processor.py:157} INFO - Started process (PID=180) to work on /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:48:22.843+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/elt_pipeline_dag.py for tasks to queue
+[2024-06-21T03:48:22.847+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:48:22.846+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:48:23.265+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:48:23.418+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:48:23.418+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-21T03:48:23.429+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:48:23.429+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-21T03:48:23.446+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/elt_pipeline_dag.py took 0.610 seconds
+[2024-06-21T03:49:08.563+0000] {processor.py:157} INFO - Started process (PID=192) to work on /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:49:08.568+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/elt_pipeline_dag.py for tasks to queue
+[2024-06-21T03:49:08.573+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:49:08.572+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:49:08.938+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:49:08.964+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:49:08.963+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-21T03:49:08.975+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:49:08.975+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-21T03:49:08.993+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/elt_pipeline_dag.py took 0.437 seconds
+[2024-06-21T03:49:39.746+0000] {processor.py:157} INFO - Started process (PID=209) to work on /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:49:39.751+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/elt_pipeline_dag.py for tasks to queue
+[2024-06-21T03:49:39.755+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:49:39.755+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:49:40.230+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:49:40.251+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:49:40.250+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-21T03:49:40.260+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:49:40.260+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-21T03:49:40.276+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/elt_pipeline_dag.py took 0.534 seconds
+[2024-06-21T03:50:12.266+0000] {processor.py:157} INFO - Started process (PID=226) to work on /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:50:12.267+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/elt_pipeline_dag.py for tasks to queue
+[2024-06-21T03:50:12.270+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:50:12.270+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:50:13.071+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:50:13.127+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:50:13.120+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-21T03:50:13.147+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:50:13.146+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-21T03:50:13.177+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/elt_pipeline_dag.py took 0.915 seconds
+[2024-06-21T03:50:43.528+0000] {processor.py:157} INFO - Started process (PID=248) to work on /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:50:43.531+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/elt_pipeline_dag.py for tasks to queue
+[2024-06-21T03:50:43.532+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:50:43.532+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:50:43.862+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T03:50:43.887+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:50:43.886+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-21T03:50:43.898+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:50:43.897+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-21T03:50:43.942+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/elt_pipeline_dag.py took 0.417 seconds
+[2024-06-21T12:30:25.889+0000] {processor.py:157} INFO - Started process (PID=44) to work on /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T12:30:25.891+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/elt_pipeline_dag.py for tasks to queue
+[2024-06-21T12:30:25.892+0000] {logging_mixin.py:151} INFO - [2024-06-21T12:30:25.892+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T12:30:27.450+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/elt_pipeline_dag.py
+[2024-06-21T12:30:28.280+0000] {logging_mixin.py:151} INFO - [2024-06-21T12:30:28.263+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:elt_pipeline' as access control is unset.
+[2024-06-21T12:30:28.283+0000] {logging_mixin.py:151} INFO - [2024-06-21T12:30:28.282+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-21T12:30:28.309+0000] {logging_mixin.py:151} INFO - [2024-06-21T12:30:28.309+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-21T12:30:28.455+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/elt_pipeline_dag.py took 2.569 seconds

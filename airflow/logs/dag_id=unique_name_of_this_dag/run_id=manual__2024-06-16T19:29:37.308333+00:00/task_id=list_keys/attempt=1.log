@@ -1,0 +1,22 @@
+[2024-06-16T19:29:38.052+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: unique_name_of_this_dag.list_keys manual__2024-06-16T19:29:37.308333+00:00 [queued]>
+[2024-06-16T19:29:38.060+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: unique_name_of_this_dag.list_keys manual__2024-06-16T19:29:37.308333+00:00 [queued]>
+[2024-06-16T19:29:38.060+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2024-06-16T19:29:38.071+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): list_keys> on 2024-06-16 19:29:37.308333+00:00
+[2024-06-16T19:29:38.080+0000] {standard_task_runner.py:57} INFO - Started process 3614 to run task
+[2024-06-16T19:29:38.086+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'unique_name_of_this_dag', 'list_keys', 'manual__2024-06-16T19:29:37.308333+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmpnk59bf_b']
+[2024-06-16T19:29:38.087+0000] {standard_task_runner.py:85} INFO - Job 28: Subtask list_keys
+[2024-06-16T19:29:38.137+0000] {task_command.py:415} INFO - Running <TaskInstance: unique_name_of_this_dag.list_keys manual__2024-06-16T19:29:37.308333+00:00 [running]> on host 52e246c9d923
+[2024-06-16T19:29:38.231+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='unique_name_of_this_dag' AIRFLOW_CTX_TASK_ID='list_keys' AIRFLOW_CTX_EXECUTION_DATE='2024-06-16T19:29:37.308333+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-16T19:29:37.308333+00:00'
+[2024-06-16T19:29:38.233+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/test_dag.py", line 27, in list_keys
+    logging.info(f"Listing Keys from {bucket}/{prefix}")
+NameError: name 'bucket' is not defined
+[2024-06-16T19:29:38.242+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=unique_name_of_this_dag, task_id=list_keys, execution_date=20240616T192937, start_date=20240616T192938, end_date=20240616T192938
+[2024-06-16T19:29:38.255+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 28 for task list_keys (name 'bucket' is not defined; 3614)
+[2024-06-16T19:29:38.296+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-06-16T19:29:38.315+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

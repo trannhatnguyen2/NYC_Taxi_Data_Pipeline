@@ -1,0 +1,934 @@
+[2024-06-16T19:07:25.621+0000] {processor.py:157} INFO - Started process (PID=3085) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:07:25.622+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:07:25.624+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:07:25.624+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:07:25.627+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:07:25.643+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.025 seconds
+[2024-06-16T19:07:55.800+0000] {processor.py:157} INFO - Started process (PID=3097) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:07:55.802+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:07:55.805+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:07:55.805+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:07:55.808+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:07:55.831+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.037 seconds
+[2024-06-16T19:08:14.935+0000] {processor.py:157} INFO - Started process (PID=3100) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:08:14.941+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:08:14.945+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:08:14.944+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:08:14.955+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:08:14.952+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/test_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag.py", line 53, in <module>
+    python_callable=extract_load_to_datalake
+NameError: name 'extract_load_to_datalake' is not defined
+[2024-06-16T19:08:14.956+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:08:14.978+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.049 seconds
+[2024-06-16T19:08:23.499+0000] {processor.py:157} INFO - Started process (PID=3110) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:08:23.500+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:08:23.502+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:08:23.501+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:08:23.507+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:08:23.642+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:08:23.642+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:elt_pipeline' as access control is unset.
+[2024-06-16T19:08:23.642+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:08:23.642+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:08:23.651+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:08:23.651+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:08:23.685+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.188 seconds
+[2024-06-16T19:08:25.519+0000] {processor.py:157} INFO - Started process (PID=3111) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:08:25.520+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:08:25.521+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:08:25.521+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:08:25.527+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:08:25.542+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:08:25.542+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:08:25.554+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:08:25.554+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:08:25.575+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.059 seconds
+[2024-06-16T19:08:26.540+0000] {processor.py:157} INFO - Started process (PID=3112) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:08:26.542+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:08:26.545+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:08:26.545+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:08:26.557+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:08:26.571+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:08:26.571+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:08:26.583+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:08:26.582+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:08:26.603+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.069 seconds
+[2024-06-16T19:08:37.669+0000] {processor.py:157} INFO - Started process (PID=3113) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:08:37.670+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:08:37.672+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:08:37.672+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:08:37.679+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:08:37.691+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:08:37.691+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:08:37.703+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:08:37.703+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:08:37.724+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.059 seconds
+[2024-06-16T19:08:45.287+0000] {processor.py:157} INFO - Started process (PID=3116) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:08:45.288+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:08:45.290+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:08:45.290+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:08:45.297+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:08:45.312+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:08:45.312+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:08:45.332+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:08:45.332+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:08:45.354+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.070 seconds
+[2024-06-16T19:09:03.936+0000] {processor.py:157} INFO - Started process (PID=3126) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:09:03.941+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:09:03.945+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:09:03.945+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:09:03.958+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:09:04.004+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:09:04.004+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:09:04.015+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:09:04.015+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:09:04.034+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.103 seconds
+[2024-06-16T19:09:34.205+0000] {processor.py:157} INFO - Started process (PID=3138) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:09:34.210+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:09:34.215+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:09:34.214+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:09:34.225+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:09:34.241+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:09:34.241+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:09:34.263+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:09:34.262+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:09:34.289+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.090 seconds
+[2024-06-16T19:09:53.904+0000] {processor.py:157} INFO - Started process (PID=3148) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:09:53.907+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:09:53.910+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:09:53.910+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:09:53.924+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:09:54.031+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:09:54.031+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:elt_pipeline' as access control is unset.
+[2024-06-16T19:09:54.031+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:09:54.031+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:09:54.040+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:09:54.040+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:09:54.064+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.165 seconds
+[2024-06-16T19:10:04.142+0000] {processor.py:157} INFO - Started process (PID=3151) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:04.145+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:10:04.149+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:04.148+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:04.153+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:04.152+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/test_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag.py", line 55
+    create_bucket = PythonOperator(
+                                  ^
+IndentationError: unindent does not match any outer indentation level
+[2024-06-16T19:10:04.154+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:04.180+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.044 seconds
+[2024-06-16T19:10:06.156+0000] {processor.py:157} INFO - Started process (PID=3152) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:06.157+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:10:06.161+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:06.160+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:06.175+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:06.188+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:06.188+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:10:06.199+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:06.198+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:10:06.218+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.068 seconds
+[2024-06-16T19:10:07.226+0000] {processor.py:157} INFO - Started process (PID=3153) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:07.227+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:10:07.231+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:07.230+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:07.245+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:07.263+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:07.263+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:10:07.285+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:07.285+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:10:07.312+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.092 seconds
+[2024-06-16T19:10:08.254+0000] {processor.py:157} INFO - Started process (PID=3154) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:08.255+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:10:08.256+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:08.256+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:08.263+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:08.278+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:08.278+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:10:08.289+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:08.289+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:10:08.309+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.058 seconds
+[2024-06-16T19:10:09.262+0000] {processor.py:157} INFO - Started process (PID=3155) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:09.264+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:10:09.266+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:09.266+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:09.273+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:09.287+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:09.287+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:10:09.298+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:09.298+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:10:09.316+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.056 seconds
+[2024-06-16T19:10:12.281+0000] {processor.py:157} INFO - Started process (PID=3156) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:12.281+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:10:12.283+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:12.283+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:12.290+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:12.307+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:12.307+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:10:12.326+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:12.326+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:10:12.349+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.071 seconds
+[2024-06-16T19:10:42.508+0000] {processor.py:157} INFO - Started process (PID=3168) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:42.513+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:10:42.515+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:42.515+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:42.521+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:42.618+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:42.618+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:elt_pipeline' as access control is unset.
+[2024-06-16T19:10:42.618+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:42.618+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:10:42.628+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:42.627+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:10:42.646+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.140 seconds
+[2024-06-16T19:10:47.189+0000] {processor.py:157} INFO - Started process (PID=3171) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:47.190+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:10:47.195+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:47.194+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:47.210+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:47.224+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:47.223+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:10:47.236+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:47.236+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:10:47.254+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.071 seconds
+[2024-06-16T19:10:58.787+0000] {processor.py:157} INFO - Started process (PID=3181) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:58.790+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:10:58.793+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:58.792+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:58.806+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:10:58.820+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:58.820+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:10:58.830+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:10:58.830+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:10:58.847+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.065 seconds
+[2024-06-16T19:11:29.003+0000] {processor.py:157} INFO - Started process (PID=3191) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:11:29.005+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:11:29.009+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:11:29.008+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:11:29.021+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:11:29.038+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:11:29.038+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:11:29.049+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:11:29.049+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:11:29.067+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.070 seconds
+[2024-06-16T19:11:33.572+0000] {processor.py:157} INFO - Started process (PID=3194) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:11:33.573+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:11:33.575+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:11:33.575+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:11:33.581+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:11:33.580+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/test_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag.py", line 58, in <module>
+    system_maintenance_task
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskmixin.py", line 103, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskmixin.py", line 261, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskmixin.py", line 213, in _set_relatives
+    task_object.update_relative(self, not upstream, edge_modifier=edge_modifier)
+AttributeError: '_TaskDecorator' object has no attribute 'update_relative'
+[2024-06-16T19:11:33.582+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:11:33.599+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.031 seconds
+[2024-06-16T19:11:36.591+0000] {processor.py:157} INFO - Started process (PID=3195) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:11:36.596+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:11:36.598+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:11:36.598+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:11:36.603+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:11:36.602+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/test_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag.py", line 58, in <module>
+    system_maintenance_task
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskmixin.py", line 103, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskmixin.py", line 261, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskmixin.py", line 213, in _set_relatives
+    task_object.update_relative(self, not upstream, edge_modifier=edge_modifier)
+AttributeError: '_TaskDecorator' object has no attribute 'update_relative'
+[2024-06-16T19:11:36.603+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:11:36.624+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.036 seconds
+[2024-06-16T19:12:06.781+0000] {processor.py:157} INFO - Started process (PID=3207) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:12:06.786+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:12:06.791+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:12:06.790+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:12:06.801+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:12:06.799+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/test_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag.py", line 58, in <module>
+    system_maintenance_task
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskmixin.py", line 103, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskmixin.py", line 261, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskmixin.py", line 213, in _set_relatives
+    task_object.update_relative(self, not upstream, edge_modifier=edge_modifier)
+AttributeError: '_TaskDecorator' object has no attribute 'update_relative'
+[2024-06-16T19:12:06.802+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:12:06.823+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.048 seconds
+[2024-06-16T19:12:36.992+0000] {processor.py:157} INFO - Started process (PID=3219) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:12:36.994+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:12:36.998+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:12:36.997+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:12:37.008+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:12:37.006+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/test_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag.py", line 58, in <module>
+    system_maintenance_task
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskmixin.py", line 103, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskmixin.py", line 261, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskmixin.py", line 213, in _set_relatives
+    task_object.update_relative(self, not upstream, edge_modifier=edge_modifier)
+AttributeError: '_TaskDecorator' object has no attribute 'update_relative'
+[2024-06-16T19:12:37.008+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:12:37.038+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.052 seconds
+[2024-06-16T19:13:07.200+0000] {processor.py:157} INFO - Started process (PID=3231) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:13:07.205+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:13:07.207+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:13:07.207+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:13:07.212+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:13:07.211+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/test_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag.py", line 58, in <module>
+    system_maintenance_task
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskmixin.py", line 103, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskmixin.py", line 261, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskmixin.py", line 213, in _set_relatives
+    task_object.update_relative(self, not upstream, edge_modifier=edge_modifier)
+AttributeError: '_TaskDecorator' object has no attribute 'update_relative'
+[2024-06-16T19:13:07.212+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:13:07.232+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.034 seconds
+[2024-06-16T19:13:34.966+0000] {processor.py:157} INFO - Started process (PID=3243) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:13:34.968+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:13:34.972+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:13:34.971+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:13:34.976+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:13:34.975+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/test_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag.py", line 57
+    (
+    ^
+IndentationError: unexpected unindent
+[2024-06-16T19:13:34.977+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:13:35.008+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.045 seconds
+[2024-06-16T19:13:51.656+0000] {processor.py:157} INFO - Started process (PID=3253) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:13:51.657+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:13:51.659+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:13:51.658+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:13:51.665+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:13:51.764+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:13:51.764+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:elt_pipeline' as access control is unset.
+[2024-06-16T19:13:51.764+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:13:51.764+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:13:51.774+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:13:51.773+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:13:51.794+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.141 seconds
+[2024-06-16T19:14:03.728+0000] {processor.py:157} INFO - Started process (PID=3254) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:14:03.730+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:14:03.734+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:14:03.734+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:14:03.747+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:14:03.766+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:14:03.765+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:14:03.785+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:14:03.785+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:14:03.804+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.081 seconds
+[2024-06-16T19:14:04.847+0000] {processor.py:157} INFO - Started process (PID=3257) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:14:04.848+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:14:04.852+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:14:04.852+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:14:04.867+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:14:04.888+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:14:04.888+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:14:04.911+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:14:04.910+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:14:04.939+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.099 seconds
+[2024-06-16T19:14:06.984+0000] {processor.py:157} INFO - Started process (PID=3258) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:14:06.985+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:14:06.987+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:14:06.987+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:14:06.994+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:14:07.004+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:14:07.004+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:14:07.015+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:14:07.015+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:14:07.033+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.055 seconds
+[2024-06-16T19:14:37.188+0000] {processor.py:157} INFO - Started process (PID=3270) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:14:37.190+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:14:37.194+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:14:37.194+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:14:37.207+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:14:37.221+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:14:37.221+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:14:37.237+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:14:37.237+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:14:37.259+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.078 seconds
+[2024-06-16T19:15:07.418+0000] {processor.py:157} INFO - Started process (PID=3282) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:15:07.424+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:15:07.427+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:15:07.427+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:15:07.441+0000] {processor.py:839} INFO - DAG(s) dict_keys(['elt_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:15:07.539+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:15:07.539+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:elt_pipeline' as access control is unset.
+[2024-06-16T19:15:07.539+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:15:07.539+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:15:07.548+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:15:07.548+0000] {dag.py:3696} INFO - Setting next_dagrun for elt_pipeline to None, run_after=None
+[2024-06-16T19:15:07.567+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.156 seconds
+[2024-06-16T19:15:11.608+0000] {processor.py:157} INFO - Started process (PID=3283) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:15:11.610+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:15:11.612+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:15:11.611+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:15:11.618+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:15:11.709+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:15:11.709+0000] {manager.py:499} INFO - Created Permission View: %s
+[2024-06-16T19:15:11.717+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:15:11.716+0000] {manager.py:499} INFO - Created Permission View: %s
+[2024-06-16T19:15:11.721+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:15:11.721+0000] {manager.py:499} INFO - Created Permission View: %s
+[2024-06-16T19:15:11.721+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:15:11.721+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:test_pipeline' as access control is unset.
+[2024-06-16T19:15:11.722+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:15:11.721+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:15:11.731+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:15:11.731+0000] {dag.py:2937} INFO - Creating ORM DAG for test_pipeline
+[2024-06-16T19:15:11.731+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:15:11.731+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:15:11.744+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.138 seconds
+[2024-06-16T19:15:41.902+0000] {processor.py:157} INFO - Started process (PID=3295) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:15:41.905+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:15:41.908+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:15:41.908+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:15:41.922+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:15:42.016+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:15:42.016+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:test_pipeline' as access control is unset.
+[2024-06-16T19:15:42.017+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:15:42.017+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:15:42.026+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:15:42.026+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:15:42.046+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.149 seconds
+[2024-06-16T19:16:12.678+0000] {processor.py:157} INFO - Started process (PID=3307) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:16:12.681+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:16:12.685+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:16:12.685+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:16:12.701+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:16:12.728+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:16:12.728+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:16:12.738+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:16:12.738+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:16:12.753+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.082 seconds
+[2024-06-16T19:16:43.478+0000] {processor.py:157} INFO - Started process (PID=3319) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:16:43.479+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:16:43.482+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:16:43.482+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:16:43.493+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:16:43.605+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:16:43.605+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:test_pipeline' as access control is unset.
+[2024-06-16T19:16:43.605+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:16:43.605+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:16:43.616+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:16:43.615+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:16:43.637+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.163 seconds
+[2024-06-16T19:17:11.313+0000] {processor.py:157} INFO - Started process (PID=3331) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:17:11.314+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:17:11.316+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:17:11.316+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:17:11.325+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:17:11.337+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:17:11.336+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:17:11.347+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:17:11.347+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:17:11.364+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.054 seconds
+[2024-06-16T19:17:14.348+0000] {processor.py:157} INFO - Started process (PID=3332) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:17:14.353+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:17:14.357+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:17:14.357+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:17:14.373+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:17:14.405+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:17:14.404+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:17:14.417+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:17:14.416+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:17:14.437+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.096 seconds
+[2024-06-16T19:17:44.593+0000] {processor.py:157} INFO - Started process (PID=3344) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:17:44.595+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:17:44.597+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:17:44.596+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:17:44.604+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:17:44.724+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:17:44.723+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:test_pipeline' as access control is unset.
+[2024-06-16T19:17:44.724+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:17:44.724+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:17:44.733+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:17:44.733+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:17:44.752+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.162 seconds
+[2024-06-16T19:18:14.788+0000] {processor.py:157} INFO - Started process (PID=3356) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:18:14.790+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:18:14.793+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:18:14.793+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:18:14.808+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:18:14.836+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:18:14.836+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:18:14.847+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:18:14.847+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:18:14.866+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.084 seconds
+[2024-06-16T19:18:45.482+0000] {processor.py:157} INFO - Started process (PID=3368) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:18:45.484+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:18:45.486+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:18:45.486+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:18:45.493+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:18:45.540+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:18:45.540+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:18:45.552+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:18:45.552+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:18:45.572+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.092 seconds
+[2024-06-16T19:19:16.232+0000] {processor.py:157} INFO - Started process (PID=3380) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:19:16.233+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:19:16.237+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:19:16.236+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:19:16.251+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:19:16.297+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:19:16.297+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:19:16.308+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:19:16.308+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:19:16.326+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.101 seconds
+[2024-06-16T19:19:46.962+0000] {processor.py:157} INFO - Started process (PID=3392) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:19:46.968+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:19:46.972+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:19:46.971+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:19:46.987+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:19:47.039+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:19:47.038+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:19:47.049+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:19:47.049+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:19:47.067+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.110 seconds
+[2024-06-16T19:20:17.709+0000] {processor.py:157} INFO - Started process (PID=3404) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:20:17.710+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:20:17.714+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:20:17.713+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:20:17.728+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:20:17.779+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:20:17.778+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:20:17.789+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:20:17.789+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:20:17.807+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.104 seconds
+[2024-06-16T19:20:48.427+0000] {processor.py:157} INFO - Started process (PID=3416) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:20:48.433+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:20:48.437+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:20:48.436+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:20:48.452+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:20:48.481+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:20:48.481+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:20:48.491+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:20:48.491+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:20:48.507+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.087 seconds
+[2024-06-16T19:21:19.120+0000] {processor.py:157} INFO - Started process (PID=3428) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:21:19.120+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:21:19.122+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:21:19.122+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:21:19.130+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:21:19.155+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:21:19.155+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:21:19.167+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:21:19.167+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:21:19.186+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.070 seconds
+[2024-06-16T19:21:49.354+0000] {processor.py:157} INFO - Started process (PID=3440) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:21:49.356+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:21:49.358+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:21:49.358+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:21:49.369+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:21:49.418+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:21:49.418+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:21:49.430+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:21:49.430+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:21:49.450+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.100 seconds
+[2024-06-16T19:22:19.598+0000] {processor.py:157} INFO - Started process (PID=3452) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:22:19.599+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:22:19.601+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:22:19.601+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:22:19.610+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:22:19.635+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:22:19.634+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:22:19.646+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:22:19.645+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:22:19.661+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.068 seconds
+[2024-06-16T19:22:50.306+0000] {processor.py:157} INFO - Started process (PID=3464) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:22:50.312+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:22:50.315+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:22:50.315+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:22:50.330+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:22:50.359+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:22:50.359+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:22:50.370+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:22:50.370+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:22:50.386+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.086 seconds
+[2024-06-16T19:23:21.034+0000] {processor.py:157} INFO - Started process (PID=3476) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:23:21.036+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:23:21.040+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:23:21.039+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:23:21.055+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:23:21.094+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:23:21.094+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:23:21.105+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:23:21.104+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:23:21.123+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.095 seconds
+[2024-06-16T19:23:30.092+0000] {processor.py:157} INFO - Started process (PID=3484) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:23:30.097+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:23:30.100+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:23:30.100+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:23:30.597+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:23:30.617+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:23:30.617+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:23:30.628+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:23:30.628+0000] {dag.py:3696} INFO - Setting next_dagrun for test_pipeline to None, run_after=None
+[2024-06-16T19:23:30.645+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.555 seconds
+[2024-06-16T19:23:46.748+0000] {processor.py:157} INFO - Started process (PID=3487) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:23:46.749+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:23:46.753+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:23:46.753+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:23:46.909+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:23:46.921+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.178 seconds
+[2024-06-16T19:24:08.049+0000] {processor.py:157} INFO - Started process (PID=3497) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:24:08.051+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:24:08.055+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:24:08.055+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:24:08.225+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:24:08.239+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.197 seconds
+[2024-06-16T19:24:26.723+0000] {processor.py:157} INFO - Started process (PID=3509) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:24:26.723+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:24:26.726+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:24:26.726+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:24:26.865+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:24:26.879+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.159 seconds
+[2024-06-16T19:24:40.963+0000] {processor.py:157} INFO - Started process (PID=3512) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:24:40.964+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:24:40.966+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:24:40.966+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:24:41.127+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:24:41.139+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.179 seconds
+[2024-06-16T19:24:48.200+0000] {processor.py:157} INFO - Started process (PID=3513) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:24:48.201+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:24:48.203+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:24:48.202+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:24:48.350+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:24:48.348+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/test_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag.py", line 33, in <module>
+    start_date=datetime.datetime.now())
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+[2024-06-16T19:24:48.350+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:24:48.374+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.178 seconds
+[2024-06-16T19:24:53.440+0000] {processor.py:157} INFO - Started process (PID=3523) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:24:53.441+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:24:53.443+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:24:53.442+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:24:53.588+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:24:53.587+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/test_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag.py", line 33, in <module>
+    start_date=datetime.datetime.now())
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+[2024-06-16T19:24:53.588+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:24:53.604+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.167 seconds
+[2024-06-16T19:25:07.528+0000] {processor.py:157} INFO - Started process (PID=3524) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:25:07.528+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:25:07.530+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:25:07.530+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:25:07.682+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:25:07.681+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/test_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag.py", line 34, in <module>
+    start_date=datetime.datetime.now())
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+[2024-06-16T19:25:07.682+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:25:07.702+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.177 seconds
+[2024-06-16T19:25:37.860+0000] {processor.py:157} INFO - Started process (PID=3536) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:25:37.863+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:25:37.864+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:25:37.864+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:25:38.023+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:25:38.021+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/test_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_dag.py", line 34, in <module>
+    start_date=datetime.datetime.now())
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+[2024-06-16T19:25:38.023+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:25:38.042+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.188 seconds
+[2024-06-16T19:25:52.135+0000] {processor.py:157} INFO - Started process (PID=3539) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:25:52.136+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:25:52.138+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:25:52.137+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:25:52.312+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:25:52.511+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:25:52.511+0000] {manager.py:499} INFO - Created Permission View: %s
+[2024-06-16T19:25:52.519+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:25:52.519+0000] {manager.py:499} INFO - Created Permission View: %s
+[2024-06-16T19:25:52.525+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:25:52.524+0000] {manager.py:499} INFO - Created Permission View: %s
+[2024-06-16T19:25:52.525+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:25:52.525+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:25:52.526+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:25:52.525+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:25:52.534+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:25:52.534+0000] {dag.py:2937} INFO - Creating ORM DAG for unique_name_of_this_dag
+[2024-06-16T19:25:52.542+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:25:52.542+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:25:52.307894+00:00, run_after=2024-06-17T19:25:52.307894+00:00
+[2024-06-16T19:25:52.558+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.430 seconds
+[2024-06-16T19:26:22.789+0000] {processor.py:157} INFO - Started process (PID=3558) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:26:22.794+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:26:22.795+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:26:22.795+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:26:22.959+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:26:23.183+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:26:23.182+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:26:23.183+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:26:23.183+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:26:23.202+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:26:23.202+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:26:22.955478+00:00, run_after=2024-06-17T19:26:22.955478+00:00
+[2024-06-16T19:26:23.226+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.440 seconds
+[2024-06-16T19:26:53.520+0000] {processor.py:157} INFO - Started process (PID=3570) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:26:53.521+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:26:53.522+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:26:53.521+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:26:53.661+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:26:53.884+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:26:53.883+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:26:53.884+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:26:53.884+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:26:53.905+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:26:53.905+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:26:53.657786+00:00, run_after=2024-06-17T19:26:53.657786+00:00
+[2024-06-16T19:26:53.930+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.413 seconds
+[2024-06-16T19:27:24.207+0000] {processor.py:157} INFO - Started process (PID=3582) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:27:24.211+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:27:24.212+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:27:24.212+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:27:24.350+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:27:24.538+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:27:24.538+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:27:24.539+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:27:24.539+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:27:24.556+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:27:24.556+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:27:24.346140+00:00, run_after=2024-06-17T19:27:24.346140+00:00
+[2024-06-16T19:27:24.577+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.375 seconds
+[2024-06-16T19:27:54.878+0000] {processor.py:157} INFO - Started process (PID=3594) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:27:54.879+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:27:54.880+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:27:54.880+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:27:55.039+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:27:55.222+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:27:55.221+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:27:55.222+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:27:55.222+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:27:55.239+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:27:55.238+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:27:55.035074+00:00, run_after=2024-06-17T19:27:55.035074+00:00
+[2024-06-16T19:27:55.260+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.388 seconds
+[2024-06-16T19:28:25.569+0000] {processor.py:157} INFO - Started process (PID=3606) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:28:25.575+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:28:25.577+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:28:25.576+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:28:25.746+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:28:25.949+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:28:25.949+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:28:25.950+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:28:25.949+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:28:25.967+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:28:25.967+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:28:25.741157+00:00, run_after=2024-06-17T19:28:25.741157+00:00
+[2024-06-16T19:28:25.990+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.427 seconds
+[2024-06-16T19:28:56.209+0000] {processor.py:157} INFO - Started process (PID=3618) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:28:56.211+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:28:56.212+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:28:56.212+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:28:56.376+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:28:56.577+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:28:56.577+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:28:56.578+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:28:56.578+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:28:56.595+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:28:56.594+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:28:56.371711+00:00, run_after=2024-06-17T19:28:56.371711+00:00
+[2024-06-16T19:28:56.618+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.416 seconds
+[2024-06-16T19:28:57.656+0000] {processor.py:157} INFO - Started process (PID=3621) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:28:57.658+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:28:57.659+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:28:57.658+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:28:57.811+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:28:57.825+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:28:57.825+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:28:57.969+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:28:57.968+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:28:57.807423+00:00, run_after=2024-06-17T19:28:57.807423+00:00
+[2024-06-16T19:28:57.985+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.335 seconds
+[2024-06-16T19:29:28.493+0000] {processor.py:157} INFO - Started process (PID=3633) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:29:28.498+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:29:28.499+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:29:28.498+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:29:28.670+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:29:28.886+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:29:28.886+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:29:28.886+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:29:28.886+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:29:28.902+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:29:28.902+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:29:28.665603+00:00, run_after=2024-06-17T19:29:28.665603+00:00
+[2024-06-16T19:29:28.934+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.444 seconds
+[2024-06-16T19:29:59.416+0000] {processor.py:157} INFO - Started process (PID=3645) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:29:59.421+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:29:59.422+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:29:59.422+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:29:59.588+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:29:59.785+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:29:59.784+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:29:59.785+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:29:59.785+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:29:59.801+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:29:59.801+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:29:59.584175+00:00, run_after=2024-06-17T19:29:59.584175+00:00
+[2024-06-16T19:29:59.817+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.407 seconds
+[2024-06-16T19:30:02.626+0000] {processor.py:157} INFO - Started process (PID=3646) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:30:02.628+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:30:02.630+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:30:02.629+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:30:02.778+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:30:02.789+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:30:02.789+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:30:02.807+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:30:02.807+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:30:02.774080+00:00, run_after=2024-06-17T19:30:02.774080+00:00
+[2024-06-16T19:30:02.831+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.211 seconds
+[2024-06-16T19:30:32.416+0000] {processor.py:157} INFO - Started process (PID=3658) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:30:32.421+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:30:32.423+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:30:32.422+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:30:32.591+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:30:32.775+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:30:32.774+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:30:32.775+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:30:32.775+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:30:32.794+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:30:32.794+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:30:32.586926+00:00, run_after=2024-06-17T19:30:32.586926+00:00
+[2024-06-16T19:30:32.819+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.410 seconds
+[2024-06-16T19:31:03.301+0000] {processor.py:157} INFO - Started process (PID=3670) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:31:03.303+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:31:03.304+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:31:03.304+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:31:03.487+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:31:03.726+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:31:03.725+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:31:03.727+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:31:03.726+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:31:03.756+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:31:03.756+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:31:03.480770+00:00, run_after=2024-06-17T19:31:03.480770+00:00
+[2024-06-16T19:31:03.779+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.480 seconds
+[2024-06-16T19:31:25.903+0000] {processor.py:157} INFO - Started process (PID=3680) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:31:25.904+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:31:25.905+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:31:25.905+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:31:26.061+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:31:26.076+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:31:26.075+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:31:26.198+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:31:26.198+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:31:26.057039+00:00, run_after=2024-06-17T19:31:26.057039+00:00
+[2024-06-16T19:31:26.221+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.324 seconds
+[2024-06-16T19:31:56.887+0000] {processor.py:157} INFO - Started process (PID=3692) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:31:56.892+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:31:56.893+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:31:56.893+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:31:57.054+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:31:57.231+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:31:57.231+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:31:57.232+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:31:57.231+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:31:57.248+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:31:57.248+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:31:57.050640+00:00, run_after=2024-06-17T19:31:57.050640+00:00
+[2024-06-16T19:31:57.265+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.385 seconds
+[2024-06-16T19:32:27.635+0000] {processor.py:157} INFO - Started process (PID=3704) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:32:27.636+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:32:27.638+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:32:27.637+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:32:27.795+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:32:27.990+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:32:27.990+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:32:27.990+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:32:27.990+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:32:28.007+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:32:28.007+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:32:27.791179+00:00, run_after=2024-06-17T19:32:27.791179+00:00
+[2024-06-16T19:32:28.029+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.399 seconds
+[2024-06-16T19:32:58.624+0000] {processor.py:157} INFO - Started process (PID=3716) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:32:58.626+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:32:58.628+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:32:58.627+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:32:58.802+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:32:59.000+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:32:58.999+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:32:59.000+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:32:59.000+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:32:59.019+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:32:59.019+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:32:58.798537+00:00, run_after=2024-06-17T19:32:58.798537+00:00
+[2024-06-16T19:32:59.044+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.425 seconds
+[2024-06-16T19:33:29.409+0000] {processor.py:157} INFO - Started process (PID=3728) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:33:29.410+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:33:29.411+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:33:29.411+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:33:29.571+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:33:29.758+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:33:29.757+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:33:29.758+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:33:29.758+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:33:29.774+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:33:29.774+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:33:29.567685+00:00, run_after=2024-06-17T19:33:29.567685+00:00
+[2024-06-16T19:33:29.789+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.385 seconds
+[2024-06-16T19:34:00.402+0000] {processor.py:157} INFO - Started process (PID=3740) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:34:00.404+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:34:00.405+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:34:00.404+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:34:00.556+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:34:00.751+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:34:00.751+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:34:00.752+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:34:00.751+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:34:00.767+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:34:00.767+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:34:00.552800+00:00, run_after=2024-06-17T19:34:00.552800+00:00
+[2024-06-16T19:34:00.785+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.386 seconds
+[2024-06-16T19:34:31.186+0000] {processor.py:157} INFO - Started process (PID=3752) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:34:31.188+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:34:31.189+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:34:31.188+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:34:31.328+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:34:31.510+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:34:31.510+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:34:31.511+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:34:31.510+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:34:31.529+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:34:31.528+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:34:31.324619+00:00, run_after=2024-06-17T19:34:31.324619+00:00
+[2024-06-16T19:34:31.551+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.367 seconds
+[2024-06-16T19:35:02.202+0000] {processor.py:157} INFO - Started process (PID=3764) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:35:02.207+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:35:02.209+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:35:02.208+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:35:02.370+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:35:02.553+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:35:02.553+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:35:02.554+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:35:02.553+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:35:02.571+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:35:02.571+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:35:02.366449+00:00, run_after=2024-06-17T19:35:02.366449+00:00
+[2024-06-16T19:35:02.588+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.392 seconds
+[2024-06-16T19:35:32.924+0000] {processor.py:157} INFO - Started process (PID=3776) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:35:32.925+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:35:32.926+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:35:32.926+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:35:33.098+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:35:33.372+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:35:33.372+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:35:33.372+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:35:33.372+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:35:33.391+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:35:33.391+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:35:33.093600+00:00, run_after=2024-06-17T19:35:33.093600+00:00
+[2024-06-16T19:35:33.411+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.490 seconds
+[2024-06-16T19:36:04.084+0000] {processor.py:157} INFO - Started process (PID=3788) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:36:04.088+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:36:04.090+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:36:04.089+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:36:04.241+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:36:04.425+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:36:04.425+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:36:04.425+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:36:04.425+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:36:04.440+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:36:04.440+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:36:04.237531+00:00, run_after=2024-06-17T19:36:04.237531+00:00
+[2024-06-16T19:36:04.462+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.382 seconds
+[2024-06-16T19:36:34.742+0000] {processor.py:157} INFO - Started process (PID=3800) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:36:34.743+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:36:34.744+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:36:34.744+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:36:35.001+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:36:35.073+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:36:35.073+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:36:35.074+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:36:35.073+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:36:35.090+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:36:35.090+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:36:34.998750+00:00, run_after=2024-06-17T19:36:34.998750+00:00
+[2024-06-16T19:36:35.107+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.372 seconds
+[2024-06-16T19:37:05.477+0000] {processor.py:157} INFO - Started process (PID=3812) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:37:05.479+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:37:05.480+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:37:05.479+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:37:05.673+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:37:05.891+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:37:05.891+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:37:05.892+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:37:05.892+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:37:05.910+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:37:05.910+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:37:05.670042+00:00, run_after=2024-06-17T19:37:05.670042+00:00
+[2024-06-16T19:37:05.928+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.454 seconds
+[2024-06-16T19:37:36.572+0000] {processor.py:157} INFO - Started process (PID=3824) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:37:36.573+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:37:36.575+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:37:36.574+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:37:36.737+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:37:36.928+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:37:36.927+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:37:36.928+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:37:36.928+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:37:36.945+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:37:36.945+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:37:36.733799+00:00, run_after=2024-06-17T19:37:36.733799+00:00
+[2024-06-16T19:37:36.962+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.396 seconds
+[2024-06-16T19:38:07.355+0000] {processor.py:157} INFO - Started process (PID=3836) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:38:07.361+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:38:07.363+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:38:07.363+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:38:07.633+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:38:07.717+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:38:07.717+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:38:07.718+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:38:07.717+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:38:07.735+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:38:07.735+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:38:07.630860+00:00, run_after=2024-06-17T19:38:07.630860+00:00
+[2024-06-16T19:38:07.756+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.406 seconds
+[2024-06-16T19:38:38.359+0000] {processor.py:157} INFO - Started process (PID=3848) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:38:38.361+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:38:38.362+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:38:38.362+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:38:38.701+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:38:38.783+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:38:38.783+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:38:38.784+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:38:38.783+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:38:38.802+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:38:38.802+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:38:38.698753+00:00, run_after=2024-06-17T19:38:38.698753+00:00
+[2024-06-16T19:38:38.822+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.471 seconds
+[2024-06-16T19:39:09.109+0000] {processor.py:157} INFO - Started process (PID=3860) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:39:09.112+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:39:09.113+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:39:09.113+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:39:09.285+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:39:09.464+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:39:09.463+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:39:09.464+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:39:09.464+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:39:09.478+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:39:09.478+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:39:09.281626+00:00, run_after=2024-06-17T19:39:09.281626+00:00
+[2024-06-16T19:39:09.498+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.395 seconds
+[2024-06-16T19:39:39.761+0000] {processor.py:157} INFO - Started process (PID=3872) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:39:39.763+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:39:39.764+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:39:39.763+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:39:40.027+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:39:40.099+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:39:40.099+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:39:40.100+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:39:40.099+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:39:40.115+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:39:40.115+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:39:40.024575+00:00, run_after=2024-06-17T19:39:40.024575+00:00
+[2024-06-16T19:39:40.136+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.382 seconds
+[2024-06-16T19:40:10.426+0000] {processor.py:157} INFO - Started process (PID=3884) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:40:10.431+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:40:10.432+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:40:10.432+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:40:10.699+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:40:10.775+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:40:10.775+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:40:10.776+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:40:10.775+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:40:10.791+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:40:10.791+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:40:10.697014+00:00, run_after=2024-06-17T19:40:10.697014+00:00
+[2024-06-16T19:40:10.808+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.388 seconds
+[2024-06-16T19:40:41.472+0000] {processor.py:157} INFO - Started process (PID=3896) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:40:41.473+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:40:41.474+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:40:41.474+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:40:41.793+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:40:41.887+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:40:41.887+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:40:41.888+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:40:41.887+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:40:41.908+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:40:41.908+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:40:41.790932+00:00, run_after=2024-06-17T19:40:41.790932+00:00
+[2024-06-16T19:40:41.930+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.464 seconds
+[2024-06-16T19:41:12.216+0000] {processor.py:157} INFO - Started process (PID=3908) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:41:12.222+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:41:12.223+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:41:12.222+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:41:12.366+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:41:12.554+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:41:12.553+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:41:12.554+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:41:12.554+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:41:12.570+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:41:12.570+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:41:12.361030+00:00, run_after=2024-06-17T19:41:12.361030+00:00
+[2024-06-16T19:41:12.591+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.381 seconds
+[2024-06-16T19:41:42.841+0000] {processor.py:157} INFO - Started process (PID=3920) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:41:42.843+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:41:42.844+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:41:42.844+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:41:43.106+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:41:43.190+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:41:43.189+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:41:43.190+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:41:43.190+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:41:43.207+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:41:43.207+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:41:43.103619+00:00, run_after=2024-06-17T19:41:43.103619+00:00
+[2024-06-16T19:41:43.230+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.395 seconds
+[2024-06-16T19:42:13.474+0000] {processor.py:157} INFO - Started process (PID=3932) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:42:13.476+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:42:13.477+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:42:13.477+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:42:13.729+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:42:13.807+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:42:13.807+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:42:13.808+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:42:13.807+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:42:13.826+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:42:13.826+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:42:13.726686+00:00, run_after=2024-06-17T19:42:13.726686+00:00
+[2024-06-16T19:42:13.850+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.379 seconds
+[2024-06-16T19:42:44.072+0000] {processor.py:157} INFO - Started process (PID=3944) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:42:44.074+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:42:44.075+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:42:44.074+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:42:44.323+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:42:44.403+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:42:44.402+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:42:44.403+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:42:44.403+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:42:44.420+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:42:44.420+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:42:44.321519+00:00, run_after=2024-06-17T19:42:44.321519+00:00
+[2024-06-16T19:42:44.441+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.375 seconds
+[2024-06-16T19:43:14.739+0000] {processor.py:157} INFO - Started process (PID=3956) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:43:14.744+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:43:14.744+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:43:14.744+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:43:14.892+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:43:15.075+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:43:15.075+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:43:15.075+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:43:15.075+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:43:15.092+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:43:15.092+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:43:14.888506+00:00, run_after=2024-06-17T19:43:14.888506+00:00
+[2024-06-16T19:43:15.114+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.377 seconds
+[2024-06-16T19:43:45.370+0000] {processor.py:157} INFO - Started process (PID=3968) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:43:45.371+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:43:45.373+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:43:45.372+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:43:45.630+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:43:45.716+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:43:45.715+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:43:45.716+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:43:45.716+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:43:45.732+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:43:45.732+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:43:45.628361+00:00, run_after=2024-06-17T19:43:45.628361+00:00
+[2024-06-16T19:43:45.748+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.385 seconds
+[2024-06-16T19:44:16.010+0000] {processor.py:157} INFO - Started process (PID=3980) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:44:16.015+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:44:16.017+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:44:16.016+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:44:16.287+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:44:16.368+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:44:16.367+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:44:16.368+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:44:16.368+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:44:16.386+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:44:16.386+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:44:16.284703+00:00, run_after=2024-06-17T19:44:16.284703+00:00
+[2024-06-16T19:44:16.411+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.407 seconds
+[2024-06-16T19:44:46.672+0000] {processor.py:157} INFO - Started process (PID=3992) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:44:46.673+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:44:46.674+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:44:46.673+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:44:46.916+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:44:46.992+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:44:46.991+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:44:46.992+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:44:46.992+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:44:47.011+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:44:47.011+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:44:46.914012+00:00, run_after=2024-06-17T19:44:46.914012+00:00
+[2024-06-16T19:44:47.030+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.360 seconds
+[2024-06-16T19:45:17.327+0000] {processor.py:157} INFO - Started process (PID=4004) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:45:17.333+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:45:17.334+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:45:17.334+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:45:17.494+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:45:17.694+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:45:17.693+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:45:17.694+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:45:17.694+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:45:17.709+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:45:17.709+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:45:17.489837+00:00, run_after=2024-06-17T19:45:17.489837+00:00
+[2024-06-16T19:45:17.724+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.403 seconds
+[2024-06-16T19:45:47.971+0000] {processor.py:157} INFO - Started process (PID=4016) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:45:47.972+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:45:47.973+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:45:47.973+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:45:48.223+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:45:48.299+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:45:48.298+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:45:48.299+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:45:48.299+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:45:48.315+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:45:48.315+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:45:48.220591+00:00, run_after=2024-06-17T19:45:48.220591+00:00
+[2024-06-16T19:45:48.331+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.367 seconds
+[2024-06-16T19:46:18.628+0000] {processor.py:157} INFO - Started process (PID=4028) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:46:18.634+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:46:18.635+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:46:18.635+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:46:18.900+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:46:18.978+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:46:18.978+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:46:18.979+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:46:18.978+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:46:18.994+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:46:18.994+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:46:18.898401+00:00, run_after=2024-06-17T19:46:18.898401+00:00
+[2024-06-16T19:46:19.016+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.394 seconds
+[2024-06-16T19:46:49.654+0000] {processor.py:157} INFO - Started process (PID=4040) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:46:49.654+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:46:49.655+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:46:49.655+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:46:49.912+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:46:49.993+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:46:49.992+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:46:49.993+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:46:49.993+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:46:50.011+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:46:50.011+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:46:49.909739+00:00, run_after=2024-06-17T19:46:49.909739+00:00
+[2024-06-16T19:46:50.029+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.378 seconds
+[2024-06-16T19:47:20.406+0000] {processor.py:157} INFO - Started process (PID=4052) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:47:20.412+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:47:20.413+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:47:20.413+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:47:20.695+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:47:20.781+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:47:20.781+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:47:20.781+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:47:20.781+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:47:20.801+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:47:20.801+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:47:20.692714+00:00, run_after=2024-06-17T19:47:20.692714+00:00
+[2024-06-16T19:47:20.826+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.426 seconds
+[2024-06-16T19:47:51.474+0000] {processor.py:157} INFO - Started process (PID=4064) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:47:51.475+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:47:51.476+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:47:51.475+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:47:51.751+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:47:51.832+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:47:51.831+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:47:51.832+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:47:51.832+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:47:51.847+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:47:51.847+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:47:51.748014+00:00, run_after=2024-06-17T19:47:51.748014+00:00
+[2024-06-16T19:47:51.862+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.391 seconds
+[2024-06-16T19:48:22.231+0000] {processor.py:157} INFO - Started process (PID=4076) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:48:22.237+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:48:22.238+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:48:22.238+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:48:22.510+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:48:22.597+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:48:22.596+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:48:22.598+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:48:22.597+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:48:22.614+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:48:22.614+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:48:22.507929+00:00, run_after=2024-06-17T19:48:22.507929+00:00
+[2024-06-16T19:48:22.640+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.417 seconds
+[2024-06-16T19:48:53.255+0000] {processor.py:157} INFO - Started process (PID=4088) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:48:53.256+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:48:53.257+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:48:53.257+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:48:53.557+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:48:53.652+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:48:53.651+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:48:53.652+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:48:53.652+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:48:53.672+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:48:53.672+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:48:53.554356+00:00, run_after=2024-06-17T19:48:53.554356+00:00
+[2024-06-16T19:48:53.696+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.444 seconds
+[2024-06-16T19:49:24.096+0000] {processor.py:157} INFO - Started process (PID=4100) to work on /opt/airflow/dags/test_dag.py
+[2024-06-16T19:49:24.101+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-06-16T19:49:24.102+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:49:24.102+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:49:24.400+0000] {processor.py:839} INFO - DAG(s) dict_keys(['unique_name_of_this_dag']) retrieved from /opt/airflow/dags/test_dag.py
+[2024-06-16T19:49:24.492+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:49:24.492+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:unique_name_of_this_dag' as access control is unset.
+[2024-06-16T19:49:24.492+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:49:24.492+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2024-06-16T19:49:24.510+0000] {logging_mixin.py:151} INFO - [2024-06-16T19:49:24.510+0000] {dag.py:3696} INFO - Setting next_dagrun for unique_name_of_this_dag to 2024-06-16T19:49:24.396824+00:00, run_after=2024-06-17T19:49:24.396824+00:00
+[2024-06-16T19:49:24.530+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/test_dag.py took 0.437 seconds

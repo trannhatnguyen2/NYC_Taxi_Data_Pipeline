@@ -1,0 +1,86 @@
+[2024-06-21T03:44:10.545+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: elt_pipeline.transform manual__2024-06-20T18:01:56.746631+00:00 [queued]>
+[2024-06-21T03:44:10.558+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: elt_pipeline.transform manual__2024-06-20T18:01:56.746631+00:00 [queued]>
+[2024-06-21T03:44:10.558+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 2
+[2024-06-21T03:44:10.577+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): transform> on 2024-06-20 18:01:56.746631+00:00
+[2024-06-21T03:44:10.588+0000] {standard_task_runner.py:57} INFO - Started process 63 to run task
+[2024-06-21T03:44:10.591+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'elt_pipeline', 'transform', 'manual__2024-06-20T18:01:56.746631+00:00', '--job-id', '383', '--raw', '--subdir', 'DAGS_FOLDER/elt_pipeline_dag.py', '--cfg-path', '/tmp/tmpn_09y7dl']
+[2024-06-21T03:44:10.593+0000] {standard_task_runner.py:85} INFO - Job 383: Subtask transform
+[2024-06-21T03:44:10.652+0000] {task_command.py:415} INFO - Running <TaskInstance: elt_pipeline.transform manual__2024-06-20T18:01:56.746631+00:00 [running]> on host 2f57aed1878c
+[2024-06-21T03:44:10.729+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='elt_pipeline' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2024-06-20T18:01:56.746631+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-20T18:01:56.746631+00:00'
+[2024-06-21T03:44:11.216+0000] {logging_mixin.py:151} INFO - Bucket processed already exists, skip creating!
+[2024-06-21T03:44:11.217+0000] {logging_mixin.py:151} INFO - Reading parquet file: yellow_tripdata_2022-05.parquet
+[2024-06-21T03:44:11.909+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: yellow_tripdata_2022-05.parquet
+[2024-06-21T03:44:19.374+0000] {logging_mixin.py:151} INFO - Merged data from file: yellow_tripdata_2022-05.parquet
+[2024-06-21T03:44:19.878+0000] {logging_mixin.py:151} INFO - Transformed data from file: yellow_tripdata_2022-05.parquet
+[2024-06-21T03:44:21.802+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: s3://processed/batch/yellow_tripdata_2022-05.parquet
+[2024-06-21T03:44:21.802+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-21T03:44:26.804+0000] {logging_mixin.py:151} INFO - Reading parquet file: green_tripdata_2022-03.parquet
+[2024-06-21T03:44:26.837+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: green_tripdata_2022-03.parquet
+[2024-06-21T03:44:26.943+0000] {logging_mixin.py:151} INFO - Merged data from file: green_tripdata_2022-03.parquet
+[2024-06-21T03:44:26.950+0000] {logging_mixin.py:151} INFO - Transformed data from file: green_tripdata_2022-03.parquet
+[2024-06-21T03:44:26.960+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: s3://processed/batch/green_tripdata_2022-03.parquet
+[2024-06-21T03:44:26.960+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-21T03:44:31.964+0000] {logging_mixin.py:151} INFO - Reading parquet file: green_tripdata_2022-01.parquet
+[2024-06-21T03:44:31.989+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: green_tripdata_2022-01.parquet
+[2024-06-21T03:44:32.090+0000] {logging_mixin.py:151} INFO - Merged data from file: green_tripdata_2022-01.parquet
+[2024-06-21T03:44:32.092+0000] {logging_mixin.py:151} INFO - Transformed data from file: green_tripdata_2022-01.parquet
+[2024-06-21T03:44:32.102+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: s3://processed/batch/green_tripdata_2022-01.parquet
+[2024-06-21T03:44:32.102+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-21T03:44:37.104+0000] {logging_mixin.py:151} INFO - Reading parquet file: green_tripdata_2022-05.parquet
+[2024-06-21T03:44:37.129+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: green_tripdata_2022-05.parquet
+[2024-06-21T03:44:37.200+0000] {logging_mixin.py:151} INFO - Merged data from file: green_tripdata_2022-05.parquet
+[2024-06-21T03:44:37.207+0000] {logging_mixin.py:151} INFO - Transformed data from file: green_tripdata_2022-05.parquet
+[2024-06-21T03:44:37.216+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: s3://processed/batch/green_tripdata_2022-05.parquet
+[2024-06-21T03:44:37.217+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-21T03:44:42.220+0000] {logging_mixin.py:151} INFO - Reading parquet file: green_tripdata_2022-04.parquet
+[2024-06-21T03:44:42.246+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: green_tripdata_2022-04.parquet
+[2024-06-21T03:44:42.328+0000] {logging_mixin.py:151} INFO - Merged data from file: green_tripdata_2022-04.parquet
+[2024-06-21T03:44:42.336+0000] {logging_mixin.py:151} INFO - Transformed data from file: green_tripdata_2022-04.parquet
+[2024-06-21T03:44:42.346+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: s3://processed/batch/green_tripdata_2022-04.parquet
+[2024-06-21T03:44:42.347+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-21T03:44:47.352+0000] {logging_mixin.py:151} INFO - Reading parquet file: green_tripdata_2022-06.parquet
+[2024-06-21T03:44:47.378+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: green_tripdata_2022-06.parquet
+[2024-06-21T03:44:47.499+0000] {logging_mixin.py:151} INFO - Merged data from file: green_tripdata_2022-06.parquet
+[2024-06-21T03:44:47.502+0000] {logging_mixin.py:151} INFO - Transformed data from file: green_tripdata_2022-06.parquet
+[2024-06-21T03:44:47.512+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: s3://processed/batch/green_tripdata_2022-06.parquet
+[2024-06-21T03:44:47.513+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-21T03:44:52.518+0000] {logging_mixin.py:151} INFO - Reading parquet file: yellow_tripdata_2022-01.parquet
+[2024-06-21T03:44:53.182+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: yellow_tripdata_2022-01.parquet
+[2024-06-21T03:44:59.917+0000] {logging_mixin.py:151} INFO - Merged data from file: yellow_tripdata_2022-01.parquet
+[2024-06-21T03:45:00.380+0000] {logging_mixin.py:151} INFO - Transformed data from file: yellow_tripdata_2022-01.parquet
+[2024-06-21T03:45:01.953+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: s3://processed/batch/yellow_tripdata_2022-01.parquet
+[2024-06-21T03:45:01.953+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-21T03:45:06.957+0000] {logging_mixin.py:151} INFO - Reading parquet file: yellow_tripdata_2022-03.parquet
+[2024-06-21T03:45:07.481+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: yellow_tripdata_2022-03.parquet
+[2024-06-21T03:45:12.644+0000] {logging_mixin.py:151} INFO - Merged data from file: yellow_tripdata_2022-03.parquet
+[2024-06-21T03:45:13.164+0000] {logging_mixin.py:151} INFO - Transformed data from file: yellow_tripdata_2022-03.parquet
+[2024-06-21T03:45:15.040+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: s3://processed/batch/yellow_tripdata_2022-03.parquet
+[2024-06-21T03:45:15.040+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-21T03:45:20.044+0000] {logging_mixin.py:151} INFO - Reading parquet file: green_tripdata_2022-02.parquet
+[2024-06-21T03:45:20.087+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: green_tripdata_2022-02.parquet
+[2024-06-21T03:45:20.175+0000] {logging_mixin.py:151} INFO - Merged data from file: green_tripdata_2022-02.parquet
+[2024-06-21T03:45:20.178+0000] {logging_mixin.py:151} INFO - Transformed data from file: green_tripdata_2022-02.parquet
+[2024-06-21T03:45:20.186+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: s3://processed/batch/green_tripdata_2022-02.parquet
+[2024-06-21T03:45:20.187+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-21T03:45:25.192+0000] {logging_mixin.py:151} INFO - Reading parquet file: yellow_tripdata_2022-06.parquet
+[2024-06-21T03:45:25.647+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: yellow_tripdata_2022-06.parquet
+[2024-06-21T03:45:29.852+0000] {logging_mixin.py:151} INFO - Merged data from file: yellow_tripdata_2022-06.parquet
+[2024-06-21T03:45:30.324+0000] {logging_mixin.py:151} INFO - Transformed data from file: yellow_tripdata_2022-06.parquet
+[2024-06-21T03:45:32.150+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: s3://processed/batch/yellow_tripdata_2022-06.parquet
+[2024-06-21T03:45:32.150+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-21T03:45:37.152+0000] {logging_mixin.py:151} INFO - Reading parquet file: yellow_tripdata_2022-04.parquet
+[2024-06-21T03:45:37.716+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: yellow_tripdata_2022-04.parquet
+[2024-06-21T03:45:45.315+0000] {logging_mixin.py:151} INFO - Merged data from file: yellow_tripdata_2022-04.parquet
+[2024-06-21T03:45:45.848+0000] {logging_mixin.py:151} INFO - Transformed data from file: yellow_tripdata_2022-04.parquet
+[2024-06-21T03:45:47.779+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: s3://processed/batch/yellow_tripdata_2022-04.parquet
+[2024-06-21T03:45:47.779+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-21T03:45:52.785+0000] {logging_mixin.py:151} INFO - Reading parquet file: yellow_tripdata_2022-02.parquet
+[2024-06-21T03:45:53.337+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: yellow_tripdata_2022-02.parquet
+[2024-06-21T03:45:57.300+0000] {logging_mixin.py:151} INFO - Merged data from file: yellow_tripdata_2022-02.parquet
+[2024-06-21T03:45:57.697+0000] {logging_mixin.py:151} INFO - Transformed data from file: yellow_tripdata_2022-02.parquet
+[2024-06-21T03:45:59.576+0000] {logging_mixin.py:151} INFO - Finished transforming data in file: s3://processed/batch/yellow_tripdata_2022-02.parquet
+[2024-06-21T03:45:59.576+0000] {logging_mixin.py:151} INFO - ==========================================================================================
+[2024-06-21T03:46:04.589+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-06-21T03:46:04.602+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=elt_pipeline, task_id=transform, execution_date=20240620T180156, start_date=20240621T034410, end_date=20240621T034604
+[2024-06-21T03:46:05.021+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-06-21T03:46:05.052+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check

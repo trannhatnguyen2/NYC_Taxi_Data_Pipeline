@@ -1,0 +1,37 @@
+[2024-06-17T16:05:01.337+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: elt_pipeline.transform manual__2024-06-17T16:04:54.441056+00:00 [queued]>
+[2024-06-17T16:05:01.345+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: elt_pipeline.transform manual__2024-06-17T16:04:54.441056+00:00 [queued]>
+[2024-06-17T16:05:01.345+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-17T16:05:01.357+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): transform> on 2024-06-17 16:04:54.441056+00:00
+[2024-06-17T16:05:01.366+0000] {standard_task_runner.py:57} INFO - Started process 318 to run task
+[2024-06-17T16:05:01.368+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'elt_pipeline', 'transform', 'manual__2024-06-17T16:04:54.441056+00:00', '--job-id', '106', '--raw', '--subdir', 'DAGS_FOLDER/elt_pipeline_dag.py', '--cfg-path', '/tmp/tmp0urk1r5b']
+[2024-06-17T16:05:01.371+0000] {standard_task_runner.py:85} INFO - Job 106: Subtask transform
+[2024-06-17T16:05:01.413+0000] {task_command.py:415} INFO - Running <TaskInstance: elt_pipeline.transform manual__2024-06-17T16:04:54.441056+00:00 [running]> on host c5bd232ea3a3
+[2024-06-17T16:05:01.674+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='elt_pipeline' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2024-06-17T16:04:54.441056+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-17T16:04:54.441056+00:00'
+[2024-06-17T16:05:01.796+0000] {logging_mixin.py:151} INFO - {'endpoint': 'minio:9000', 'bucket_name': 'delta', 'folder_name': 'test', 'access_key': 'minio_access_key', 'secret_key': 'minio_secret_key'}
+[2024-06-17T16:05:01.978+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/green_tripdata_2022-01.parquet
+[2024-06-17T16:05:02.114+0000] {logging_mixin.py:151} INFO - Dropped column store_and_fwd_flag from file: test/green_tripdata_2022-01.parquet
+[2024-06-17T16:05:02.116+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scripts/elt_pipeline.py", line 203, in transform_data
+    df = merge_taxi_zone(df, file)
+  File "/opt/airflow/dags/scripts/elt_pipeline.py", line 91, in merge_taxi_zone
+    df_lookup = pd.read_csv(TAXI_LOOKUP_PATH)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 912, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 577, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1407, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1661, in _make_engine
+    self.handles = get_handle(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/common.py", line 859, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/scripts/data/taxi_lookup.csv'
+[2024-06-17T16:05:02.128+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=elt_pipeline, task_id=transform, execution_date=20240617T160454, start_date=20240617T160501, end_date=20240617T160502
+[2024-06-17T16:05:02.157+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 106 for task transform ([Errno 2] No such file or directory: '/opt/airflow/scripts/data/taxi_lookup.csv'; 318)
+[2024-06-17T16:05:02.182+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-06-17T16:05:02.198+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

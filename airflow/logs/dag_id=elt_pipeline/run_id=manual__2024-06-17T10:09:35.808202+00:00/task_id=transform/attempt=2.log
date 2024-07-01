@@ -1,0 +1,69 @@
+[2024-06-17T10:14:45.962+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: elt_pipeline.transform manual__2024-06-17T10:09:35.808202+00:00 [queued]>
+[2024-06-17T10:14:45.972+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: elt_pipeline.transform manual__2024-06-17T10:09:35.808202+00:00 [queued]>
+[2024-06-17T10:14:45.972+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 2
+[2024-06-17T10:14:45.984+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): transform> on 2024-06-17 10:09:35.808202+00:00
+[2024-06-17T10:14:45.991+0000] {standard_task_runner.py:57} INFO - Started process 3225 to run task
+[2024-06-17T10:14:45.995+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'elt_pipeline', 'transform', 'manual__2024-06-17T10:09:35.808202+00:00', '--job-id', '91', '--raw', '--subdir', 'DAGS_FOLDER/elt_pipeline_dag.py', '--cfg-path', '/tmp/tmpdokxii7w']
+[2024-06-17T10:14:45.998+0000] {standard_task_runner.py:85} INFO - Job 91: Subtask transform
+[2024-06-17T10:14:46.042+0000] {task_command.py:415} INFO - Running <TaskInstance: elt_pipeline.transform manual__2024-06-17T10:09:35.808202+00:00 [running]> on host 52e246c9d923
+[2024-06-17T10:14:46.266+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='elt_pipeline' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2024-06-17T10:09:35.808202+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-17T10:09:35.808202+00:00'
+[2024-06-17T10:14:46.269+0000] {logging_mixin.py:151} INFO - {'endpoint': 'minio:9000', 'bucket_name': 'delta', 'folder_name': 'test', 'access_key': 'minio_access_key', 'secret_key': 'minio_secret_key'}
+[2024-06-17T10:14:46.278+0000] {logging_mixin.py:151} INFO - Reading parquet file: test/green_tripdata_2022-01.parquet
+[2024-06-17T10:14:48.487+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scripts/elt_pipeline.py", line 200, in transform_data
+    df = pd.read_parquet(path)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/parquet.py", line 509, in read_parquet
+    return impl.read(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/parquet.py", line 227, in read
+    pa_table = self.api.parquet.read_table(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyarrow/parquet/core.py", line 2926, in read_table
+    dataset = _ParquetDatasetV2(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyarrow/parquet/core.py", line 2452, in __init__
+    finfo = filesystem.get_file_info(path_or_paths)
+  File "pyarrow/_fs.pyx", line 571, in pyarrow._fs.FileSystem.get_file_info
+  File "pyarrow/error.pxi", line 144, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/_fs.pyx", line 1490, in pyarrow._fs._cb_get_file_info
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyarrow/fs.py", line 330, in get_file_info
+    info = self.fs.info(path)
+  File "/home/airflow/.local/lib/python3.8/site-packages/fsspec/asyn.py", line 118, in wrapper
+    return sync(self.loop, func, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/fsspec/asyn.py", line 103, in sync
+    raise return_result
+  File "/home/airflow/.local/lib/python3.8/site-packages/fsspec/asyn.py", line 56, in _runner
+    result[0] = await coro
+  File "/home/airflow/.local/lib/python3.8/site-packages/s3fs/core.py", line 1374, in _info
+    out = await self._call_s3(
+  File "/home/airflow/.local/lib/python3.8/site-packages/s3fs/core.py", line 365, in _call_s3
+    return await _error_wrapper(
+  File "/home/airflow/.local/lib/python3.8/site-packages/s3fs/core.py", line 145, in _error_wrapper
+    raise err
+  File "/home/airflow/.local/lib/python3.8/site-packages/s3fs/core.py", line 113, in _error_wrapper
+    return await func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/aiobotocore/client.py", line 366, in _make_api_call
+    http, parsed_response = await self._make_request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/aiobotocore/client.py", line 391, in _make_request
+    return await self._endpoint.make_request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/aiobotocore/endpoint.py", line 96, in _send_request
+    request = await self.create_request(request_dict, operation_model)
+  File "/home/airflow/.local/lib/python3.8/site-packages/aiobotocore/endpoint.py", line 84, in create_request
+    await self._event_emitter.emit(
+  File "/home/airflow/.local/lib/python3.8/site-packages/aiobotocore/hooks.py", line 66, in _emit
+    response = await resolve_awaitable(handler(**kwargs))
+  File "/home/airflow/.local/lib/python3.8/site-packages/aiobotocore/_helpers.py", line 15, in resolve_awaitable
+    return await obj
+  File "/home/airflow/.local/lib/python3.8/site-packages/aiobotocore/signers.py", line 24, in handler
+    return await self.sign(operation_name, request)
+  File "/home/airflow/.local/lib/python3.8/site-packages/aiobotocore/signers.py", line 82, in sign
+    auth.add_auth(request)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/auth.py", line 418, in add_auth
+    raise NoCredentialsError()
+botocore.exceptions.NoCredentialsError: Unable to locate credentials
+[2024-06-17T10:14:48.502+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=elt_pipeline, task_id=transform, execution_date=20240617T100935, start_date=20240617T101445, end_date=20240617T101448
+[2024-06-17T10:14:48.526+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 91 for task transform (Unable to locate credentials; 3225)
+[2024-06-17T10:14:48.573+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-06-17T10:14:48.591+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

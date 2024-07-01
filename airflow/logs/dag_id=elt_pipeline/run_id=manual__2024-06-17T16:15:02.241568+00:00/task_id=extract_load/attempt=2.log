@@ -1,0 +1,4 @@
+[2024-06-17T16:49:24.357+0000] {taskinstance.py:1147} INFO - Dependencies not met for <TaskInstance: elt_pipeline.extract_load manual__2024-06-17T16:15:02.241568+00:00 [success]>, dependency 'Task Instance State' FAILED: Task is in the 'success' state.
+[2024-06-17T16:49:24.365+0000] {local_task_job_runner.py:154} INFO - Task is not able to be run
+[2024-06-17T16:59:48.441+0000] {taskinstance.py:1147} INFO - Dependencies not met for <TaskInstance: elt_pipeline.extract_load manual__2024-06-17T16:15:02.241568+00:00 [success]>, dependency 'Task Instance State' FAILED: Task is in the 'success' state.
+[2024-06-17T16:59:48.443+0000] {local_task_job_runner.py:154} INFO - Task is not able to be run

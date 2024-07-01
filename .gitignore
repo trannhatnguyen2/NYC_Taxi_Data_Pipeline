@@ -1,0 +1,7 @@
+**/__pycache__/
+
+/data/*
+/jars/*
+**/logs/
+test.py
+/airflow/logs/*

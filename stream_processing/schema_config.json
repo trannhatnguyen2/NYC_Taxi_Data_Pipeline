@@ -1,0 +1,21 @@
+{
+  "fields": [
+    { "name": "dolocationid", "type": "IntegerType", "nullable": true },
+    { "name": "pulocationid", "type": "IntegerType", "nullable": true },
+    { "name": "ratecodeid", "type": "DoubleType", "nullable": true },
+    { "name": "vendorid", "type": "IntegerType", "nullable": true },
+    { "name": "congestion_surcharge", "type": "DoubleType", "nullable": true },
+    { "name": "extra", "type": "DoubleType", "nullable": true },
+    { "name": "fare_amount", "type": "DoubleType", "nullable": true },
+    { "name": "improvement_surcharge", "type": "DoubleType", "nullable": true },
+    { "name": "mta_tax", "type": "DoubleType", "nullable": true },
+    { "name": "passenger_count", "type": "DoubleType", "nullable": true },
+    { "name": "payment_type", "type": "IntegerType", "nullable": true },
+    { "name": "tip_amount", "type": "DoubleType", "nullable": true },
+    { "name": "tolls_amount", "type": "DoubleType", "nullable": true },
+    { "name": "total_amount", "type": "DoubleType", "nullable": true },
+    { "name": "tpep_dropoff_datetime", "type": "LongType", "nullable": true },
+    { "name": "tpep_pickup_datetime", "type": "LongType", "nullable": true },
+    { "name": "trip_distance", "type": "DoubleType", "nullable": true }
+  ]
+}

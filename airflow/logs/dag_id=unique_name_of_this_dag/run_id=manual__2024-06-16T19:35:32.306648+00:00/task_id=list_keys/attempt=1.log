@@ -1,0 +1,115 @@
+[2024-06-16T19:35:33.200+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: unique_name_of_this_dag.list_keys manual__2024-06-16T19:35:32.306648+00:00 [queued]>
+[2024-06-16T19:35:33.210+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: unique_name_of_this_dag.list_keys manual__2024-06-16T19:35:32.306648+00:00 [queued]>
+[2024-06-16T19:35:33.210+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2024-06-16T19:35:33.226+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): list_keys> on 2024-06-16 19:35:32.306648+00:00
+[2024-06-16T19:35:33.236+0000] {standard_task_runner.py:57} INFO - Started process 3710 to run task
+[2024-06-16T19:35:33.240+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'unique_name_of_this_dag', 'list_keys', 'manual__2024-06-16T19:35:32.306648+00:00', '--job-id', '32', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmpmzpfjbrn']
+[2024-06-16T19:35:33.241+0000] {standard_task_runner.py:85} INFO - Job 32: Subtask list_keys
+[2024-06-16T19:35:33.288+0000] {task_command.py:415} INFO - Running <TaskInstance: unique_name_of_this_dag.list_keys manual__2024-06-16T19:35:32.306648+00:00 [running]> on host 52e246c9d923
+[2024-06-16T19:35:33.358+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='unique_name_of_this_dag' AIRFLOW_CTX_TASK_ID='list_keys' AIRFLOW_CTX_EXECUTION_DATE='2024-06-16T19:35:32.306648+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-16T19:35:32.306648+00:00'
+[2024-06-16T19:35:33.370+0000] {base.py:73} INFO - Using connection ID 'my_s3_conn' for task execution.
+[2024-06-16T19:35:42.356+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/httpsession.py", line 465, in send
+    urllib_response = conn.urlopen(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 415, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/awsrequest.py", line 96, in request
+    rval = super().request(method, url, body, headers, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.8/http/client.py", line 1256, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.8/http/client.py", line 1302, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.8/http/client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/awsrequest.py", line 123, in _send_output
+    self.send(msg)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/awsrequest.py", line 223, in send
+    return super().send(str)
+  File "/usr/local/lib/python3.8/http/client.py", line 951, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <botocore.awsrequest.AWSHTTPConnection object at 0x74b9d9b8fd90>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/test_dag.py", line 28, in list_keys
+    keys = hook.list_keys('datalake', prefix='stream')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 92, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 822, in list_keys
+    for page in response:
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/paginate.py", line 269, in __iter__
+    response = self._make_request(current_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/paginate.py", line 357, in _make_request
+    return self._method(**current_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/client.py", line 535, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/client.py", line 963, in _make_api_call
+    http, parsed_response = self._make_request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/client.py", line 986, in _make_request
+    return self._endpoint.make_request(operation_model, request_dict)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/endpoint.py", line 119, in make_request
+    return self._send_request(request_dict, operation_model)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/endpoint.py", line 202, in _send_request
+    while self._needs_retry(
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/endpoint.py", line 354, in _needs_retry
+    responses = self._event_emitter.emit(
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/hooks.py", line 412, in emit
+    return self._emitter.emit(aliased_event_name, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/hooks.py", line 256, in emit
+    return self._emit(event_name, kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/hooks.py", line 239, in _emit
+    response = handler(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/retryhandler.py", line 207, in __call__
+    if self._checker(**checker_kwargs):
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/retryhandler.py", line 284, in __call__
+    should_retry = self._should_retry(
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/retryhandler.py", line 320, in _should_retry
+    return self._checker(attempt_number, response, caught_exception)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/retryhandler.py", line 363, in __call__
+    checker_response = checker(
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/retryhandler.py", line 247, in __call__
+    return self._check_caught_exception(
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/retryhandler.py", line 416, in _check_caught_exception
+    raise caught_exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/endpoint.py", line 281, in _do_get_response
+    http_response = self._send(request)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/endpoint.py", line 377, in _send
+    return self.http_session.send(request)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/httpsession.py", line 494, in send
+    raise EndpointConnectionError(endpoint_url=request.url, error=e)
+botocore.exceptions.EndpointConnectionError: Could not connect to the endpoint URL: "http://localhost:9000/datalake?list-type=2&prefix=stream&delimiter=&start-after=&encoding-type=url"
+[2024-06-16T19:35:42.384+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=unique_name_of_this_dag, task_id=list_keys, execution_date=20240616T193532, start_date=20240616T193533, end_date=20240616T193542
+[2024-06-16T19:35:42.407+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 32 for task list_keys (Could not connect to the endpoint URL: "http://localhost:9000/datalake?list-type=2&prefix=stream&delimiter=&start-after=&encoding-type=url"; 3710)
+[2024-06-16T19:35:42.486+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-06-16T19:35:42.503+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

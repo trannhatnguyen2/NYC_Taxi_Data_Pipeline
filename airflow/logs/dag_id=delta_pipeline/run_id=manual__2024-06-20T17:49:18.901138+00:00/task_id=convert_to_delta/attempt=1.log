@@ -1,0 +1,38 @@
+[2024-06-20T17:49:21.820+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: delta_pipeline.convert_to_delta manual__2024-06-20T17:49:18.901138+00:00 [queued]>
+[2024-06-20T17:49:21.828+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: delta_pipeline.convert_to_delta manual__2024-06-20T17:49:18.901138+00:00 [queued]>
+[2024-06-20T17:49:21.828+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-20T17:49:21.840+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): convert_to_delta> on 2024-06-20 17:49:18.901138+00:00
+[2024-06-20T17:49:21.846+0000] {standard_task_runner.py:57} INFO - Started process 72 to run task
+[2024-06-20T17:49:21.849+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'delta_pipeline', 'convert_to_delta', 'manual__2024-06-20T17:49:18.901138+00:00', '--job-id', '372', '--raw', '--subdir', 'DAGS_FOLDER/delta_dag.py', '--cfg-path', '/tmp/tmpasikel2x']
+[2024-06-20T17:49:21.850+0000] {standard_task_runner.py:85} INFO - Job 372: Subtask convert_to_delta
+[2024-06-20T17:49:21.911+0000] {task_command.py:415} INFO - Running <TaskInstance: delta_pipeline.convert_to_delta manual__2024-06-20T17:49:18.901138+00:00 [running]> on host 40214f1a5465
+[2024-06-20T17:49:22.018+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='delta_pipeline' AIRFLOW_CTX_TASK_ID='convert_to_delta' AIRFLOW_CTX_EXECUTION_DATE='2024-06-20T17:49:18.901138+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-20T17:49:18.901138+00:00'
+[2024-06-20T17:49:47.121+0000] {local_task_job_runner.py:294} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2024-06-20T17:49:47.124+0000] {process_utils.py:131} INFO - Sending 15 to group 72. PIDs of all processes in the group: [73, 72]
+[2024-06-20T17:49:47.124+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 72
+[2024-06-20T17:49:47.125+0000] {taskinstance.py:1630} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-06-20T17:49:47.146+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scripts/convert_to_delta.py", line 89, in main_convert
+    spark = configure_spark_with_delta_pip(builder, extra_packages=["org.apache.hadoop:hadoop-aws:3.3.4"]).getOrCreate()
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/sql/session.py", line 497, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/context.py", line 515, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/context.py", line 201, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/context.py", line 436, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/java_gateway.py", line 104, in launch_gateway
+    time.sleep(0.1)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1632, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-06-20T17:49:47.153+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=delta_pipeline, task_id=convert_to_delta, execution_date=20240620T174918, start_date=20240620T174921, end_date=20240620T174947
+[2024-06-20T17:49:47.176+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 372 for task convert_to_delta (Task received SIGTERM signal; 72)
+[2024-06-20T17:49:47.217+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=73, status='terminated', started='17:49:21') (73) terminated with exit code None
+[2024-06-20T17:49:47.218+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=72, status='terminated', exitcode=1, started='17:49:20') (72) terminated with exit code 1

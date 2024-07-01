@@ -1,0 +1,65 @@
+[2024-06-21T03:44:09.443+0000] {processor.py:157} INFO - Started process (PID=48) to work on /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:44:09.443+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar for tasks to queue
+[2024-06-21T03:44:09.445+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:09.445+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:44:09.447+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:44:09.459+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar took 0.019 seconds
+[2024-06-21T03:44:56.604+0000] {processor.py:157} INFO - Started process (PID=74) to work on /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:44:56.605+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar for tasks to queue
+[2024-06-21T03:44:56.610+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:44:56.608+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:44:56.613+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:44:56.633+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar took 0.034 seconds
+[2024-06-21T03:45:27.493+0000] {processor.py:157} INFO - Started process (PID=91) to work on /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:45:27.495+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar for tasks to queue
+[2024-06-21T03:45:27.497+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:45:27.497+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:45:27.499+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:45:27.514+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar took 0.023 seconds
+[2024-06-21T03:46:03.697+0000] {processor.py:157} INFO - Started process (PID=110) to work on /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:46:03.699+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar for tasks to queue
+[2024-06-21T03:46:03.704+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:46:03.703+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:46:03.707+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:46:03.730+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar took 0.039 seconds
+[2024-06-21T03:46:50.158+0000] {processor.py:157} INFO - Started process (PID=136) to work on /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:46:50.160+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar for tasks to queue
+[2024-06-21T03:46:50.163+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:46:50.163+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:46:50.168+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:46:50.186+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar took 0.034 seconds
+[2024-06-21T03:47:36.154+0000] {processor.py:157} INFO - Started process (PID=153) to work on /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:47:36.159+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar for tasks to queue
+[2024-06-21T03:47:36.161+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:47:36.160+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:47:36.163+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:47:36.177+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar took 0.026 seconds
+[2024-06-21T03:48:07.083+0000] {processor.py:157} INFO - Started process (PID=168) to work on /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:48:07.086+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar for tasks to queue
+[2024-06-21T03:48:07.089+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:48:07.088+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:48:07.094+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:48:07.111+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar took 0.032 seconds
+[2024-06-21T03:48:37.818+0000] {processor.py:157} INFO - Started process (PID=184) to work on /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:48:37.820+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar for tasks to queue
+[2024-06-21T03:48:37.822+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:48:37.821+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:48:37.824+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:48:37.842+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar took 0.028 seconds
+[2024-06-21T03:49:09.053+0000] {processor.py:157} INFO - Started process (PID=197) to work on /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:49:09.056+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar for tasks to queue
+[2024-06-21T03:49:09.059+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:49:09.059+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:49:09.064+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:49:09.081+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar took 0.031 seconds
+[2024-06-21T03:49:40.156+0000] {processor.py:157} INFO - Started process (PID=213) to work on /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:49:40.161+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar for tasks to queue
+[2024-06-21T03:49:40.163+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:49:40.163+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:49:40.166+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:49:40.179+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar took 0.026 seconds
+[2024-06-21T03:50:13.778+0000] {processor.py:157} INFO - Started process (PID=236) to work on /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:50:13.780+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar for tasks to queue
+[2024-06-21T03:50:13.783+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:50:13.783+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:50:13.788+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:50:13.808+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar took 0.035 seconds
+[2024-06-21T03:50:43.945+0000] {processor.py:157} INFO - Started process (PID=252) to work on /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:50:43.947+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar for tasks to queue
+[2024-06-21T03:50:43.948+0000] {logging_mixin.py:151} INFO - [2024-06-21T03:50:43.948+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:50:43.951+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T03:50:43.966+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar took 0.023 seconds
+[2024-06-21T12:30:29.137+0000] {processor.py:157} INFO - Started process (PID=55) to work on /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T12:30:29.142+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar for tasks to queue
+[2024-06-21T12:30:29.147+0000] {logging_mixin.py:151} INFO - [2024-06-21T12:30:29.144+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T12:30:29.153+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar
+[2024-06-21T12:30:29.549+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/scripts/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar took 0.424 seconds

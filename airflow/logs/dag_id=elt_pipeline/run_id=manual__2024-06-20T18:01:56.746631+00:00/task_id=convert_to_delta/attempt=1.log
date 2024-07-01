@@ -1,0 +1,9 @@
+[2024-06-21T03:46:06.334+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: elt_pipeline.convert_to_delta manual__2024-06-20T18:01:56.746631+00:00 [queued]>
+[2024-06-21T03:46:06.342+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: elt_pipeline.convert_to_delta manual__2024-06-20T18:01:56.746631+00:00 [queued]>
+[2024-06-21T03:46:06.343+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-21T03:46:06.355+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): convert_to_delta> on 2024-06-20 18:01:56.746631+00:00
+[2024-06-21T03:46:06.363+0000] {standard_task_runner.py:57} INFO - Started process 277 to run task
+[2024-06-21T03:46:06.367+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'elt_pipeline', 'convert_to_delta', 'manual__2024-06-20T18:01:56.746631+00:00', '--job-id', '386', '--raw', '--subdir', 'DAGS_FOLDER/elt_pipeline_dag.py', '--cfg-path', '/tmp/tmp78t7r6ud']
+[2024-06-21T03:46:06.369+0000] {standard_task_runner.py:85} INFO - Job 386: Subtask convert_to_delta
+[2024-06-21T03:46:06.413+0000] {task_command.py:415} INFO - Running <TaskInstance: elt_pipeline.convert_to_delta manual__2024-06-20T18:01:56.746631+00:00 [running]> on host 2f57aed1878c
+[2024-06-21T03:46:06.497+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='t.nhatnguyen' AIRFLOW_CTX_DAG_ID='elt_pipeline' AIRFLOW_CTX_TASK_ID='convert_to_delta' AIRFLOW_CTX_EXECUTION_DATE='2024-06-20T18:01:56.746631+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-20T18:01:56.746631+00:00'
