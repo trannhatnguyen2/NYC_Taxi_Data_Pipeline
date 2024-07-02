@@ -23,11 +23,9 @@ This fragmentation led to incomplete insights and impeded our capability to make
 .
     ├── airflow/                                    /* airflow folder including dags,.. /*
     ├── batch_processing/
-    │   ├── datalake_to_dw.py                           /* ETL data from datalake to staging area /*
-    │   ├── helpers.py
-    │   └── minio_utils.py                              /* functions: list_parquet_files in bucket (MinIO) /*
+    │   └── datalake_to_dw.py                           /* ETL data from datalake to staging area /*
     ├── configs/                                    /* contain config files /*
-    │   ├── datalake_airflow.yaml
+    │   ├── spark.yaml
     │   └── datalake.yaml
     ├── data/                                       /* contain dataset /*
     │   ├── 2020/
@@ -58,23 +56,16 @@ This fragmentation led to incomplete insights and impeded our capability to make
     │    └── run.sh                                     /* run create connector */
     ├── imgs/
     ├── jars/                                       /* JAR files for Spark version 3.5.1 */
-    ├── src/
+    ├── scripts/
     │   ├── data/
     │       └── taxi_lookup.csv                             /* CSV file to look up latitude and longitude */
-    │   ├── export_data_to_datalake.py                  /* upload data from local to 'raw' bucket (MinIO) */
-    │   ├── helpers.py
-    │   ├── preprocessing.py                            /* pre-process dataset in local */
-    │   ├── streaming_data_json.py                      /* stream data json format into kafka */
-    │   └── trino_db_scripts_generate.py
-    ├── src_airflow/
-    │   ├── data/
-    │       └── taxi_lookup.csv
-    │   ├── convert_to_delta.py
-    │   ├── elt_pipeline.py                             /* ELT pipeline: extract - load - process */
-    │   └── helpers.py
+    │   ├── extract_load.py                             /* upload data from local to 'raw' bucket (MinIO) */
+    │   ├── transform_data.py                           /* transform data to 'processed' bucket (MinIO) */
+    │   └── convert_to_delta.py                         /* convert data parquet file from 'processed' to 'delta' bucket (MinIO) */
     ├── streaming_processing/
     │    ├── read_parquet_streaming.py
-    │    └──  streaming_to_datalake.py              /* read data stream in kafka topic and write to 'raw' bucket (Minio) */
+    │    ├── schema_config.json
+    │    └── streaming_to_datalake.py               /* read data stream in kafka topic and write to 'raw' bucket (Minio) */
     ├── trino/
     │    ├── catalog/
     │       └──  datalake.properties
@@ -85,8 +76,12 @@ This fragmentation led to incomplete insights and impeded our capability to make
     ├── utils/                                     /* functions /*
     │    ├── create_schema.py
     │    ├── create_table.py
-    │    ├── postgresql_client.py
-    │    └──  streaming_data.db.py
+    │    ├── postgresql_client.py                       /* PostgreSQL Client: create connect, execute query, get columns in bucket /*
+    │    ├── helper.py
+    │    ├── minio_utils.py                             /* Minio Client: create connect, create bucket, list parquet files in bucket /*
+    │    ├── streaming_data_json.py                     /* stream data json format into kafka */
+    │    ├── streaming_data_db.py                       /* stream data into database */
+    │    └── trino_db_scripts_generate.py
     ├── .env
     ├── .gitignore
     ├── airflow-docker-compose.yaml
