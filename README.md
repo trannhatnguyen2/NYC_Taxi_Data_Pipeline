@@ -1,14 +1,25 @@
-# 🚕 NYC_TAXI Data Pipeline 🚕
+# [🚕 NYC_TAXI Data Pipeline 🚕](https://github.com/trannhatnguyen2/NYC_Taxi_Data_Pipeline)
 
 In today's data-driven landscape, analyzing extensive datasets is essential for deriving business insights. Our Taxi Data Analytics application leverages <b>Airflow, Spark, Delta Lake, Debezium, Kafka, DBT,</b> and <b>Great Expectations</b> to convert raw taxi trip data into actionable intelligence.
 
-## 💥 Challenge: Data Integration Issues 💥
+# 💥 Challenge: Data Integration Issues
 
 At the beginning, our operations encountered considerable difficulties in integrating various data sources. The diversity in systems and formats posed challenges in consolidating and thoroughly analyzing trip data.
 
 This fragmentation led to incomplete insights and impeded our capability to make informed decisions based on data effectively. Hence, we required a robust solution to consolidate our data sources or streamline the analysis process.
 
-## 🌟 System Architecture 🌟
+# 📕 Table Of Contents
+
+<!--ts-->
+
+- 🌟 [System Architecture](#️-system-architecture)
+- 📁 [Repository Structure](#-repository-structure)
+- 🚀 [Getting Started](#-getting-started)
+- 🔍 [How to Guide](#-how-to-guide)
+- 📌 [References](#-references)
+  <!--te-->
+
+# 🌟 System Architecture
 
 <p align="center">
 <img src="./imgs/big-data-diagram.svg" width=100% height=100%>
@@ -17,7 +28,7 @@ This fragmentation led to incomplete insights and impeded our capability to make
     System Architecture
 </p>
 
-## 📁 Repository structure 📁
+# 📁 Repository Structure
 
 ```shell
 .
@@ -92,7 +103,7 @@ This fragmentation led to incomplete insights and impeded our capability to make
     └── stream-docker-compose.yaml
 ```
 
-## 🚀 Getting Started 🚀
+# 🚀 Getting Started
 
 1.  **Clone the repository**:
 
@@ -141,9 +152,9 @@ This fragmentation led to incomplete insights and impeded our capability to make
     curl -O https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.12/3.2.1/spark-sql-kafka-0-10_2.12-3.2.1.jar
     ```
 
-## How-to Guide
+# 🔍 How to Guide
 
-### I. Batch Processing
+## I. Batch Processing
 
 1.  **Push the data (parquet format) from local to `raw` bucket - Datalake (MinIO)**:
 
@@ -223,7 +234,7 @@ Then, run the file `full_flow.ipynb`
     Validated the data using Great Expectations
 </p>
 
-7. **Use DBT to transform the data to create the dimension the fact tables**
+7. **Use DBT to transform the data and create a star schema in the data warehouse**
 
 ```bash
    cd dbt_nyc
@@ -243,7 +254,7 @@ Read [`README.md`](https://github.com/trannhatnguyen2/data-engineer-mle2/tree/ma
 <p align="center">
 <img src="./imgs/batch_8.png" width=50% height=50%>
 
-### II. Stream Processing
+## II. Stream Processing
 
 1. **Create Connector Postgres to Debezium**:
 
@@ -333,7 +344,7 @@ After that, run the following command to register a new schema for our data:
 
 ```
 
-### III. Airflow - Data Orchestration
+## III. Airflow - Data Orchestration
 
 ```bash
    cd airflow/
@@ -350,7 +361,7 @@ Read [`README.md`](https://github.com/trannhatnguyen2/data-engineer-mle2/tree/ma
 
 ---
 
-### Reference:
+# 📌 References
 
 [1] [NYC Taxi Trip Dataset](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
 
