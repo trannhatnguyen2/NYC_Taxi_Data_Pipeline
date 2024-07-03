@@ -16,12 +16,12 @@ def main():
 
     create_staging_schema = """CREATE SCHEMA IF NOT EXISTS staging;"""
 
-    create_dw_schema = """CREATE SCHEMA IF NOT EXISTS dw;"""
+    create_production_schema = """CREATE SCHEMA IF NOT EXISTS production;"""
 
     try:
         pc.execute_query(create_iot_schema)
         pc.execute_query(create_staging_schema)
-        pc.execute_query(create_dw_schema)
+        pc.execute_query(create_production_schema)
     except Exception as e:
         print(f"Failed to create schema with error: {e}")
 

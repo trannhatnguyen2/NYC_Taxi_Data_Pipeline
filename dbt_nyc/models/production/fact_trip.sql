@@ -32,11 +32,11 @@ with trip_staging as (
     from 
         staging.nyc_taxi as f
     join 
-        dw.dim_vendor as dv ON f.vendor_id = dv.vendor_id
+        production.dim_vendor as dv ON f.vendor_id = dv.vendor_id
     join
-        dw.dim_rate_code as dr ON f.rate_code_id = dr.rate_code_id
+        production.dim_rate_code as dr ON f.rate_code_id = dr.rate_code_id
     join
-        dw.dim_payment as dp ON f.payment_type_id = dp.payment_type_id
+        production.dim_payment as dp ON f.payment_type_id = dp.payment_type_id
 )
 
 select

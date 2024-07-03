@@ -31,6 +31,6 @@ clean-targets: # directories to be removed by `dbt clean`
 models:
   dbt_nyc:
     # Config indicated by + and applies to all files under models/example/
-    dw:
-      +schema: dw
+    production:
+      +schema: production
       +materialized: table
