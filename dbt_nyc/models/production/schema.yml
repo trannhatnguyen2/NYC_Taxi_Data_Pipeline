@@ -1,0 +1,83 @@
+version: 2
+
+models:
+  - name: fact_trip
+    description: "Fact Trip"
+    columns:
+      - name: vendor_key
+        tests:
+          - not_null
+      - name: rate_code_key
+        tests:
+          - not_null
+      - name: pickup_location_id
+        tests:
+          - not_null
+      - name: dropoff_location_id
+        tests:
+          - not_null
+      - name: payment_type_key
+        tests:
+          - not_null
+      - name: service_type_id
+        tests:
+          - not_null
+      - name: passenger_count
+        tests:
+          - not_null
+      - name: trip_distance
+        tests:
+          - not_null
+      - name: total_amount
+        tests:
+          - not_null
+
+  - name: dim_dropoff_location
+    columns:
+      - name: dropoff_location_id
+        tests:
+          - unique
+          - not_null
+      - name: dropoff_latitude
+        tests:
+          - not_null
+      - name: dropoff_longitude
+        tests:
+          - not_null
+
+  - name: dim_pickup_location
+    columns:
+      - name: pickup_location_id
+        tests:
+          - unique
+          - not_null
+      - name: pickup_latitude
+        tests:
+          - not_null
+      - name: pickup_longitude
+        tests:
+          - not_null
+
+  - name: dim_payment
+    columns:
+      - name: payment_description
+        tests:
+          - not_null
+
+  - name: dim_rate_code
+    columns:
+      - name: rate_code_description
+        tests:
+          - not_null
+
+  - name: dim_service_type
+    columns:
+      - name: service_name
+        tests:
+          - not_null
+
+  - name: dim_vendor
+    columns:
+      - name: vendor_name
+        tests:
+          - not_null

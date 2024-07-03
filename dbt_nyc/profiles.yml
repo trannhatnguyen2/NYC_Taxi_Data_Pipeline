@@ -1,0 +1,19 @@
+dbt_nyc:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: k6
+      pass: k6
+      database: k6
+      schema: public
+    prod:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: k6
+      pass: k6
+      database: k6
+      schema: public
