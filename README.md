@@ -10,12 +10,16 @@ This fragmentation led to incomplete insights and impeded our capability to make
 
 # 📕 Table Of Contents
 
+<!--ts-->
+
 - 🌟 [System Architecture](#️-system-architecture)
 - 📁 [Repository Structure](#-repository-structure)
 - 🚀 [Getting Started](#-getting-started)
 - 🔍 [How to Guide](#-how-to-guide)
-- 📊 [Result](#️-result)
 - 📌 [References](#-references)
+  <!--te-->
+
+<br />
 
 # 🌟 System Architecture 🌟
 
