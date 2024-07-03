@@ -8,6 +8,15 @@ At the beginning, our operations encountered considerable difficulties in integr
 
 This fragmentation led to incomplete insights and impeded our capability to make informed decisions based on data effectively. Hence, we required a robust solution to consolidate our data sources or streamline the analysis process.
 
+## 📕 Table Of Contents
+
+- 🌟 [System Architecture](#️-system-architecture)
+- 📁 [Repository Structure](#-repository-structure)
+- 🚀 [Getting Started](#-getting-started)
+- 🔍 [How to Guide](#-how-to-guide)
+- 📊 [Result](#️-result)
+- 📌 [References](#-references)
+
 ## 🌟 System Architecture 🌟
 
 <p align="center">
@@ -17,7 +26,7 @@ This fragmentation led to incomplete insights and impeded our capability to make
     System Architecture
 </p>
 
-## 📁 Repository structure 📁
+## 📁 Repository Structure 📁
 
 ```shell
 .
@@ -141,7 +150,7 @@ This fragmentation led to incomplete insights and impeded our capability to make
     curl -O https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.12/3.2.1/spark-sql-kafka-0-10_2.12-3.2.1.jar
     ```
 
-## How-to Guide
+## 🔍 How to Guide 🔍
 
 ### I. Batch Processing
 
@@ -223,7 +232,7 @@ Then, run the file `full_flow.ipynb`
     Validated the data using Great Expectations
 </p>
 
-7. **Use DBT to transform the data to create the dimension the fact tables**
+7. **Use DBT to transform the data and create a star schema in the data warehouse**
 
 ```bash
    cd dbt_nyc
@@ -350,7 +359,7 @@ Read [`README.md`](https://github.com/trannhatnguyen2/data-engineer-mle2/tree/ma
 
 ---
 
-### Reference:
+## 📌 References 📌
 
 [1] [NYC Taxi Trip Dataset](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
 
