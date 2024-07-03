@@ -28,7 +28,7 @@ This fragmentation led to incomplete insights and impeded our capability to make
     System Architecture
 </p>
 
-# 📁 Repository Structure 📁
+# 📁 Repository Structure
 
 ```shell
 .
