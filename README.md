@@ -195,7 +195,7 @@ This fragmentation led to incomplete insights and impeded our capability to make
     Converted the data successfully
 </p>
 
-4. **Create schema `staging`, `dw` and table `staging.nyc_taxi` in PostgreSQL**
+4. **Create schema `staging`, `production` and table `staging.nyc_taxi` in PostgreSQL**
 
 ```bash
    python utils/create_schema.py
