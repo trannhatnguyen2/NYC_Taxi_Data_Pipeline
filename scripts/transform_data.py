@@ -149,13 +149,13 @@ def transform_data(endpoint_url, access_key, secret_key):
     client.create_bucket(datalake_cfg['bucket_name_2'])
 
     # Transform data
-    for year in YEARS:
-        all_fps = glob(os.path.join(DATA_PATH, year, "*.parquet"))
-
-        for file in all_fps:
-            file_name = file.split('/')[-1]
-            print(f"Reading parquet file: {file_name}")
-            
+    
+    all_fps = glob(os.path.join(DATA_PATH, "*.parquet"))
+    print(all_fps)
+    for file in all_fps:
+        file_name = file.split('/')[-1]
+        print(f"Reading parquet file: {file_name}")
+        try:
             df = pd.read_parquet(file, engine='pyarrow')
 
             # lower case all columns
@@ -169,6 +169,10 @@ def transform_data(endpoint_url, access_key, secret_key):
             path = f"s3://{datalake_cfg['bucket_name_2']}/{datalake_cfg['folder_name']}/" + file_name
             df.to_parquet(path, index=False, filesystem=s3_fs, engine='pyarrow')
             print("Finished transforming data in file: " + path)
+            print("="*100)
+        except Exception as e:
+            print(f"Error processing file: {file_name}")
+            print(e)
             print("="*100)
 ###############################################
 

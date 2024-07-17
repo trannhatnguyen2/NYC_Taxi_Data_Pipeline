@@ -97,14 +97,14 @@ anonymous_usage_statistics:
   data_context_id: ec2e8f5e-9559-468f-b182-cada6655e5d4
   enabled: true
 fluent_datasources:
-  nguyentn-nyctaxi:
+  nyctaxi:
     type: postgres
     assets:
       postgres_taxi_data:
         type: table
         order_by: []
         batch_metadata: {}
-        table_name: nyc_taxi_test
+        table_name: nyc_taxi
         schema_name: staging
     connection_string: postgresql+psycopg2://k6:k6@localhost:5432/k6
 notebooks:

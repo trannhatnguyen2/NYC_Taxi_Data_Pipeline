@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-data_sample = "./data/2022/yellow_tripdata_2022-01.parquet"
+data_sample = "../data/yellow_tripdata_yellow_tripdata_2024-04.parquet"
 df = pd.read_parquet(data_sample)
 columns = df.columns
 

@@ -150,6 +150,7 @@ This fragmentation led to incomplete insights and impeded our capability to make
     curl -O https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.3.4/hadoop-aws-3.3.4.jar
     curl -O https://repo1.maven.org/maven2/org/postgresql/postgresql/42.4.3/postgresql-42.4.3.jar
     curl -O https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.12/3.2.1/spark-sql-kafka-0-10_2.12-3.2.1.jar
+    apt-get install openjdk-8-jdk-headless -qq
     ```
 
 # 🔍 How to Guide
@@ -159,7 +160,7 @@ This fragmentation led to incomplete insights and impeded our capability to make
 1.  **Push the data (parquet format) from local to `raw` bucket - Datalake (MinIO)**:
 
 ```bash
-    python src/local_to_raw.py
+    python src/extract_load.py
 ```
 
 <p align="center">
@@ -172,7 +173,7 @@ This fragmentation led to incomplete insights and impeded our capability to make
 2. **Process the data from `raw` to `processed` bucket (MinIO)**:
 
 ```bash
-    python src/raw_to_processed.py
+    python src/transform_data.py
 ```
 
 <p align="center">
@@ -184,8 +185,11 @@ This fragmentation led to incomplete insights and impeded our capability to make
 
 3. **Convert the data into Delta Lake format**:
 
+
+
+
 ```bash
-    python src/processed_to_delta.py
+    python src/convert_to_delta.py
 ```
 
 <p align="center">
@@ -194,6 +198,9 @@ This fragmentation led to incomplete insights and impeded our capability to make
 <p align="center">
     Converted the data successfully
 </p>
+
+
+
 
 4. **Create schema `staging`, `production` and table `staging.nyc_taxi` in PostgreSQL**
 

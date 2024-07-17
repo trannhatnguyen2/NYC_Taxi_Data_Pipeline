@@ -13,7 +13,7 @@ from postgresql_client import PostgresSQLClient
 # Parameters & Arguments
 ###############################################
 TABLE_NAME = "iot.taxi_nyc_time_series"
-PARQUET_FILE = "./data/2024/yellow_tripdata_2024-01.parquet"
+PARQUET_FILE = "../data/yellow_tripdata_yellow_tripdata_2024-04.parquet"
 NUM_ROWS = 10000
 ###############################################
 
@@ -53,7 +53,7 @@ def main():
         print(f"Sent: {format_record(row)}")
         pc.execute_query(query)
         print("-"*100)
-        sleep(2)
+        #sleep(2)
 
 def format_record(row):
     taxi_res = {
