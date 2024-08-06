@@ -85,6 +85,7 @@ def delta_convert(endpoint_url, access_key, secret_key):
         df_delta = df.write \
                     .format("delta") \
                     .mode("overwrite") \
+                    .option("overwriteSchema", "true") \
                     .save(f"s3a://{BUCKET_NAME_3}/{datalake_cfg['folder_name']}")
         
         logging.info("="*50 + "COMPLETELY" + "="*50)
