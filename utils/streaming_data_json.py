@@ -27,7 +27,7 @@ parser.add_argument(
 args = parser.parse_args()
 
 NUM_DEVICES = 1
-DATA_PATH = "data/2024/yellow_tripdata_2024-01.parquet"
+DATA_PATH = "data/yellow_tripdata_yellow_tripdata_2024-04.parquet"
 
 
 def create_topic(admin, topic_name):

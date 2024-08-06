@@ -20,7 +20,7 @@ evaluation_parameters: {}
 runtime_configuration: {}
 validations:
   - batch_request:
-      datasource_name: nguyentn-nyctaxi
+      datasource_name: nyctaxi
       data_asset_name: postgres_taxi_data
       options: {}
       batch_slice:
