@@ -243,7 +243,7 @@ Then, run the file `full_flow.ipynb`
 Read [`README.md`](https://github.com/trannhatnguyen2/data-engineer-mle2/tree/main/dbt_nyc) for the next steps
 
 <p align="center">
-<img src="./imgs/star_schema.png" width=100% height=100%>
+<img src="./imgs/star_schema.png" width=90% height=90%>
 
 <p align="center">
     Data Warehouse - Star Schema
